@@ -87,20 +87,20 @@
 <meta name="description" content="目的因为飞行的时候要考虑电池电压（虽然BB响低压报警器可以实现这个效果，但是感觉略生硬了很多），以及飞行姿态的一些数据的获取，所以我决定给我的四轴飞行器增加OSD系统；此外OSD确实建立起了一个通道，可以把飞行器上的一些数据以很直观的方式展现出来，基于扩展考虑，如果增加了GPS模块还可以传递高度信息和位置信息数据，这样对于了解飞行距离和姿态还是有很大的帮助的；再有就是从传递回来的视频画面看起来更加">
 <meta property="og:type" content="article">
 <meta property="og:title" content="CC3D加装Minimosd研究">
-<meta property="og:url" content="http://blog.f1982.com/cn/2015/10/10/fpv-cc3d-add-osd-minoposd-minimosd/index.html">
+<meta property="og:url" content="http://blog.f1982.com/zh-cn/2015/10/10/fpv-cc3d-add-osd-minoposd-minimosd/index.html">
 <meta property="og:site_name" content="ANDY.C Jorney">
 <meta property="og:description" content="目的因为飞行的时候要考虑电池电压（虽然BB响低压报警器可以实现这个效果，但是感觉略生硬了很多），以及飞行姿态的一些数据的获取，所以我决定给我的四轴飞行器增加OSD系统；此外OSD确实建立起了一个通道，可以把飞行器上的一些数据以很直观的方式展现出来，基于扩展考虑，如果增加了GPS模块还可以传递高度信息和位置信息数据，这样对于了解飞行距离和姿态还是有很大的帮助的；再有就是从传递回来的视频画面看起来更加">
-<meta property="og:image" content="http://blog.f1982.com/cn/2015/10/10/fpv-cc3d-add-osd-minoposd-minimosd/minioposd-after-setup.jpg">
-<meta property="og:image" content="http://blog.f1982.com/cn/2015/10/10/fpv-cc3d-add-osd-minoposd-minimosd/minioposd-ftdi.png">
-<meta property="og:image" content="http://blog.f1982.com/cn/2015/10/10/fpv-cc3d-add-osd-minoposd-minimosd/minioposd-ftdi-photo.jpg">
-<meta property="og:image" content="http://blog.f1982.com/cn/2015/10/10/fpv-cc3d-add-osd-minoposd-minimosd/minioposd-test.jpg">
-<meta property="og:image" content="http://blog.f1982.com/cn/2015/10/10/fpv-cc3d-add-osd-minoposd-minimosd/minioposd-voltage-measuer.jpg">
-<meta property="og:image" content="http://blog.f1982.com/cn/2015/10/10/fpv-cc3d-add-osd-minoposd-minimosd/minioposd-update-charset.jpg">
-<meta property="og:image" content="http://blog.f1982.com/cn/2015/10/10/fpv-cc3d-add-osd-minoposd-minimosd/minioposd-update-firmware.jpg">
-<meta property="og:image" content="http://blog.f1982.com/cn/2015/10/10/fpv-cc3d-add-osd-minoposd-minimosd/minioposd-assemble-1.jpg">
-<meta property="og:image" content="http://blog.f1982.com/cn/2015/10/10/fpv-cc3d-add-osd-minoposd-minimosd/minioposd-assemble-2.jpg">
-<meta property="og:image" content="http://blog.f1982.com/cn/2015/10/10/fpv-cc3d-add-osd-minoposd-minimosd/minioposd-assemble-3.jpg">
-<meta property="og:updated_time" content="2016-09-18T09:10:18.000Z">
+<meta property="og:image" content="http://blog.f1982.com/zh-cn/2015/10/10/fpv-cc3d-add-osd-minoposd-minimosd/minioposd-after-setup.jpg">
+<meta property="og:image" content="http://blog.f1982.com/zh-cn/2015/10/10/fpv-cc3d-add-osd-minoposd-minimosd/minioposd-ftdi.png">
+<meta property="og:image" content="http://blog.f1982.com/zh-cn/2015/10/10/fpv-cc3d-add-osd-minoposd-minimosd/minioposd-ftdi-photo.jpg">
+<meta property="og:image" content="http://blog.f1982.com/zh-cn/2015/10/10/fpv-cc3d-add-osd-minoposd-minimosd/minioposd-test.jpg">
+<meta property="og:image" content="http://blog.f1982.com/zh-cn/2015/10/10/fpv-cc3d-add-osd-minoposd-minimosd/minioposd-voltage-measuer.jpg">
+<meta property="og:image" content="http://blog.f1982.com/zh-cn/2015/10/10/fpv-cc3d-add-osd-minoposd-minimosd/minioposd-update-charset.jpg">
+<meta property="og:image" content="http://blog.f1982.com/zh-cn/2015/10/10/fpv-cc3d-add-osd-minoposd-minimosd/minioposd-update-firmware.jpg">
+<meta property="og:image" content="http://blog.f1982.com/zh-cn/2015/10/10/fpv-cc3d-add-osd-minoposd-minimosd/minioposd-assemble-1.jpg">
+<meta property="og:image" content="http://blog.f1982.com/zh-cn/2015/10/10/fpv-cc3d-add-osd-minoposd-minimosd/minioposd-assemble-2.jpg">
+<meta property="og:image" content="http://blog.f1982.com/zh-cn/2015/10/10/fpv-cc3d-add-osd-minoposd-minimosd/minioposd-assemble-3.jpg">
+<meta property="og:updated_time" content="2016-09-18T09:24:01.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="CC3D加装Minimosd研究">
 <meta name="twitter:description" content="目的因为飞行的时候要考虑电池电压（虽然BB响低压报警器可以实现这个效果，但是感觉略生硬了很多），以及飞行姿态的一些数据的获取，所以我决定给我的四轴飞行器增加OSD系统；此外OSD确实建立起了一个通道，可以把飞行器上的一些数据以很直观的方式展现出来，基于扩展考虑，如果增加了GPS模块还可以传递高度信息和位置信息数据，这样对于了解飞行距离和姿态还是有很大的帮助的；再有就是从传递回来的视频画面看起来更加">
@@ -124,12 +124,12 @@
 
 
 
-  <link rel="canonical" href="http://blog.f1982.com/cn/2015/10/10/fpv-cc3d-add-osd-minoposd-minimosd/"/>
+  <link rel="canonical" href="http://blog.f1982.com/zh-cn/2015/10/10/fpv-cc3d-add-osd-minoposd-minimosd/"/>
 
   <title> CC3D加装Minimosd研究 | ANDY.C Jorney </title>
 </head>
 
-<body itemscope itemtype="http://schema.org/WebPage" lang="en,cn,tw,default">
+<body itemscope itemtype="http://schema.org/WebPage" lang="en,zh-cn,zh-tw,default">
 
   
 
@@ -288,7 +288,7 @@
       
         <h2 id="目的">目的</h2><p>因为飞行的时候要考虑电池电压（虽然BB响低压报警器可以实现这个效果，但是感觉略生硬了很多），以及飞行姿态的一些数据的获取，所以我决定给我的四轴飞行器增加OSD系统；此外OSD确实建立起了一个通道，可以把飞行器上的一些数据以很直观的方式展现出来，基于扩展考虑，如果增加了GPS模块还可以传递高度信息和位置信息数据，这样对于了解飞行距离和姿态还是有很大的帮助的；再有就是从传递回来的视频画面看起来更加的炫酷了。</p>
 <p>OSD安装设置后的效果</p>
-<img src="/cn/2015/10/10/fpv-cc3d-add-osd-minoposd-minimosd/minioposd-after-setup.jpg" alt="OSD安装设置后的效果" title="OSD安装设置后的效果">
+<img src="/zh-cn/2015/10/10/fpv-cc3d-add-osd-minoposd-minimosd/minioposd-after-setup.jpg" alt="OSD安装设置后的效果" title="OSD安装设置后的效果">
 <a id="more"></a>
 <h2 id="硬件选择">硬件选择</h2><p>之前一直有看穷人OSD，但是有人说和CC3D的兼容性不太好，后来看到板子的尺寸略大，也就没有深入研究，直到看到Minioposd，觉得这个才是我想要尝试的，主要的特点我觉得就是：</p>
 <ul>
@@ -307,23 +307,23 @@
 <h3 id="rssi_-_模拟版">rssi - 模拟版</h3><p>如果要扩展模拟rssi显示，就刷rssi。</p>
 <h3 id="rxok_-_数字版">rxok - 数字版</h3><p>rxok是rssi的数字版，原理是利用接收机自带的信号灯高低电平检测，遗憾的是华科尔的D10接收机并不支持这样的修改和扩展。</p>
 <h2 id="硬件连接">硬件连接</h2><p>如何链接Minioposd进行刷机。</p>
-<img src="/cn/2015/10/10/fpv-cc3d-add-osd-minoposd-minimosd/minioposd-ftdi.png" alt="连接Minioposd和电脑" title="连接Minioposd和电脑">
-<p>我连接以后的效果<br><img src="/cn/2015/10/10/fpv-cc3d-add-osd-minoposd-minimosd/minioposd-ftdi-photo.jpg" alt="我的连接" title="我的连接"></p>
-<img src="/cn/2015/10/10/fpv-cc3d-add-osd-minoposd-minimosd/minioposd-test.jpg" alt="图片" title="图片">
+<img src="/zh-cn/2015/10/10/fpv-cc3d-add-osd-minoposd-minimosd/minioposd-ftdi.png" alt="连接Minioposd和电脑" title="连接Minioposd和电脑">
+<p>我连接以后的效果<br><img src="/zh-cn/2015/10/10/fpv-cc3d-add-osd-minoposd-minimosd/minioposd-ftdi-photo.jpg" alt="我的连接" title="我的连接"></p>
+<img src="/zh-cn/2015/10/10/fpv-cc3d-add-osd-minoposd-minimosd/minioposd-test.jpg" alt="图片" title="图片">
 <h2 id="硬件修改">硬件修改</h2><p>因为接收机不支持的原因，我只添加了电压测量的功能</p>
-<img src="/cn/2015/10/10/fpv-cc3d-add-osd-minoposd-minimosd/minioposd-voltage-measuer.jpg" alt="修改硬件用来测量电压" title="修改硬件用来测量电压">
+<img src="/zh-cn/2015/10/10/fpv-cc3d-add-osd-minoposd-minimosd/minioposd-voltage-measuer.jpg" alt="修改硬件用来测量电压" title="修改硬件用来测量电压">
 <h2 id="软件设置">软件设置</h2><p><em>更新字库</em></p>
-<img src="/cn/2015/10/10/fpv-cc3d-add-osd-minoposd-minimosd/minioposd-update-charset.jpg" alt="更新字库" title="更新字库">
+<img src="/zh-cn/2015/10/10/fpv-cc3d-add-osd-minoposd-minimosd/minioposd-update-charset.jpg" alt="更新字库" title="更新字库">
 <p><em>更新固件</em></p>
-<img src="/cn/2015/10/10/fpv-cc3d-add-osd-minoposd-minimosd/minioposd-update-firmware.jpg" alt="更新固件" title="更新固件">
+<img src="/zh-cn/2015/10/10/fpv-cc3d-add-osd-minoposd-minimosd/minioposd-update-firmware.jpg" alt="更新固件" title="更新固件">
 <p><em>修改设置</em></p>
 <p>比较简单，修改界面显示成自己想要的布局和位置就好，唯一要注意的是，由于屏幕尺寸和分辨率的问题，尽量留出右侧下侧足够空隙。到最后装配之前最好实测一下以保证显示器可以显示完整。</p>
 <p>设置完毕后可以导出一份配置文件，妥善备份和保管，这样方便之后调整和修改，固件丢失也可以快速导入恢复。</p>
 <p><a href="http://pan.baidu.com/s/1ntINKIt" target="_blank" rel="external">我的配置文件下载</a></p>
 <h2 id="硬件安装">硬件安装</h2><p>因为增加了新的硬件，所以四轴的布局也稍微做了些调整，把osd也集成到了四轴狭小的空间里。</p>
-<img src="/cn/2015/10/10/fpv-cc3d-add-osd-minoposd-minimosd/minioposd-assemble-1.jpg" alt="图片" title="图片">
-<img src="/cn/2015/10/10/fpv-cc3d-add-osd-minoposd-minimosd/minioposd-assemble-2.jpg" alt="图片" title="图片">
-<img src="/cn/2015/10/10/fpv-cc3d-add-osd-minoposd-minimosd/minioposd-assemble-3.jpg" alt="图片" title="图片">
+<img src="/zh-cn/2015/10/10/fpv-cc3d-add-osd-minoposd-minimosd/minioposd-assemble-1.jpg" alt="图片" title="图片">
+<img src="/zh-cn/2015/10/10/fpv-cc3d-add-osd-minoposd-minimosd/minioposd-assemble-2.jpg" alt="图片" title="图片">
+<img src="/zh-cn/2015/10/10/fpv-cc3d-add-osd-minoposd-minimosd/minioposd-assemble-3.jpg" alt="图片" title="图片">
 <h2 id="CC3d地面站软件设置">CC3d地面站软件设置</h2><ul>
 <li><a href="http://v.youku.com/v_show/id_XNzk4MTUyNDQ4.html" target="_blank" rel="external">视频1</a></li>
 <li><a href="http://v.youku.com/v_show/id_XNzk4MTc2NjM2.html" target="_blank" rel="external">视频2</a></li>
@@ -373,7 +373,7 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/en/2013/07/03/first-time-travel-to-japan/" rel="next" title="旅行到日本-东游记">
+              <a href="/zh-cn/2013/07/03/first-time-travel-to-japan/" rel="next" title="旅行到日本-东游记">
                 <i class="fa fa-chevron-left"></i> 旅行到日本-东游记
               </a>
             
@@ -381,7 +381,7 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/cn/2015/10/10/my-2011-later-macbook-pro-gpu-issues/" rel="prev" title="我的2011年版Macbook Pro与传说中的显卡门">
+              <a href="/zh-cn/2015/10/10/my-2011-later-macbook-pro-gpu-issues/" rel="prev" title="我的2011年版Macbook Pro与传说中的显卡门">
                 我的2011年版Macbook Pro与传说中的显卡门 <i class="fa fa-chevron-right"></i>
               </a>
             
