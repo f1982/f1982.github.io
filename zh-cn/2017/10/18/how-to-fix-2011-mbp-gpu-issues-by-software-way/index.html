@@ -98,16 +98,16 @@
 
 
 问题已经无法靠官方来解决了，好在这台机器在我这里服役已经超过6年">
-<meta property="og:image" content="http://blog.f1982.com/how-to-fix-2011-mbp-gpu-issues-by-software-way/mbp_gpu_issues_double_apple_logo.jpg">
-<meta property="og:image" content="http://blog.f1982.com/how-to-fix-2011-mbp-gpu-issues-by-software-way/mbp_gpu_issues_white_screen.jpg">
-<meta property="og:image" content="http://blog.f1982.com/how-to-fix-2011-mbp-gpu-issues-by-software-way/mpb_blue_screen.jpg">
-<meta property="og:image" content="http://blog.f1982.com/how-to-fix-2011-mbp-gpu-issues-by-software-way/apple_hardware_test_ui.jpg">
-<meta property="og:image" content="http://blog.f1982.com/how-to-fix-2011-mbp-gpu-issues-by-software-way/mbp_open_backshell.jpg">
-<meta property="og:image" content="http://blog.f1982.com/how-to-fix-2011-mbp-gpu-issues-by-software-way/modify_fei_variables_big.jpg">
-<meta property="og:image" content="http://blog.f1982.com/how-to-fix-2011-mbp-gpu-issues-by-software-way/mbp_recovered.png">
-<meta property="og:image" content="http://blog.f1982.com/how-to-fix-2011-mbp-gpu-issues-by-software-way/sp_display_brightness_disappeared.png">
-<meta property="og:image" content="http://blog.f1982.com/how-to-fix-2011-mbp-gpu-issues-by-software-way/app_brightness_slider.png">
-<meta property="og:updated_time" content="2017-10-18T10:59:29.812Z">
+<meta property="og:image" content="http://blog.f1982.com/mbp_gpu_issues_double_apple_logo.jpg">
+<meta property="og:image" content="http://blog.f1982.com/mbp_gpu_issues_white_screen.jpg">
+<meta property="og:image" content="http://blog.f1982.com/mpb_blue_screen.jpg">
+<meta property="og:image" content="http://blog.f1982.com/apple_hardware_test_ui.jpg">
+<meta property="og:image" content="http://blog.f1982.com/mbp_open_backshell.jpg">
+<meta property="og:image" content="http://blog.f1982.com/modify_fei_variables_big.jpg">
+<meta property="og:image" content="http://blog.f1982.com/mbp_recovered.png">
+<meta property="og:image" content="http://blog.f1982.com/sp_display_brightness_disappeared.png">
+<meta property="og:image" content="http://blog.f1982.com/app_brightness_slider.png">
+<meta property="og:updated_time" content="2017-10-18T11:02:41.656Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="2011 Later MacBook Pro 显卡问题 High Serria 解决方式 - 软件篇">
 <meta name="twitter:description" content="前言2011 年 MacBook Pro 的 AMD 显卡问题困扰我不止一次了，早在 2015 年 10月份的时候，我就感受到了一波(原文)，机器莫名其妙的就重启，之后无法进入系统，当初也是折腾了好久，好在我赶上了最后一波的 Apple 免费维护，给我更换了主板。然而好景并不长久，过了两年故伎重演，这次早就过了苹果的维护周期。
@@ -298,18 +298,18 @@
 
       
         <h2 id="前言">前言</h2><p>2011 年 MacBook Pro 的 AMD 显卡问题困扰我不止一次了，早在 2015 年 10月份的时候，我就感受到了一波(<a href="http://blog.f1982.com/zh-cn/2015/10/10/my-2011-later-macbook-pro-gpu-issues/#more">原文</a>)，机器莫名其妙的就重启，之后无法进入系统，当初也是折腾了好久，好在我赶上了最后一波的 Apple 免费维护，给我更换了主板。然而好景并不长久，过了两年故伎重演，这次早就过了苹果的维护周期。</p>
-<p><img src="how-to-fix-2011-mbp-gpu-issues-by-software-way/mbp_gpu_issues_double_apple_logo.jpg" alt="双苹果"></p>
-<p><img src="how-to-fix-2011-mbp-gpu-issues-by-software-way/mbp_gpu_issues_white_screen.jpg" alt="白屏"></p>
-<p><img src="how-to-fix-2011-mbp-gpu-issues-by-software-way/mpb_blue_screen.jpg" alt="蓝屏"></p>
+<p><img src="mbp_gpu_issues_double_apple_logo.jpg" alt="双苹果"></p>
+<p><img src="mbp_gpu_issues_white_screen.jpg" alt="白屏"></p>
+<p><img src="mpb_blue_screen.jpg" alt="蓝屏"></p>
 <p>问题已经无法靠官方来解决了，好在这台机器在我这里服役已经超过6年，也算是命途多舛，经历了升级内存，硬盘报废，升级 SSD，显卡损坏，还2次，对我来说也是没什么遗憾了。而且有了上几次的经验，其实我已经改变了对于电脑这东西的看法：</p>
 <blockquote>
 <p>电脑只是计算中心，珍贵的是数据！</p>
 <p>没有什么地方的数据是绝对安全的，没有什么硬盘是不会坏的，没有电脑不会死机，所以数据只有同时在两个以上的地方存在才算是安全的!</p>
 </blockquote>
 <p>这次我的电脑有完整的备份在 TimeMachine 里，所有的代码都在云端的 GitHub 或者 bitbucket 里安安稳稳的躺着，所以我也没有了之前电脑坏掉的那种焦虑感。<br>虽然我不喜欢新版 MacBook Pro 2017 的去掉的 MagSafe 和没有键程的手感，但是也到时候更新了！所以这次，我可以放心的”玩”一下这台服役良久的机器了。</p>
-<p><img src="how-to-fix-2011-mbp-gpu-issues-by-software-way/apple_hardware_test_ui.jpg" alt="运行 Apple 的硬件检测程序并不能检测到任何问题"></p>
+<p><img src="apple_hardware_test_ui.jpg" alt="运行 Apple 的硬件检测程序并不能检测到任何问题"></p>
 <p>我查遍了网络，基本找到了2种截然不同的解决方式，一种是软件方式，一种是硬件方式，软件方式相比之下成本比较低，但是也不算特别省事儿，但是对动手能力要求稍微低点；硬件方式解决需要额外的工具，而且要求胆大心细，毕竟要打开机身，焊接，有一些电学的基本知识，而且有直接毁掉主板的概率，所以难度颇大，但是优点是：幸运的话你可以100%恢复你的 MacBook Pro。不过限于篇幅，这里这篇文章就只聊聊软件的方式。</p>
-<p><img src="how-to-fix-2011-mbp-gpu-issues-by-software-way/mbp_open_backshell.jpg" alt="打开后盖已经是家常便饭"></p>
+<p><img src="mbp_open_backshell.jpg" alt="打开后盖已经是家常便饭"></p>
 <p>另外一点就是要提醒的是，不管哪种方式，都有<strong>破坏计算机系统</strong>，或者<strong>毁掉电脑</strong>的风险，如果不是万不得已或者对自己的能力有充分的信任，请不要<strong>轻易尝试</strong>，还是交给专业人员来维修更为靠谱！</p>
 <a id="more"></a>
 <h2 id="软件解决方式">软件解决方式</h2><p>原理上来说软件解决主要的思路就是就是要禁用独立显卡，让系统启动的时候直接调用集成显卡，并且在 MacBook 运作的时候不去自主的切换独立显卡。<br>禁用过程分2个阶段，一个是在 EFI 启动（类似于 Windows 的 BIOS）的时候告诉系统直接使用集成显卡，另外一个阶段是把 macOS 系统里的 AMD 驱动程序全部删除掉，macOS 就不会去启用独立显卡。这样不管是启动 macOS 还是 运行 macOS 程序的时候，都不会切换到独立显卡。</p>
@@ -328,7 +328,7 @@
 </code></pre><p>列出目录下所有文件</p>
 <pre><code><span class="keyword">ls</span>
 </code></pre><p>你将会看到有 “gpu-power-prefs-…” 为前缀的文件名列出 (… 的地方是 UUID 的值).</p>
-<p><img src="how-to-fix-2011-mbp-gpu-issues-by-software-way/modify_fei_variables_big.jpg" alt=""></p>
+<p><img src="modify_fei_variables_big.jpg" alt=""></p>
 <p>顺利的话如果你发现列表里有类似 <code>gpu-power-prefs-...</code> 的值，用 <code>rm</code> 命令删除</p>
 <pre><code>rm gpu-<span class="keyword">power</span>-prefs-…
 </code></pre><p>也会发生权限不够的情况，如果 efivarfs 被装载成可读、可写权限，一般文件就可以正常被删除。如果运行删除命令报错提示：</p>
@@ -386,10 +386,10 @@ umount <span class="regexp">/sys/</span>firmware<span class="regexp">/efi/</span
 </code></pre><p>重新启动</p>
 <pre><code>sudo <span class="built_in">shutdown</span> -r <span class="built_in">now</span>
 </code></pre><p>再次重启后你应该就可以看到熟悉的 macOS 的登录界面了，到这里软件修复的工作也基本完成了。你可以继续使用这台电脑再战些时日了。</p>
-<p><img src="how-to-fix-2011-mbp-gpu-issues-by-software-way/mbp_recovered.png" alt="终于可以再次稳定的进入登录窗口了"></p>
+<p><img src="mbp_recovered.png" alt="终于可以再次稳定的进入登录窗口了"></p>
 <h2 id="软件修复之后的其他问题">软件修复之后的其他问题</h2><h3 id="无法调节背光亮度">无法调节背光亮度</h3><p>合上笔记本无法关闭显示器背光，同时也无法调节亮度，笔记本的显示器会始终以最亮的状态(或者上一次正常显示的亮度)显示，这样对眼睛和对显示屏灯管本身也有伤害，推荐 Mac AppStore 里有个叫 Brightness Slider <a href="https://itunes.apple.com/us/app/brightness-slider/id456624497?mt=12" target="_blank" rel="external">下载地址</a> </p>
-<p><img src="how-to-fix-2011-mbp-gpu-issues-by-software-way/sp_display_brightness_disappeared.png" alt="设置面板里没有调节亮度的功能"></p>
-<p><img src="how-to-fix-2011-mbp-gpu-issues-by-software-way/app_brightness_slider.png" alt="调节亮度的软件"></p>
+<p><img src="sp_display_brightness_disappeared.png" alt="设置面板里没有调节亮度的功能"></p>
+<p><img src="app_brightness_slider.png" alt="调节亮度的软件"></p>
 <h3 id="无法使用外接显示器">无法使用外接显示器</h3><p>网传这里有个例外，就是如果你在接了外界显示器的同时，开机屏幕亮起后迅速合上笔记本屏幕，就可以单独使用外接显示器（但是我没有成功过）。</p>
 <h3 id="重启后集成显卡驱动失效">重启后集成显卡驱动失效</h3><p>有时候用外置移动硬盘启动系统后可能会造成驱动再次失效的问题需要重新在终端里输入：</p>
 <pre><code>sudo nvram fa4ce28d-b62f-<span class="number">4</span>c99-<span class="number">9</span>cc3-<span class="number">6815686e30</span>f9:gpu-power-prefs=%<span class="number">01</span>%<span class="number">00</span>%<span class="number">00</span>%<span class="number">00</span>

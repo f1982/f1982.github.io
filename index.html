@@ -282,18 +282,18 @@
       
         
           <h2 id="前言">前言</h2><p>2011 年 MacBook Pro 的 AMD 显卡问题困扰我不止一次了，早在 2015 年 10月份的时候，我就感受到了一波(<a href="http://blog.f1982.com/zh-cn/2015/10/10/my-2011-later-macbook-pro-gpu-issues/#more">原文</a>)，机器莫名其妙的就重启，之后无法进入系统，当初也是折腾了好久，好在我赶上了最后一波的 Apple 免费维护，给我更换了主板。然而好景并不长久，过了两年故伎重演，这次早就过了苹果的维护周期。</p>
-<p><img src="how-to-fix-2011-mbp-gpu-issues-by-software-way/mbp_gpu_issues_double_apple_logo.jpg" alt="双苹果"></p>
-<p><img src="how-to-fix-2011-mbp-gpu-issues-by-software-way/mbp_gpu_issues_white_screen.jpg" alt="白屏"></p>
-<p><img src="how-to-fix-2011-mbp-gpu-issues-by-software-way/mpb_blue_screen.jpg" alt="蓝屏"></p>
+<p><img src="mbp_gpu_issues_double_apple_logo.jpg" alt="双苹果"></p>
+<p><img src="mbp_gpu_issues_white_screen.jpg" alt="白屏"></p>
+<p><img src="mpb_blue_screen.jpg" alt="蓝屏"></p>
 <p>问题已经无法靠官方来解决了，好在这台机器在我这里服役已经超过6年，也算是命途多舛，经历了升级内存，硬盘报废，升级 SSD，显卡损坏，还2次，对我来说也是没什么遗憾了。而且有了上几次的经验，其实我已经改变了对于电脑这东西的看法：</p>
 <blockquote>
 <p>电脑只是计算中心，珍贵的是数据！</p>
 <p>没有什么地方的数据是绝对安全的，没有什么硬盘是不会坏的，没有电脑不会死机，所以数据只有同时在两个以上的地方存在才算是安全的!</p>
 </blockquote>
 <p>这次我的电脑有完整的备份在 TimeMachine 里，所有的代码都在云端的 GitHub 或者 bitbucket 里安安稳稳的躺着，所以我也没有了之前电脑坏掉的那种焦虑感。<br>虽然我不喜欢新版 MacBook Pro 2017 的去掉的 MagSafe 和没有键程的手感，但是也到时候更新了！所以这次，我可以放心的”玩”一下这台服役良久的机器了。</p>
-<p><img src="how-to-fix-2011-mbp-gpu-issues-by-software-way/apple_hardware_test_ui.jpg" alt="运行 Apple 的硬件检测程序并不能检测到任何问题"></p>
+<p><img src="apple_hardware_test_ui.jpg" alt="运行 Apple 的硬件检测程序并不能检测到任何问题"></p>
 <p>我查遍了网络，基本找到了2种截然不同的解决方式，一种是软件方式，一种是硬件方式，软件方式相比之下成本比较低，但是也不算特别省事儿，但是对动手能力要求稍微低点；硬件方式解决需要额外的工具，而且要求胆大心细，毕竟要打开机身，焊接，有一些电学的基本知识，而且有直接毁掉主板的概率，所以难度颇大，但是优点是：幸运的话你可以100%恢复你的 MacBook Pro。不过限于篇幅，这里这篇文章就只聊聊软件的方式。</p>
-<p><img src="how-to-fix-2011-mbp-gpu-issues-by-software-way/mbp_open_backshell.jpg" alt="打开后盖已经是家常便饭"></p>
+<p><img src="mbp_open_backshell.jpg" alt="打开后盖已经是家常便饭"></p>
 <p>另外一点就是要提醒的是，不管哪种方式，都有<strong>破坏计算机系统</strong>，或者<strong>毁掉电脑</strong>的风险，如果不是万不得已或者对自己的能力有充分的信任，请不要<strong>轻易尝试</strong>，还是交给专业人员来维修更为靠谱！</p>
           <div class="post-more-link text-center">
             <a class="btn" href="/zh-cn/2017/10/18/how-to-fix-2011-mbp-gpu-issues-by-software-way/#more" rel="contents">
