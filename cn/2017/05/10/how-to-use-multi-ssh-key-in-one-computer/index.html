@@ -92,7 +92,7 @@
 <meta property="og:site_name" content="ANDY.C Jorney">
 <meta property="og:description" content="问题之前一直对各种 git 服务需要的 ssh key 的认证都是懵懵懂懂的状态，直到我偶尔用了多个git服务，比如 github 、bitbucket ，出现了好几次无法提交和拉取的问题，我才意识到我多次修改了 id_rsa 文件，为不同的 git 服务创建 ssh key 的同时也覆盖了之前 git 服务器的 key 。心想肯定有办法让多个服务共存吧，于是 Google 了一番，方法并不难。">
 <meta property="og:locale" content="cn">
-<meta property="og:updated_time" content="2017-10-19T08:29:12.343Z">
+<meta property="og:updated_time" content="2017-10-19T12:04:01.254Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="一台计算机里如何存储多个 ssh key">
 <meta name="twitter:description" content="问题之前一直对各种 git 服务需要的 ssh key 的认证都是懵懵懂懂的状态，直到我偶尔用了多个git服务，比如 github 、bitbucket ，出现了好几次无法提交和拉取的问题，我才意识到我多次修改了 id_rsa 文件，为不同的 git 服务创建 ssh key 的同时也覆盖了之前 git 服务器的 key 。心想肯定有办法让多个服务共存吧，于是 Google 了一番，方法并不难。">
@@ -303,7 +303,8 @@ Enter same passphrase <span class="attribute">again</span>:
 <pre><code>id_rs<span class="built_in">a_github</span>
 id_rs<span class="built_in">a_bitbucket</span>
 id_rs<span class="built_in">a_oschina</span>
-</code></pre><h3 id="添加到_ssh-agent">添加到 ssh-agent</h3><p>用 <code>ssh-add</code> 命令把创建的密钥添加到 ssh-agent 里</p>
+</code></pre><a id="more"></a>
+<h3 id="添加到_ssh-agent">添加到 ssh-agent</h3><p>用 <code>ssh-add</code> 命令把创建的密钥添加到 ssh-agent 里</p>
 <pre><code><span class="variable">$ </span>ssh-add ~<span class="regexp">/.ssh/id</span>_rsa_github
 <span class="variable">$ </span>ssh-add ~<span class="regexp">/.ssh/id</span>_rsa_bitbucket
 <span class="variable">$ </span>ssh-add ~<span class="regexp">/.ssh/id</span>_rsa_oschina

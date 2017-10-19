@@ -100,7 +100,7 @@
 <meta property="og:image" content="http://blog.f1982.com/cn/2017/10/18/how-to-fix-2011-mbp-gpu-issues-by-software-way/modify_fei_variables_big.jpg">
 <meta property="og:image" content="http://blog.f1982.com/cn/2017/10/18/how-to-fix-2011-mbp-gpu-issues-by-software-way/sp_display_brightness_disappeared.png">
 <meta property="og:image" content="http://blog.f1982.com/cn/2017/10/18/how-to-fix-2011-mbp-gpu-issues-by-software-way/app_brightness_slider.png">
-<meta property="og:updated_time" content="2017-10-19T08:25:44.315Z">
+<meta property="og:updated_time" content="2017-10-19T12:03:04.534Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="2011 Later MacBook Pro 显卡问题 High Serria 解决方式 - 软件篇">
 <meta name="twitter:description" content="前言2011 年 MacBook Pro 的 AMD 显卡问题困扰我不止一次了，早在 2015 年 10月份的时候，我就感受到了一波(原文)，机器莫名其妙的就重启，之后无法进入系统，当初也是折腾了好久，好在我赶上了最后一波的 Apple 免费维护，给我更换了主板。然而好景并不长久，过了两年故伎重演，这次早就过了苹果的维护周期。    问题已经无法靠官方来解决了，好在这台机器在我这里服役已经超过6年">
@@ -314,10 +314,10 @@
 </blockquote>
 <p>这次我的电脑有完整的备份在 TimeMachine 里，所有的代码都在云端的 GitHub 或者 bitbucket 里安安稳稳的躺着，所以我也没有了之前电脑坏掉的那种焦虑感。<br>虽然我不喜欢新版 MacBook Pro 2017 的去掉的 MagSafe 和没有键程的手感，但是也到时候更新了！所以这次，我可以放心的”玩”一下这台服役良久的机器了。</p>
 <img src="/cn/2017/10/18/how-to-fix-2011-mbp-gpu-issues-by-software-way/apple_hardware_test_ui.jpg" alt="运行 Apple 的硬件检测程序并不能检测到任何问题" title="运行 Apple 的硬件检测程序并不能检测到任何问题">
+<a id="more"></a>
 <p>我查遍了网络，基本找到了2种截然不同的解决方式，一种是软件方式，一种是硬件方式，软件方式相比之下成本比较低，但是也不算特别省事儿，但是对动手能力要求稍微低点；硬件方式解决需要额外的工具，而且要求胆大心细，毕竟要打开机身，焊接，有一些电学的基本知识，而且有直接毁掉主板的概率，所以难度颇大，但是优点是：幸运的话你可以100%恢复你的 MacBook Pro。不过限于篇幅，这里这篇文章就只聊聊软件的方式。</p>
 <img src="/cn/2017/10/18/how-to-fix-2011-mbp-gpu-issues-by-software-way/mbp_open_backshell.jpg" alt="运行 Apple 打开后盖已经是家常便饭" title="运行 Apple 打开后盖已经是家常便饭">
 <p>另外一点就是要提醒的是，不管哪种方式，都有<strong>破坏计算机系统</strong>，或者<strong>毁掉电脑</strong>的风险，如果不是万不得已或者对自己的能力有充分的信任，请不要<strong>轻易尝试</strong>，还是交给专业人员来维修更为靠谱！</p>
-<a id="more"></a>
 <h2 id="软件解决方式">软件解决方式</h2><p>原理上来说软件解决主要的思路就是就是要禁用独立显卡，让系统启动的时候直接调用集成显卡，并且在 MacBook 运作的时候不去自主的切换独立显卡。<br>禁用过程分2个阶段，一个是在 EFI 启动（类似于 Windows 的 BIOS）的时候告诉系统直接使用集成显卡，另外一个阶段是把 macOS 系统里的 AMD 驱动程序全部删除掉，macOS 就不会去启用独立显卡。这样不管是启动 macOS 还是 运行 macOS 程序的时候，都不会切换到独立显卡。</p>
 <h3 id="EFI_禁用（修改_nvarm_参数）">EFI 禁用（修改 nvarm 参数）</h3><h4 id="下载_ArchLinux_ISO">下载 ArchLinux ISO</h4><p>你需要有一台可用的计算机来制作 ArchLinux 的 USB 启动盘，ArchLinux 的<a href="https://www.archlinux.org/download/" target="_blank" rel="external">下载地址</a>。制作 USB 启动盘或者 CD 启动盘都是可以的，我这里用 USB 启动的方式，毕竟手头 U盘比客户光驱还是来的方便。</p>
 <h4 id="制作_USB_启动盘">制作 USB 启动盘</h4><p>英文好的可以移步<a href="https://wiki.archlinux.org/index.php/USB_flash_installation_media" target="_blank" rel="external">这里</a><br>在 macOS 系统下首先你要确定你 USB 驱动器的盘符，打开应用程序里的”终端” <code>/Applications/Utilities/Terminal</code> 用如下的命令列出所有的设备:</p>
