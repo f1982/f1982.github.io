@@ -68,7 +68,7 @@
 <link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="GPU,MacBook,Apple," />
+  <meta name="keywords" content="MacBook,GPU,Apple," />
 
 
 
@@ -85,7 +85,7 @@
 
 
 <meta name="description" content="前言2011 年 MacBook Pro 的 AMD 显卡问题困扰我不止一次了，早在 2015 年 10月份的时候，我就感受到了一波(原文)，机器莫名其妙的就重启，之后无法进入系统，当初也是折腾了好久，好在我赶上了最后一波的 Apple 免费维护，给我更换了主板。然而好景并不长久，过了两年故伎重演，这次早就过了苹果的维护周期。    问题已经无法靠官方来解决了，好在这台机器在我这里服役已经超过6年">
-<meta name="keywords" content="GPU,MacBook,Apple">
+<meta name="keywords" content="MacBook,GPU,Apple">
 <meta property="og:type" content="article">
 <meta property="og:title" content="2011 Later MacBook Pro 显卡问题 High Serria 解决方式 - 软件篇">
 <meta property="og:url" content="http://blog.f1982.com/cn/2017/10/18/how-to-fix-2011-mbp-gpu-issues-by-software-way/index.html">
@@ -98,8 +98,9 @@
 <meta property="og:image" content="http://blog.f1982.com/cn/2017/10/18/how-to-fix-2011-mbp-gpu-issues-by-software-way/apple_hardware_test_ui.jpg">
 <meta property="og:image" content="http://blog.f1982.com/cn/2017/10/18/how-to-fix-2011-mbp-gpu-issues-by-software-way/mbp_open_backshell.jpg">
 <meta property="og:image" content="http://blog.f1982.com/cn/2017/10/18/how-to-fix-2011-mbp-gpu-issues-by-software-way/modify_fei_variables_big.jpg">
+<meta property="og:image" content="http://blog.f1982.com/cn/2017/10/18/how-to-fix-2011-mbp-gpu-issues-by-software-way/sp_display_brightness_disappeared.png">
 <meta property="og:image" content="http://blog.f1982.com/cn/2017/10/18/how-to-fix-2011-mbp-gpu-issues-by-software-way/app_brightness_slider.png">
-<meta property="og:updated_time" content="2017-10-19T05:49:39.383Z">
+<meta property="og:updated_time" content="2017-10-19T05:55:06.877Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="2011 Later MacBook Pro 显卡问题 High Serria 解决方式 - 软件篇">
 <meta name="twitter:description" content="前言2011 年 MacBook Pro 的 AMD 显卡问题困扰我不止一次了，早在 2015 年 10月份的时候，我就感受到了一波(原文)，机器莫名其妙的就重启，之后无法进入系统，当初也是折腾了好久，好在我赶上了最后一波的 Apple 免费维护，给我更换了主板。然而好景并不长久，过了两年故伎重演，这次早就过了苹果的维护周期。    问题已经无法靠官方来解决了，好在这台机器在我这里服役已经超过6年">
@@ -193,7 +194,7 @@
             
               <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
             
-            Startseite
+            Home
           </a>
         </li>
       
@@ -203,7 +204,7 @@
             
               <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
             
-            Archiv
+            Archives
           </a>
         </li>
       
@@ -266,7 +267,7 @@
             <span class="post-meta-item-icon">
               <i class="fa fa-calendar-o"></i>
             </span>
-            <span class="post-meta-item-text">Veröffentlicht am</span>
+            <span class="post-meta-item-text">Posted on</span>
             <time itemprop="dateCreated" datetime="2017-10-18T18:47:22+08:00" content="2017-10-18">
               2017-10-18
             </time>
@@ -393,7 +394,7 @@ umount <span class="regexp">/sys/</span>firmware<span class="regexp">/efi/</span
 </code></pre><p>再次重启后你应该就可以看到熟悉的 macOS 的登录界面了，到这里软件修复的工作也基本完成了。你可以继续使用这台电脑再战些时日了。</p>
 
 <h2 id="软件修复之后的其他问题">软件修复之后的其他问题</h2><h3 id="无法调节背光亮度">无法调节背光亮度</h3><p>合上笔记本无法关闭显示器背光，同时也无法调节亮度，笔记本的显示器会始终以最亮的状态(或者上一次正常显示的亮度)显示，这样对眼睛和对显示屏灯管本身也有伤害，推荐 Mac AppStore 里有个叫 Brightness Slider <a href="https://itunes.apple.com/us/app/brightness-slider/id456624497?mt=12" target="_blank" rel="external">下载地址</a> </p>
-
+<img src="/cn/2017/10/18/how-to-fix-2011-mbp-gpu-issues-by-software-way/sp_display_brightness_disappeared.png" alt="设置面板里没有调节亮度的功能" title="设置面板里没有调节亮度的功能">
 <img src="/cn/2017/10/18/how-to-fix-2011-mbp-gpu-issues-by-software-way/app_brightness_slider.png" alt="调节亮度的软件" title="调节亮度的软件">
 <h3 id="无法使用外接显示器">无法使用外接显示器</h3><p>网传这里有个例外，就是如果你在接了外界显示器的同时，开机屏幕亮起后迅速合上笔记本屏幕，就可以单独使用外接显示器（但是我没有成功过）。</p>
 <h3 id="重启后集成显卡驱动失效">重启后集成显卡驱动失效</h3><p>有时候用外置移动硬盘启动系统后可能会造成驱动再次失效的问题需要重新在终端里输入：</p>
@@ -438,9 +439,9 @@ umount <span class="regexp">/sys/</span>firmware<span class="regexp">/efi/</span
       
         <div class="post-tags">
           
-            <a href="/tags/GPU/" rel="tag">#GPU</a>
-          
             <a href="/tags/MacBook/" rel="tag">#MacBook</a>
+          
+            <a href="/tags/GPU/" rel="tag">#GPU</a>
           
             <a href="/tags/Apple/" rel="tag">#Apple</a>
           
@@ -513,10 +514,10 @@ umount <span class="regexp">/sys/</span>firmware<span class="regexp">/efi/</span
       
         <ul class="sidebar-nav motion-element">
           <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
-            Inhaltsverzeichnis
+            Table of Contents
           </li>
           <li class="sidebar-nav-overview" data-target="site-overview">
-            Übersicht
+            Overview
           </li>
         </ul>
       
@@ -533,7 +534,7 @@ umount <span class="regexp">/sys/</span>firmware<span class="regexp">/efi/</span
           <div class="site-state-item site-state-posts">
             <a href="/archives">
               <span class="site-state-item-count">4</span>
-              <span class="site-state-item-name">Artikel</span>
+              <span class="site-state-item-name">posts</span>
             </a>
           </div>
 
@@ -541,7 +542,7 @@ umount <span class="regexp">/sys/</span>firmware<span class="regexp">/efi/</span
             <div class="site-state-item site-state-categories">
               
                 <span class="site-state-item-count">2</span>
-                <span class="site-state-item-name">Kategorien</span>
+                <span class="site-state-item-name">categories</span>
               
             </div>
           
@@ -550,7 +551,7 @@ umount <span class="regexp">/sys/</span>firmware<span class="regexp">/efi/</span
             <div class="site-state-item site-state-tags">
               <a href="/tags">
                 <span class="site-state-item-count">11</span>
-                <span class="site-state-item-name">Tags</span>
+                <span class="site-state-item-name">tags</span>
               </a>
             </div>
           
@@ -670,7 +671,7 @@ umount <span class="regexp">/sys/</span>firmware<span class="regexp">/efi/</span
 </div>
 
 <div class="powered-by">
-  Erstellt mit  <a class="theme-link" href="https://hexo.io">Hexo</a>
+  Powered by <a class="theme-link" href="https://hexo.io">Hexo</a>
 </div>
 
 <div class="theme-info">
