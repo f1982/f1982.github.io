@@ -92,7 +92,7 @@
 <meta property="og:site_name" content="曹Andy的临时博客标题">
 <meta property="og:description" content="问题之前一直对各种 git 服务需要的 ssh key 的认证都是懵懵懂懂的状态，直到我偶尔用了多个git服务，比如 github 、bitbucket ，出现了好几次无法提交和拉取的问题，我才意识到我多次修改了 id_rsa 文件，为不同的 git 服务创建 ssh key 的同时也覆盖了之前 git 服务器的 key 。心想肯定有办法让多个服务共存吧，于是 Google 了一番，方法并不难。">
 <meta property="og:locale" content="cn">
-<meta property="og:updated_time" content="2018-01-12T01:48:20.918Z">
+<meta property="og:updated_time" content="2018-03-20T03:19:39.047Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="一台计算机里如何存储多个 ssh key">
 <meta name="twitter:description" content="问题之前一直对各种 git 服务需要的 ssh key 的认证都是懵懵懂懂的状态，直到我偶尔用了多个git服务，比如 github 、bitbucket ，出现了好几次无法提交和拉取的问题，我才意识到我多次修改了 id_rsa 文件，为不同的 git 服务创建 ssh key 的同时也覆盖了之前 git 服务器的 key 。心想肯定有办法让多个服务共存吧，于是 Google 了一番，方法并不难。">
@@ -325,9 +325,14 @@ id_rs<span class="built_in">a_oschina</span>
 </code></pre><a id="more"></a>
 <h3 id="添加到_ssh-agent">添加到 ssh-agent</h3><p>用 <code>ssh-add</code> 命令把创建的密钥添加到 ssh-agent 里</p>
 <pre><code><span class="variable">$ </span>ssh-add ~<span class="regexp">/.ssh/id</span>_rsa_github
-</code></pre><p>更新提示:<code>ssh-add</code> 命令只能<em>临时性</em>添加到系统设置里，重启后会失效，如果永久添加可以用下面的命令来实现</p>
+</code></pre><p>更新提示:<code>ssh-add</code> 命令只能<em>临时性</em>添加到系统设置里，重启后会失效，<del>如果永久添加可以用下面的命令来实现</del></p>
 <pre><code><span class="label">ssh</span>-<span class="keyword">add </span>-K ~/.ssh/id_rsa_github
-</code></pre><p>你可以用 <code>ssh-add -l</code> 来查看一下添加效果，一般会出现下面的提示信息</p>
+</code></pre><p><del>可以用开机运行脚本的方式，每次开机自动运行如下脚本。</del><br>实验的结果是，调用脚本会提示输入密码，所以并不能自动运行成功运行？ </p>
+<pre><code><span class="label">ssh</span>-<span class="keyword">add </span>~/.ssh/id_rsa_github
+<span class="label">ssh</span>-<span class="keyword">add </span>~/.ssh/id_rsa_bitbucket
+<span class="label">ssh</span>-<span class="keyword">add </span>~/.ssh/id_rsa_oschina
+</code></pre><p><a href="https://www.jianshu.com/p/ada03bd51ed5" target="_blank" rel="external">用 Automator 添加到开机启动的方式</a></p>
+<p>你可以用 <code>ssh-add -l</code> 来查看一下添加效果，一般会出现下面的提示信息</p>
 <pre><code><span class="number">2048</span> <span class="constant">SHA256</span><span class="symbol">:ueU7NSaLTzfKNMKL3EVkBKqK2/bvr/ewdNVTmBYZtxg</span> /<span class="constant">Users</span>/<span class="constant">YourName</span>/.ssh/id_rsa_github (<span class="constant">RSA</span>)
 <span class="number">2048</span> <span class="constant">SHA256</span><span class="symbol">:xGAMHLe5Un5LLWiXp6GI84CVn23sD9g+EQBjXMQP34YA</span> /<span class="constant">Users</span>/<span class="constant">YourName</span>/.ssh/id_rsa_bitbucket (<span class="constant">RSA</span>)
 <span class="number">2048</span> <span class="constant">SHA256</span><span class="symbol">:lJfTU9j6JfkMSM4vJpk5BdsARzkRA/d05aUnc2BdBeg</span> /<span class="constant">Users</span>/<span class="constant">YourName</span>/.ssh/id_rsa_oschina (<span class="constant">RSA</span>)
@@ -352,7 +357,10 @@ Host oschina<span class="class">.net</span>
     User            git
     IdentityFile    /Users/YourName/.ssh/id_rsa_oschina
 </code></pre><p>好了，这样你就可以任意穿梭于多个 <code>git</code> 服务器而不用担心 <code>ssh key</code> 的问题了。</p>
-
+<p>注意，关于 ssh-add 持久化失效的问题，如果你的系统版本是 Sierra 10.12.2 以上，可以在 <code>~/.ssh/config</code> 文件中增加如下代码，来实现持久化效果</p>
+<pre><code><span class="title">Host</span> *
+    UseKeychain <span class="built_in">yes</span>
+</code></pre>
       
     </div>
 
@@ -484,7 +492,7 @@ Host oschina<span class="class">.net</span>
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">9</span>
+              <span class="site-state-item-count">10</span>
               <span class="site-state-item-name">Artikel</span>
             </a>
           </div>
@@ -501,7 +509,7 @@ Host oschina<span class="class">.net</span>
           
             <div class="site-state-item site-state-tags">
               <a href="/tags">
-                <span class="site-state-item-count">29</span>
+                <span class="site-state-item-count">32</span>
                 <span class="site-state-item-name">Tags</span>
               </a>
             </div>
