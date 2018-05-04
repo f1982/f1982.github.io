@@ -248,6 +248,137 @@
             
               
                 
+                <a class="post-title-link" href="/cn/2017/05/10/how-to-use-multi-ssh-key-in-one-computer/" itemprop="url">
+                  一台计算机里如何存储多个 ssh key
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">Posted on</span>
+            <time itemprop="dateCreated" datetime="2017-05-10T15:35:22+08:00" content="2017-05-10">
+              2017-05-10
+            </time>
+          </span>
+
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">In</span>
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/Tech/" itemprop="url" rel="index">
+                    <span itemprop="name">Tech</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/cn/2017/05/10/how-to-use-multi-ssh-key-in-one-computer/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="cn/2017/05/10/how-to-use-multi-ssh-key-in-one-computer/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+
+          
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          <h2 id="问题">问题</h2><p>之前一直对各种 git 服务需要的 ssh key 的认证都是懵懵懂懂的状态，直到我偶尔用了多个git服务，比如 github 、bitbucket ，出现了好几次无法提交和拉取的问题，我才意识到我多次修改了 id_rsa 文件，为不同的 git 服务创建 ssh key 的同时也覆盖了之前 git 服务器的 key 。心想肯定有办法让多个服务共存吧，于是 Google 了一番，方法并不难。</p>
+<h2 id="步骤">步骤</h2><h3 id="创建密钥">创建密钥</h3><h4 id="1-创建一个密钥">1.创建一个密钥</h4><pre><code><span class="variable">$ </span>ssh-keygen -t rsa
+</code></pre><h4 id="2-输入保存ssh_key_密钥的文件名称_id_rsa_github_。">2.输入保存ssh key 密钥的文件名称 <code>id_rsa_github</code> 。</h4><pre><code><span class="constant">Enter </span>file <span class="keyword">in</span> which to save the key (<span class="regexp">/root/</span>.ssh/id_rsa)<span class="symbol">:/root/</span>.ssh/id_rsa_aaa
+</code></pre><h4 id="3-输入两次密码，要求最低不能低于8位。">3.输入两次密码，要求最低不能低于8位。</h4><pre><code>Enter passphrase (empty <span class="keyword">for</span> <span class="literal">no</span> passphrase):
+Enter same passphrase <span class="attribute">again</span>:
+</code></pre><p>重复上面的步骤可以创建多个密钥，比如你有多个git账户</p>
+<pre><code>id_rs<span class="built_in">a_github</span>
+id_rs<span class="built_in">a_bitbucket</span>
+id_rs<span class="built_in">a_oschina</span>
+</code></pre>
+          <div class="post-more-link text-center">
+            <a class="btn" href="/cn/2017/05/10/how-to-use-multi-ssh-key-in-one-computer/#more" rel="contents">
+              Read more &raquo;
+            </a>
+          </div>
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
                 <a class="post-title-link" href="/cn/2016/03/24/the-journey-of-my-indie-game-development/" itemprop="url">
                   在独立开发的路上，请保护那份对游戏最初的热忱！
                 </a>
@@ -788,7 +919,7 @@
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">14</span>
+              <span class="site-state-item-count">15</span>
               <span class="site-state-item-name">posts</span>
             </a>
           </div>
@@ -805,7 +936,7 @@
           
             <div class="site-state-item site-state-tags">
               <a href="/tags">
-                <span class="site-state-item-count">35</span>
+                <span class="site-state-item-count">36</span>
                 <span class="site-state-item-name">tags</span>
               </a>
             </div>
