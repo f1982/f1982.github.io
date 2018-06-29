@@ -1090,11 +1090,11 @@ pre .javascript .function {
 .posts-expand .post-body img {
   box-sizing: border-box;
   margin: auto;
-  padding: 3px;
-  border: 1px solid #ddd;
+/* padding: 3px; */
+/* border: 1px solid $gray-lighter;*/
 }
 .posts-expand .fancybox img {
-  margin: 0 auto;
+  margin: 30px auto;
 }
 @media (max-width: 767px) {
   .posts-collapse {
@@ -1548,7 +1548,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #f11cff;
+  background: #e7d249;
 }
 .links-of-blogroll {
   font-size: 13px;
