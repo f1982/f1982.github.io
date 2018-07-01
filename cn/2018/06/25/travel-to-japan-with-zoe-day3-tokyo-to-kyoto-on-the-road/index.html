@@ -68,7 +68,7 @@
 <link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="微信小程序,devtool,坑,技巧,教学,教程" />
+  <meta name="keywords" content="日本,东京,京都,民宿,丹波口,嶋原懐傳,新干线,日本地铁,带娃旅行,自由行,带娃去旅行,旅行清单,旅行必备,旅行攻略,亲子游,景点,爱彼迎,和风庭院,tokyo disneyland,traveling to japan,japan travel tips blog,japan travel blog,travelling with a baby,terrible 2,terrible twos,places to travel with kids,flying with kids,where to travel with kids in 2018,kids travel log,kids vlog,travel vlog,trip vlog,vlogs,video blog,airbnb,homestay,tokyo,kyoto,family vacation spots" />
 
 
 
@@ -84,23 +84,20 @@
 
 
 
-<meta name="description" content="小程序主要基于数据绑定来处理 js 和 wxml 之间的数据传输，虽然这样有很多便利性，但是有时候也是蛮不方便的。今天遇到调用组件方法的问题，其实非常简单，最关键是一个 selectComponent(&amp;#39;#component-id&amp;#39;); 的方法问题，不想读太多文字可以直接下载源码。下面是完整记录。 创建组件新建一个叫做 my-component 的组件，并在组件 my-compon">
-<meta name="keywords" content="微信小程序,devtool,坑,技巧,教学,教程">
+<meta name="description" content="第三天，我们离开了东京，在路上奔波了大半天，来到了京都的日式民宿，开启了京都之旅。  我：“神龙神龙告诉我，怎么才能让文章的开头出现一个带音乐的视频，而不需要我费力剪辑？” 神龙：“别做梦了，赶紧剪！”   墙外用户如果想看高清可以去油管订阅 我的频道； 也可以复制链接到 腾讯视频 查看 今天的计划是集体从东京迁徙到京都，就这么简单，然而一行11人要带着 n 个箱子，3个孩子，2个婴儿车，还有人">
+<meta name="keywords" content="日本,东京,京都,民宿,丹波口,嶋原懐傳,新干线,日本地铁,带娃旅行,自由行,带娃去旅行,旅行清单,旅行必备,旅行攻略,亲子游,景点,爱彼迎,和风庭院,tokyo disneyland,traveling to japan,japan travel tips blog,japan travel blog,travelling with a baby,terrible 2,terrible twos,places to travel with kids,flying with kids,where to travel with kids in 2018,kids travel log,kids vlog,travel vlog,trip vlog,vlogs,video blog,airbnb,homestay,tokyo,kyoto,family vacation spots">
 <meta property="og:type" content="article">
-<meta property="og:title" content="微信小程序如何在页面调用组件内方法">
-<meta property="og:url" content="http://blog.f1982.com/cn/2018/04/24/wei-xin-xiao-cheng-xu-ru-he-diao-yong-zhu-jian-de-fang-fa/index.html">
+<meta property="og:title" content="霓虹溜娃Day3，从东京到京都，我们在路上颠儿">
+<meta property="og:url" content="http://blog.f1982.com/cn/2018/06/25/travel-to-japan-with-zoe-day3-tokyo-to-kyoto-on-the-road/index.html">
 <meta property="og:site_name" content="曹Andy的临时博客标题">
-<meta property="og:description" content="小程序主要基于数据绑定来处理 js 和 wxml 之间的数据传输，虽然这样有很多便利性，但是有时候也是蛮不方便的。今天遇到调用组件方法的问题，其实非常简单，最关键是一个 selectComponent(&amp;#39;#component-id&amp;#39;); 的方法问题，不想读太多文字可以直接下载源码。下面是完整记录。 创建组件新建一个叫做 my-component 的组件，并在组件 my-compon">
+<meta property="og:description" content="第三天，我们离开了东京，在路上奔波了大半天，来到了京都的日式民宿，开启了京都之旅。  我：“神龙神龙告诉我，怎么才能让文章的开头出现一个带音乐的视频，而不需要我费力剪辑？” 神龙：“别做梦了，赶紧剪！”   墙外用户如果想看高清可以去油管订阅 我的频道； 也可以复制链接到 腾讯视频 查看 今天的计划是集体从东京迁徙到京都，就这么简单，然而一行11人要带着 n 个箱子，3个孩子，2个婴儿车，还有人">
 <meta property="og:locale" content="cn">
-<meta property="og:image" content="http://blog.f1982.com/cn/2018/04/24/wei-xin-xiao-cheng-xu-ru-he-diao-yong-zhu-jian-de-fang-fa/wexin-dai-ma-pian-duan-component.jpg">
-<meta property="og:image" content="http://blog.f1982.com/cn/2018/04/24/wei-xin-xiao-cheng-xu-ru-he-diao-yong-zhu-jian-de-fang-fa/wexin-devtool-console-log.jpg">
-<meta property="og:image" content="https://img.shields.io/crates/l/rustc-serialize.svg">
-<meta property="og:image" content="https://img.shields.io/github/downloads/atom/atom/total.svg">
-<meta property="og:updated_time" content="2018-04-25T02:36:15.832Z">
+<meta property="og:image" content="http://blog.f1982.com/cn/2018/06/25/travel-to-japan-with-zoe-day3-tokyo-to-kyoto-on-the-road/mp.weixin.gif">
+<meta property="og:updated_time" content="2018-07-01T05:20:49.698Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="微信小程序如何在页面调用组件内方法">
-<meta name="twitter:description" content="小程序主要基于数据绑定来处理 js 和 wxml 之间的数据传输，虽然这样有很多便利性，但是有时候也是蛮不方便的。今天遇到调用组件方法的问题，其实非常简单，最关键是一个 selectComponent(&amp;#39;#component-id&amp;#39;); 的方法问题，不想读太多文字可以直接下载源码。下面是完整记录。 创建组件新建一个叫做 my-component 的组件，并在组件 my-compon">
-<meta name="twitter:image" content="http://blog.f1982.com/cn/2018/04/24/wei-xin-xiao-cheng-xu-ru-he-diao-yong-zhu-jian-de-fang-fa/wexin-dai-ma-pian-duan-component.jpg">
+<meta name="twitter:title" content="霓虹溜娃Day3，从东京到京都，我们在路上颠儿">
+<meta name="twitter:description" content="第三天，我们离开了东京，在路上奔波了大半天，来到了京都的日式民宿，开启了京都之旅。  我：“神龙神龙告诉我，怎么才能让文章的开头出现一个带音乐的视频，而不需要我费力剪辑？” 神龙：“别做梦了，赶紧剪！”   墙外用户如果想看高清可以去油管订阅 我的频道； 也可以复制链接到 腾讯视频 查看 今天的计划是集体从东京迁徙到京都，就这么简单，然而一行11人要带着 n 个箱子，3个孩子，2个婴儿车，还有人">
+<meta name="twitter:image" content="http://blog.f1982.com/cn/2018/06/25/travel-to-japan-with-zoe-day3-tokyo-to-kyoto-on-the-road/mp.weixin.gif">
 
 
 
@@ -121,9 +118,9 @@
 
 
 
-  <link rel="canonical" href="http://blog.f1982.com/cn/2018/04/24/wei-xin-xiao-cheng-xu-ru-he-diao-yong-zhu-jian-de-fang-fa/"/>
+  <link rel="canonical" href="http://blog.f1982.com/cn/2018/06/25/travel-to-japan-with-zoe-day3-tokyo-to-kyoto-on-the-road/"/>
 
-  <title> 微信小程序如何在页面调用组件内方法 | 曹Andy的临时博客标题 </title>
+  <title> 霓虹溜娃Day3，从东京到京都，我们在路上颠儿 | 曹Andy的临时博客标题 </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="en,zh-cn,zh-tw,default">
@@ -252,7 +249,7 @@
             
             
               
-                微信小程序如何在页面调用组件内方法
+                霓虹溜娃Day3，从东京到京都，我们在路上颠儿
               
             
           </h1>
@@ -264,8 +261,8 @@
               <i class="fa fa-calendar-o"></i>
             </span>
             <span class="post-meta-item-text">Posté le</span>
-            <time itemprop="dateCreated" datetime="2018-04-24T23:00:01+08:00" content="2018-04-24">
-              2018-04-24
+            <time itemprop="dateCreated" datetime="2018-06-25T11:06:35+08:00" content="2018-06-25">
+              2018-06-25
             </time>
           </span>
 
@@ -278,8 +275,8 @@
               <span class="post-meta-item-text">In</span>
               
                 <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                  <a href="/categories/Dev/" itemprop="url" rel="index">
-                    <span itemprop="name">Dev</span>
+                  <a href="/categories/Travel/" itemprop="url" rel="index">
+                    <span itemprop="name">Travel</span>
                   </a>
                 </span>
 
@@ -294,8 +291,8 @@
             
               <span class="post-comments-count">
                 &nbsp; | &nbsp;
-                <a href="/cn/2018/04/24/wei-xin-xiao-cheng-xu-ru-he-diao-yong-zhu-jian-de-fang-fa/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="cn/2018/04/24/wei-xin-xiao-cheng-xu-ru-he-diao-yong-zhu-jian-de-fang-fa/" itemprop="commentsCount"></span>
+                <a href="/cn/2018/06/25/travel-to-japan-with-zoe-day3-tokyo-to-kyoto-on-the-road/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="cn/2018/06/25/travel-to-japan-with-zoe-day3-tokyo-to-kyoto-on-the-road/" itemprop="commentsCount"></span>
                 </a>
               </span>
             
@@ -318,48 +315,33 @@
       
 
       
-        <p>小程序主要基于数据绑定来处理 js 和 wxml 之间的数据传输，虽然这样有很多便利性，但是有时候也是蛮不方便的。今天遇到调用组件方法的问题，其实非常简单，最关键是一个 <code>selectComponent(&#39;#component-id&#39;);</code> 的方法问题，不想读太多文字可以直接<a href="https://github.com/f1982/WxappCallComponentMethod" target="_blank" rel="external">下载源码</a>。下面是完整记录。</p>
-<h2 id="创建组件">创建组件</h2><p>新建一个叫做 <code>my-component</code> 的组件，并在组件 <code>my-component.js</code> 的 methods 块里增加 <code>myFunction</code> 方法，也就是一会儿我们想尝试用页面直接调用的方法。￼组件的其他内容，按照需要的逻辑自己添加就好了。</p>
-<pre><code><span class="tag">Component</span>(<span class="rules">{
-    <span class="rule"><span class="attribute">properties</span>:<span class="value"> {
+        <blockquote>
+<p>第三天，我们离开了东京，在路上奔波了大半天，来到了京都的日式民宿，开启了京都之旅。</p>
+</blockquote>
+<p>我：“神龙神龙告诉我，怎么才能让文章的开头出现一个带音乐的视频，而不需要我费力剪辑？” 神龙：“别做梦了，赶紧剪！”</p>
+<embed src="https://imgcache.qq.com/tencentvideo_v1/playerv3/TPout.swf?max_age=86400&v=20161117&vid=s07057ppnmr&auto=0" allowfullscreen="true" quality="high" width="100%" height="545" align="middle" allowscriptaccess="always" type="application/x-shockwave-flash">
 
-    },
-    data: {
-
-    },
-    methods: {
-        myFunction: <span class="function">function</span>(){
-            console.<span class="function">log</span>(<span class="string">'I am myFunction'</span>)</span></span>;
-        }</span>
-    }
-})
-</code></pre><img src="/cn/2018/04/24/wei-xin-xiao-cheng-xu-ru-he-diao-yong-zhu-jian-de-fang-fa/wexin-dai-ma-pian-duan-component.jpg" alt="微信代码片段的目录结构" title="微信代码片段的目录结构">
+<p>墙外用户如果想看高清可以去油管订阅 <a href="https://www.youtube.com/user/caojundan" target="_blank" rel="external">我的频道</a>； 也可以复制链接到 <a href="https://v.qq.com/x/page/s07057ppnmr.html" target="_blank" rel="external">腾讯视频</a> 查看</p>
+<p>今天的计划是集体从东京迁徙到京都，就这么简单，然而一行11人要带着 n 个箱子，3个孩子，2个婴儿车，还有人手一个的双肩背包，从地铁到新干线再地铁的行程还是并没有那么简单。</p>
+<p>早上起床之后我又重新游览了一遍民宿，带着一丝丝恋恋不舍的情绪翻遍了每一个角落，别误会，我只是想知道房东到底提供了多少便利给房客。</p>
+<p>然后我们又尝试拍了个大合影，如果不是有延时摄影为证，根本想象不到带3个孩子拍合影有多么困难。</p>
 <a id="more"></a>
-<h2 id="页面调用组件">页面调用组件</h2><p>在<code>index.json</code>里添加组件：</p>
-<pre><code>{
-    "<span class="attribute">usingComponents</span>": <span class="value">{
-        "<span class="attribute">my-component</span>": <span class="value"><span class="string">"./my-component"</span>
-    </span>}
-</span>}
-</code></pre><p>在<code>index.wxml</code>页面头部引用组件：</p>
-<pre><code>&lt;<span class="preprocessor">import</span> src=<span class="string">"./my-component.wxml"</span> /&gt;
-</code></pre><p>在<code>wxml</code>文件里调用组件，并设置组件的 id：</p>
-<pre><code>&lt;<span class="keyword">my</span>-component <span class="property">id</span>=<span class="string">"component-id"</span>&gt;&lt;/<span class="keyword">my</span>-component&gt;
-</code></pre><p><strong>id</strong> 是页面调用的关键！</p>
-<p>在<code>index.js</code>里根据组件的 id 获取组件实例，这样就可以调用任何组件里的任何写在 methods 块里的方法了：</p>
-<pre><code><span class="keyword">const</span> component = <span class="keyword">this</span>.selectComponent(<span class="string">'#component-id'</span>);
-component.myFunction();
-</code></pre><p>我这里是在 index.wxml 里添加了个按钮：</p>
-<pre><code><span class="tag">&lt;<span class="title">button</span> <span class="attribute">bindtap</span>=<span class="value">'callComponentMethod'</span>&gt;</span>点我调用组件内部方法<span class="tag">&lt;/<span class="title">button</span>&gt;</span>
-</code></pre><p>又在 index.js 页面里增加了回调方法，里面去调用 component 的方法</p>
-<pre><code><span class="rule"><span class="attribute">callComponentMethod</span>:<span class="value"> <span class="function">function</span>(evt){
-    const component = this.<span class="function">selectComponent</span>(<span class="string">'#component-id'</span>)</span></span>;
-    <span class="tag">component</span><span class="class">.myFunction</span>();
-}
-</code></pre><p>结果如下：</p>
-<img src="/cn/2018/04/24/wei-xin-xiao-cheng-xu-ru-he-diao-yong-zhu-jian-de-fang-fa/wexin-devtool-console-log.jpg" alt="控制台输出说明调用成功" title="控制台输出说明调用成功">
-<p>Github 代码片段<a href="https://github.com/f1982/WxappCallComponentMethod" target="_blank" rel="external">下载地址</a></p>
-<p><img src="https://img.shields.io/crates/l/rustc-serialize.svg" alt="Crates.io"> <img src="https://img.shields.io/github/downloads/atom/atom/total.svg" alt="Github"> </p>
+<p>我们先地铁从新蒲安转移到新干线的东京站，买到票后，候车的间隙去吃了碗拉面，带娃的原因，我们只能交替着进店吃面。</p>
+<p>新干线上一一基本处于坐不住状态，“我是马上两岁的孩子，怎么可能老实的待着呢？”。刚刚吃了火车便当就开始到处瞎跑了，一会儿又拿起新干线上的电话玩耍，看到我们洗手，她也要参与，没有半分钟闲着的时候，我也只能靠备用咖啡提神对付她。最后又到了午休时间，她再次开始午间不安分，我知道睡意来袭了…</p>
+<p>躺在妈妈身上睡去的这段时间，感觉整个世界，不是整个车厢而已，都变得安宁下来了。我们也有空稍微看一下沿途的风景，最后一口咖啡之后，我也开始闭目养神…</p>
+<p>新干线到了京都之后，在站内不用走多远的距离，再次坐上地铁，我们从京都駅转战到丹波口駅。手机打开 GoogleMap 我们跟着 GPS 和指南针小箭头的指引大致走了10分钟到达了这家叫做 町家レジデンスイン 嶋原懐傳 的民宿门前。</p>
+<p>不过在门口我们找了半天开门的方式，差点就要拆水表了，才发现门口的带盖儿的密码锁。</p>
+<p>这是一栋看起来非常日式独栋住宅，比较符合我们心里对日式民宿的期待，妈妈们对屋子里的清洁程度，还有各种生活用品都非常满意，一楼房间的窗子外面还有一个别致的小庭院，很是平静，非常的和风。</p>
+<p>我对这个房间的结构非常好奇，环顾一周可以看出绝大部分是木质结构，甚至屋子的大梁都是一整根并不那么直的原木打造的，颇有些古时味道，走在二楼的楼梯和地板上也隐约可以感受到木质结构和钢筋混泥土的不同。</p>
+<p>我脑海里甚至突然浮现出了三只小猪的故事，如果这时候大灰狼来了，估计是可以把这个房子吹跑的吧。</p>
+<p>我们稍事休整，就开始自由活动，也算是周边环境的探索之旅了。</p>
+<p>虽然是第二次来京都了，但是换个了落脚点，从城市的另外一个方向出发，感受到很多不同，所以想了解欣赏一个城市，需要的是多个维度。</p>
+<p>离房子不远的地方有一个小小的街心公园，没想到的是，这里的沙堆对明日的行程影响甚大…</p>
+<p>晚上我们在附近的寿司店解决了晚饭。一一在餐厅候餐的扭蛋机阵列又玩了良久，一妈已经有经验，兜里备足了硬币。</p>
+<p>一一小朋友吃了好几个寿司米饭团，然后把上面的三文鱼和甜虾分给我，我觉得带她吃寿司是明智而又美好的！另外她在寿司店里第一次吃了柠檬，居然完全没有被酸味震慑住…反而有点喜欢的意思…</p>
+<center>上集回顾：<a href="/cn/2018/06/25/travel-to-japan-with-zoe-day1-tokyo-airbnb-house/">在雨中的迪斯尼里使劲儿撒欢儿…</a></center><br><center>下集预告：小沙堆才是我心中最好玩的游乐场（你让迪斯尼怎么想）</center>
+
+<p><center>关于女儿一一的公众号，欢迎用帅气姿势扫码关注。</center><br><img src="/cn/2018/06/25/travel-to-japan-with-zoe-day3-tokyo-to-kyoto-on-the-road/mp.weixin.gif" alt="mp.weixin.gif" title=""></p>
 
       
     </div>
@@ -396,9 +378,19 @@ component.myFunction();
           </div>
 
           
-            <a href="/tags/Javascript/" rel="tag">#Javascript</a>
+            <a href="/tags/Travel/" rel="tag">#Travel</a>
           
-            <a href="/tags/微信小程序/" rel="tag">#微信小程序</a>
+            <a href="/tags/Vlog/" rel="tag">#Vlog</a>
+          
+            <a href="/tags/Japan/" rel="tag">#Japan</a>
+          
+            <a href="/tags/Trailer/" rel="tag">#Trailer</a>
+          
+            <a href="/tags/日本/" rel="tag">#日本</a>
+          
+            <a href="/tags/旅行/" rel="tag">#旅行</a>
+          
+            <a href="/tags/视频日志/" rel="tag">#视频日志</a>
           
         </div>
       
@@ -407,17 +399,13 @@ component.myFunction();
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/cn/2018/04/12/we-xin-xiao-cheng-xu-ji-qiao-wen-ti-zheng-li/" rel="next" title="微信小程序开发的那些坑们（持续更新中...)">
-                <i class="fa fa-chevron-left"></i> 微信小程序开发的那些坑们（持续更新中...)
+              <a href="/cn/2018/06/25/travel-to-japan-with-zoe-day2-tokyo-disneyland-in-rain/" rel="next" title="霓虹溜娃记Day2，在雨中的迪斯尼里使劲儿撒欢儿...">
+                <i class="fa fa-chevron-left"></i> 霓虹溜娃记Day2，在雨中的迪斯尼里使劲儿撒欢儿...
               </a>
             
           </div>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/cn/2018/05/04/red-brick-art-museum-unspeakable-openness-of-things/" rel="prev" title="放电，以艺术之名。红砖美术馆-道隐无名。">
-                放电，以艺术之名。红砖美术馆-道隐无名。 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -603,7 +591,7 @@ component.myFunction();
               
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#创建组件"><span class="nav-number">1.</span> <span class="nav-text">创建组件</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#页面调用组件"><span class="nav-number">2.</span> <span class="nav-text">页面调用组件</span></a></li></ol></div>
+              <p class="post-toc-empty">This post does not have a Table of Contents</p>
             
           </div>
         </section>
@@ -723,9 +711,9 @@ component.myFunction();
 
     <script type="text/javascript">
       var disqus_shortname = 'f1982';
-      var disqus_identifier = 'cn/2018/04/24/wei-xin-xiao-cheng-xu-ru-he-diao-yong-zhu-jian-de-fang-fa/';
-      var disqus_title = "微信小程序如何在页面调用组件内方法";
-      var disqus_url = 'http://blog.f1982.com/cn/2018/04/24/wei-xin-xiao-cheng-xu-ru-he-diao-yong-zhu-jian-de-fang-fa/';
+      var disqus_identifier = 'cn/2018/06/25/travel-to-japan-with-zoe-day3-tokyo-to-kyoto-on-the-road/';
+      var disqus_title = "霓虹溜娃Day3，从东京到京都，我们在路上颠儿";
+      var disqus_url = 'http://blog.f1982.com/cn/2018/06/25/travel-to-japan-with-zoe-day3-tokyo-to-kyoto-on-the-road/';
 
       function run_disqus_script(disqus_script){
         var dsq = document.createElement('script');
