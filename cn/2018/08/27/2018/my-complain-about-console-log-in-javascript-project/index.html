@@ -1,0 +1,773 @@
+<!doctype html>
+
+
+
+  
+
+
+<html class="theme-next muse use-motion">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/vendors/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/vendors/font-awesome/css/font-awesome.min.css?v=4.4.0" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="console.log(),Wrap Console Log,VS Code,VS Code 插件,js 开发技巧,js 调试技巧,VS Code 技巧" />
+
+
+
+
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.0.1" />
+
+
+
+
+
+
+<meta name="description" content="最近经常抱怨：我再也不想写一句 console.log() 了！ 困惑最近一直都在玩前端技术，其实也不算是纯粹的前端了，但是 js 语法体系里的东西确实越来越好用，npm 管理下的项目开发也变得充满了魔法。 但是，和其他平台一样，在开发的过程中，我们不停的输出各种变量，虽然我知道各种 debug 工具都很好用，但是，我们还是无法避免的需要把变量输出到调试面板，以给我们最直观的体验，这种最基础最直接">
+<meta name="keywords" content="console.log(),Wrap Console Log,VS Code,VS Code 插件,js 开发技巧,js 调试技巧,VS Code 技巧">
+<meta property="og:type" content="article">
+<meta property="og:title" content="我和 console.log() 之间的那点恩怨情仇">
+<meta property="og:url" content="http://blog.f1982.com/cn/2018/08/27/2018/my-complain-about-console-log-in-javascript-project/index.html">
+<meta property="og:site_name" content="曹Andy的临时博客标题">
+<meta property="og:description" content="最近经常抱怨：我再也不想写一句 console.log() 了！ 困惑最近一直都在玩前端技术，其实也不算是纯粹的前端了，但是 js 语法体系里的东西确实越来越好用，npm 管理下的项目开发也变得充满了魔法。 但是，和其他平台一样，在开发的过程中，我们不停的输出各种变量，虽然我知道各种 debug 工具都很好用，但是，我们还是无法避免的需要把变量输出到调试面板，以给我们最直观的体验，这种最基础最直接">
+<meta property="og:locale" content="cn">
+<meta property="og:image" content="http://blog.f1982.com/cn/2018/08/27/2018/my-complain-about-console-log-in-javascript-project/vscode-coding-log.mp4.gif">
+<meta property="og:image" content="http://blog.f1982.com/cn/2018/08/27/2018/my-complain-about-console-log-in-javascript-project/black-question-mark.jpeg">
+<meta property="og:image" content="http://blog.f1982.com/cn/2018/08/27/2018/my-complain-about-console-log-in-javascript-project/alfred-snippet-clogv.png">
+<meta property="og:image" content="http://blog.f1982.com/cn/2018/08/27/2018/my-complain-about-console-log-in-javascript-project/vscode-snippet-logv.mp4.gif">
+<meta property="og:image" content="http://blog.f1982.com/cn/2018/08/27/2018/my-complain-about-console-log-in-javascript-project/wrap-console-log.png">
+<meta property="og:image" content="http://blog.f1982.com/cn/2018/08/27/2018/my-complain-about-console-log-in-javascript-project/screenshot_log_cursor.gif">
+<meta property="og:image" content="http://blog.f1982.com/cn/2018/08/27/2018/my-complain-about-console-log-in-javascript-project/vscode-keyboard-bind.png">
+<meta property="og:image" content="http://blog.f1982.com/cn/2018/08/27/2018/my-complain-about-console-log-in-javascript-project/vscode-wrap-console-shortcuts.png">
+<meta property="og:updated_time" content="2018-08-27T08:14:05.115Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="我和 console.log() 之间的那点恩怨情仇">
+<meta name="twitter:description" content="最近经常抱怨：我再也不想写一句 console.log() 了！ 困惑最近一直都在玩前端技术，其实也不算是纯粹的前端了，但是 js 语法体系里的东西确实越来越好用，npm 管理下的项目开发也变得充满了魔法。 但是，和其他平台一样，在开发的过程中，我们不停的输出各种变量，虽然我知道各种 debug 工具都很好用，但是，我们还是无法避免的需要把变量输出到调试面板，以给我们最直观的体验，这种最基础最直接">
+<meta name="twitter:image" content="http://blog.f1982.com/cn/2018/08/27/2018/my-complain-about-console-log-in-javascript-project/vscode-coding-log.mp4.gif">
+
+
+
+<script type="text/javascript" id="hexo.configuration">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    scheme: 'Muse',
+    sidebar: {"position":"left","display":"post"},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: 0,
+      author: 'Author'
+    }
+  };
+</script>
+
+
+
+
+  <link rel="canonical" href="http://blog.f1982.com/cn/2018/08/27/2018/my-complain-about-console-log-in-javascript-project/"/>
+
+  <title> 我和 console.log() 之间的那点恩怨情仇 | 曹Andy的临时博客标题 </title>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="en,zh-cn,zh-tw,default">
+
+  
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-26199919-2', 'auto');
+  ga('send', 'pageview');
+</script>
+
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+
+  <div class="container one-collumn sidebar-position-left page-post-detail ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-meta ">
+  
+
+  <div class="custom-logo-site-title">
+    <a href="/"  class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <span class="site-title">曹Andy的临时博客标题</span>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+  <p class="site-subtitle">他走过的这一路上的碎念与杂谈</p>
+</div>
+
+<div class="site-nav-toggle">
+  <button>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+  </button>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            Startseite
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            Archiv
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            Tags
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                我和 console.log() 之间的那点恩怨情仇
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">Veröffentlicht am</span>
+            <time itemprop="dateCreated" datetime="2018-08-27T16:03:28+08:00" content="2018-08-27">
+              2018-08-27
+            </time>
+          </span>
+
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">in</span>
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/Travel/" itemprop="url" rel="index">
+                    <span itemprop="name">Travel</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/cn/2018/08/27/2018/my-complain-about-console-log-in-javascript-project/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="cn/2018/08/27/2018/my-complain-about-console-log-in-javascript-project/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+
+          
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p>最近经常抱怨：我再也不想写一句 <code>console.log()</code> 了！</p>
+<h3 id="困惑">困惑</h3><p>最近一直都在玩前端技术，其实也不算是纯粹的前端了，但是 js 语法体系里的东西确实越来越好用，npm 管理下的项目开发也变得充满了魔法。</p>
+<p>但是，和其他平台一样，在开发的过程中，我们不停的输出各种变量，虽然我知道各种 debug 工具都很好用，但是，我们还是无法避免的需要把变量输出到调试面板，以给我们最直观的体验，这种最基础最直接的方式有时候觉得很蠢，但是不可或缺。</p>
+<p>然而我是懒惰而不喜欢重复的，这种习惯体现在方方面面。</p>
+<pre><code>console.<span class="command">log</span>(sth);
+</code></pre><p>一度让我觉得，我自己在浪费生命。</p>
+<p>具体的说，我常用的 <code>console.log</code> 应该和大多数人的用法一样，分两种情况：</p>
+<ul>
+<li><p>输出变量的值</p>
+<pre><code>console.<span class="built_in">log</span>(<span class="keyword">value</span>);
+</code></pre></li>
+<li><p>因为输出的内容太多，我需要给变量做标识</p>
+<pre><code>console.<span class="built_in">log</span>(<span class="string">'value '</span>+value)<span class="comment">;</span>
+</code></pre></li>
+</ul>
+<p>这里有个小细节，就是如果我在 <code>javascript</code> 里，如果 <code>value</code> 是个对象或者数组，这样的输出结果可读性非常差，一般结果就是 <code>[Object Object]</code> 之类的结果，显然并不是我们想要的。所以这里可以稍加调整，估计一般人都已经这么做了。</p>
+<pre><code>console.<span class="built_in">log</span>(<span class="string">'value '</span>,value)<span class="comment">;</span>
+</code></pre><p>这样，只是修改了一个字符，保障不同类型的变量都输出都有比较好的可读性。 Chrome 的 devtool 可以把这些复杂对象处理的非常舒服。</p>
+<p>这样看，我们的需求就非常简单了，就是要输入这样的一段代码就可以了。</p>
+<pre><code>console.<span class="built_in">log</span>(<span class="string">'value: '</span>,value)<span class="comment">;</span>
+</code></pre><p>这里加了一个冒号，增加可读性。</p>
+<img src="/cn/2018/08/27/2018/my-complain-about-console-log-in-javascript-project/vscode-coding-log.mp4.gif" alt="我打字速度应该算是个中等水准，但是放到程序员里估计是慢的。" title="我打字速度应该算是个中等水准，但是放到程序员里估计是慢的。">
+<p>因为要经常使用的原因，这句话里又有括号，又有单引号，还有冒号和逗号，输入复杂度其实不算低。</p>
+<ul>
+<li>我个人在没有任何输入提示下输入大概需要 <strong>9s</strong> 多；</li>
+<li>在 VS Code 代码提示和补全的帮助下大概需要的时间是 <strong>7s</strong> 多；</li>
+</ul>
+<p>这些还都是在没有输入错误反复修改的情况下统计的。</p>
+<p>拿平均输入需要8s 算如果每天输入这段代码 <strong>100次</strong>（我估计比这还多），那消耗的时间就达到了 <strong>800秒</strong> 也就是大概 <strong>13分钟</strong>。如果一年那大概 <strong>4745分钟</strong>。 大约 <strong>79小时</strong>。</p>
+<img src="/cn/2018/08/27/2018/my-complain-about-console-log-in-javascript-project/black-question-mark.jpeg" alt="What**k" title="What**k">
+<p>关键的问题是，我反复的输入并不能提升我的任何技能，它<strong>没有意义</strong>！ 所以我决定改进。</p>
+<h3 id="第一阶段">第一阶段</h3><p>我用的方式是 Alfred 自带的 Snippet 快捷输入功能。</p>
+<img src="/cn/2018/08/27/2018/my-complain-about-console-log-in-javascript-project/alfred-snippet-clogv.png" alt="描述" title="描述">
+<p>其实不一定非要用 Alfred 这个软件，毕竟市面上支持快捷输入的软件一把一把的，例如 Dash 或者 Snippetty, 就连最基础的搜狗输入法，也可以实现这个功能。大致的原理就是我把这段文本设置一个快捷输入。这样我只要我运行着 Alfred 或者输入法，快速输入自定义代码。</p>
+<pre><code>console.<span class="built_in">log</span>(<span class="string">'value: '</span>,value)<span class="comment">;</span>
+</code></pre><p>在 Alfred 的设置里，是可以直接读取剪切板内容的，所以你如果之前就复制好了变量，代码就直接输出内容了。<br>当然你也可以通过双击修改 <code>value</code> 的方式就可以快捷输入我要输出的变量了。</p>
+<p>我大概把时间降低到了 <strong>5s</strong> 左右，当然这个取决于你输入的变量长短，当然你还可以用复制粘贴的方式，会更快一点。</p>
+<h3 id="第二阶段">第二阶段</h3><p>我发现我自从变主力编辑工具切换到 VS Code 之后，我很少会在其他编辑器里输入这段代码，所以之前的方式，软件全局设置的方式并不合适。而与此同时，我发现 VS Code 自带的 Snippets 功能也非常的强大。<br>点击编辑器左下角的设置图标 &gt; 选择 User Snippets &gt; 在弹出的列表里选择 javascript &gt; 在打开的编辑器里输入如下代码（注意格式）：</p>
+<pre><code><span class="string">"Console Log Value"</span>: {
+    <span class="string">"prefix"</span>: <span class="string">"logv"</span>,
+    <span class="string">"body"</span>: <span class="string">"console.log(\"</span><span class="variable">$1</span> is: \<span class="string">",$1);"</span>
+},
+</code></pre><p>这里设置的触发方式是在 js 文件编辑状态敲击 <code>logv</code> 然后输入或者粘贴你想要的变量名。</p>
+<img src="/cn/2018/08/27/2018/my-complain-about-console-log-in-javascript-project/vscode-snippet-logv.mp4.gif" alt="VS Code 自动同步变量名的功能提升速度明显" title="VS Code 自动同步变量名的功能提升速度明显">
+<p>这次我完成输出变量的时间变成了 <strong>2-3s</strong> 之间，提升明显。另外，这种方式定制化很强，其实可以根据需求来调整代码，增加输出信息等。而且我自己已经觉得满意，这种方式我使用了起码有几个月的时间。</p>
+<h3 id="第三阶段">第三阶段</h3><p>本来我觉得我已经把一个 <strong>7-9s</strong> 的任务提升到了 <strong>2-3s</strong> 近乎完美，直到我发现了它!</p>
+<p>一个 VS Code 小插件，名字叫 <a href="https://marketplace.visualstudio.com/items?itemName=midnightsyntax.vscode-wrap-console-log" target="_blank" rel="external">Wrap Console Log</a> 。</p>
+<img src="/cn/2018/08/27/2018/my-complain-about-console-log-in-javascript-project/wrap-console-log.png" alt="Wrap Console Log 截图" title="Wrap Console Log 截图">
+<p>通过定制快捷键的方式，你可以通过这款软件快速的 console.log 鼠标指针所在的变量信息，直接把这个输出变量的这个流程缩短到0.5s 以内。</p>
+<img src="/cn/2018/08/27/2018/my-complain-about-console-log-in-javascript-project/screenshot_log_cursor.gif" alt="输入需要两个条件，一个是鼠标指向要输出的变量，然后按下快捷键。" title="输入需要两个条件，一个是鼠标指向要输出的变量，然后按下快捷键。">
+<img src="/cn/2018/08/27/2018/my-complain-about-console-log-in-javascript-project/vscode-keyboard-bind.png" alt="要想速度最快，必须设置一个比较合适的按键绑定" title="要想速度最快，必须设置一个比较合适的按键绑定">
+<img src="/cn/2018/08/27/2018/my-complain-about-console-log-in-javascript-project/vscode-wrap-console-shortcuts.png" alt="我这里设置的 Command+L" title="我这里设置的 Command+L">
+<p>当然这个插件还有一些其他很酷很实用的功能，可以详细探索，这里就只是抛砖引玉了。</p>
+<p>相比第一种方式，可以帮我每年节省大概70小时的时间，我可以做更多有趣或者有意义的事儿。</p>
+<p>至此，我关于 console.log 的抱怨算是告一段落，如果你有更好，更快的方式欢迎各种方式告知我。非常感谢！</p>
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+
+          <div>
+            <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-layout="in-article"
+     data-ad-format="fluid"
+     data-ad-client="ca-pub-9893504593235600"
+     data-ad-slot="7654736119"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+          </div>
+
+          
+            <a href="/tags/Javascript/" rel="tag">#Javascript</a>
+          
+            <a href="/tags/Develop/" rel="tag">#Develop</a>
+          
+            <a href="/tags/npm/" rel="tag">#npm</a>
+          
+        </div>
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/cn/2018/07/31/2018/zhao-pian-jia-wen-zi-xiao-cheng-xu-guang-ying-yin-zhang/" rel="next" title="照片加文字，不仅仅的！在照片上记录时间的刻度">
+                <i class="fa fa-chevron-left"></i> 照片加文字，不仅仅的！在照片上记录时间的刻度
+              </a>
+            
+          </div>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
+    
+      <div id="disqus_thread">
+        <noscript>
+          Please enable JavaScript to view the
+          <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a>
+        </noscript>
+      </div>
+    
+  </div>
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            Inhaltsverzeichnis
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            Übersicht
+          </li>
+        </ul>
+      
+
+      <section class="site-overview sidebar-panel ">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="/images/selfie_by_pixel.jpg"
+               alt="Andy" />
+          <p class="site-author-name" itemprop="name">Andy</p>
+          <p class="site-description motion-element" itemprop="description">Do More!</p>
+        </div>
+        <nav class="site-state motion-element">
+          <div class="site-state-item site-state-posts">
+            <a href="/archives">
+              <span class="site-state-item-count">22</span>
+              <span class="site-state-item-name">Artikel</span>
+            </a>
+          </div>
+
+          
+            <div class="site-state-item site-state-categories">
+              
+                <span class="site-state-item-count">6</span>
+                <span class="site-state-item-name">Kategorien</span>
+              
+            </div>
+          
+
+          
+            <div class="site-state-item site-state-tags">
+              <a href="/tags">
+                <span class="site-state-item-count">46</span>
+                <span class="site-state-item-name">Tags</span>
+              </a>
+            </div>
+          
+
+        </nav>
+
+        
+
+        <div class="links-of-author motion-element">
+          
+            
+              <span class="links-of-author-item">
+                <a href="http://instagram.com/iandycao/" target="_blank" title="Instagram">
+                  
+                    <i class="fa fa-fw fa-instagram"></i>
+                  
+                  Instagram
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="https://www.facebook.com/andycao1982" target="_blank" title="Facebook">
+                  
+                    <i class="fa fa-fw fa-facebook"></i>
+                  
+                  Facebook
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="https://www.youtube.com/caojundan" target="_blank" title="Youtube">
+                  
+                    <i class="fa fa-fw fa-youtube"></i>
+                  
+                  Youtube
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="https://www.linkedin.com/in/andyisme" target="_blank" title="LinkedIn">
+                  
+                    <i class="fa fa-fw fa-globe"></i>
+                  
+                  LinkedIn
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="https://twitter.com/iandycao" target="_blank" title="Twitter">
+                  
+                    <i class="fa fa-fw fa-twitter"></i>
+                  
+                  Twitter
+                </a>
+              </span>
+            
+          
+        </div>
+
+        
+        
+
+        
+        
+          <div class="links-of-blogroll motion-element links-of-blogroll-inline">
+            <div class="links-of-blogroll-title">
+              <i class="fa  fa-fw fa-globe"></i>
+              Links
+            </div>
+            <ul class="links-of-blogroll-list">
+              
+                <li class="links-of-blogroll-item">
+                  <a href="https://www.tigerwang.us/" title="王老虎" target="_blank">王老虎</a>
+                </li>
+              
+                <li class="links-of-blogroll-item">
+                  <a href="http://fenglee.com/" title="阿丰哥" target="_blank">阿丰哥</a>
+                </li>
+              
+            </ul>
+          </div>
+        
+
+      </section>
+
+      
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+            
+              
+            
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#困惑"><span class="nav-number">1.</span> <span class="nav-text">困惑</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#第一阶段"><span class="nav-number">2.</span> <span class="nav-text">第一阶段</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#第二阶段"><span class="nav-number">3.</span> <span class="nav-text">第二阶段</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#第三阶段"><span class="nav-number">4.</span> <span class="nav-text">第三阶段</span></a></li></ol></div>
+            
+          </div>
+        </section>
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  &copy; 
+  <span itemprop="copyrightYear">2018</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Andy</span>
+</div>
+
+<div class="powered-by">
+  Erstellt mit  <a class="theme-link" href="https://hexo.io">Hexo</a>
+</div>
+
+<div class="theme-info">
+  Theme -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT.Muse
+  </a>
+</div>
+
+        
+
+        
+      </div>
+    </footer>
+
+    <div class="back-to-top">
+      <i class="fa fa-arrow-up"></i>
+    </div>
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  <script type="text/javascript" src="/vendors/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script type="text/javascript" src="/vendors/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script type="text/javascript" src="/vendors/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script type="text/javascript" src="/vendors/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/vendors/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/vendors/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.0.1"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.0.1"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.0.1"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.0.1"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.0.1"></script>
+
+
+
+  
+
+
+
+  
+
+    <script type="text/javascript">
+      var disqus_shortname = 'f1982';
+      var disqus_identifier = 'cn/2018/08/27/2018/my-complain-about-console-log-in-javascript-project/';
+      var disqus_title = "我和 console.log() 之间的那点恩怨情仇";
+      var disqus_url = 'http://blog.f1982.com/cn/2018/08/27/2018/my-complain-about-console-log-in-javascript-project/';
+
+      function run_disqus_script(disqus_script){
+        var dsq = document.createElement('script');
+        dsq.type = 'text/javascript';
+        dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/' + disqus_script;
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+      }
+
+      run_disqus_script('count.js');
+      
+        run_disqus_script('embed.js');
+      
+    </script>
+  
+
+
+
+
+  
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>

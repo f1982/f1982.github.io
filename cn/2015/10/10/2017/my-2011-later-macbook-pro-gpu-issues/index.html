@@ -1,0 +1,729 @@
+<!doctype html>
+
+
+
+  
+
+
+<html class="theme-next muse use-motion">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/vendors/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/vendors/font-awesome/css/font-awesome.min.css?v=4.4.0" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="GPU,Macbook Pro,Fix," />
+
+
+
+
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.0.1" />
+
+
+
+
+
+
+<meta name="description" content="一个再一般不过的日常，我像平时一样玩着电脑，写着代码听着歌。同时导入一直混乱的照片文件到Mac OS X新版的Photos里，由于照片数量确实庞大，所以电脑的风扇偶尔呼啸，时而平静，我也没有很多在意，毕竟这也没什么特别的。然而,突然一次没有任何先兆死机，我有点意外，但是也没特别在意，只是心里惯性的骂了一句“该死”，想着刚刚的界面还要重新来一遍，其他也没什么了，毕竟死机的事儿也不是第一次发生。重启的">
+<meta name="keywords" content="GPU,Macbook Pro,Fix">
+<meta property="og:type" content="article">
+<meta property="og:title" content="我的2011年版Macbook Pro与传说中的显卡门">
+<meta property="og:url" content="http://blog.f1982.com/cn/2015/10/10/2017/my-2011-later-macbook-pro-gpu-issues/index.html">
+<meta property="og:site_name" content="曹Andy的临时博客标题">
+<meta property="og:description" content="一个再一般不过的日常，我像平时一样玩着电脑，写着代码听着歌。同时导入一直混乱的照片文件到Mac OS X新版的Photos里，由于照片数量确实庞大，所以电脑的风扇偶尔呼啸，时而平静，我也没有很多在意，毕竟这也没什么特别的。然而,突然一次没有任何先兆死机，我有点意外，但是也没特别在意，只是心里惯性的骂了一句“该死”，想着刚刚的界面还要重新来一遍，其他也没什么了，毕竟死机的事儿也不是第一次发生。重启的">
+<meta property="og:locale" content="cn">
+<meta property="og:image" content="http://blog.f1982.com/cn/2015/10/10/2017/my-2011-later-macbook-pro-gpu-issues/single-user-mode.png">
+<meta property="og:image" content="http://blog.f1982.com/cn/2015/10/10/2017/my-2011-later-macbook-pro-gpu-issues/mbp-disassembled.png">
+<meta property="og:image" content="http://blog.f1982.com/cn/2015/10/10/2017/my-2011-later-macbook-pro-gpu-issues/repair-bill.png">
+<meta property="og:updated_time" content="2017-10-19T13:16:02.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="我的2011年版Macbook Pro与传说中的显卡门">
+<meta name="twitter:description" content="一个再一般不过的日常，我像平时一样玩着电脑，写着代码听着歌。同时导入一直混乱的照片文件到Mac OS X新版的Photos里，由于照片数量确实庞大，所以电脑的风扇偶尔呼啸，时而平静，我也没有很多在意，毕竟这也没什么特别的。然而,突然一次没有任何先兆死机，我有点意外，但是也没特别在意，只是心里惯性的骂了一句“该死”，想着刚刚的界面还要重新来一遍，其他也没什么了，毕竟死机的事儿也不是第一次发生。重启的">
+<meta name="twitter:image" content="http://blog.f1982.com/cn/2015/10/10/2017/my-2011-later-macbook-pro-gpu-issues/single-user-mode.png">
+
+
+
+<script type="text/javascript" id="hexo.configuration">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    scheme: 'Muse',
+    sidebar: {"position":"left","display":"post"},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: 0,
+      author: 'Author'
+    }
+  };
+</script>
+
+
+
+
+  <link rel="canonical" href="http://blog.f1982.com/cn/2015/10/10/2017/my-2011-later-macbook-pro-gpu-issues/"/>
+
+  <title> 我的2011年版Macbook Pro与传说中的显卡门 | 曹Andy的临时博客标题 </title>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="en,zh-cn,zh-tw,default">
+
+  
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-26199919-2', 'auto');
+  ga('send', 'pageview');
+</script>
+
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+
+  <div class="container one-collumn sidebar-position-left page-post-detail ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-meta ">
+  
+
+  <div class="custom-logo-site-title">
+    <a href="/"  class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <span class="site-title">曹Andy的临时博客标题</span>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+  <p class="site-subtitle">他走过的这一路上的碎念与杂谈</p>
+</div>
+
+<div class="site-nav-toggle">
+  <button>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+  </button>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            Startseite
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            Archiv
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            Tags
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                我的2011年版Macbook Pro与传说中的显卡门
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">Veröffentlicht am</span>
+            <time itemprop="dateCreated" datetime="2015-10-10T15:11:22+08:00" content="2015-10-10">
+              2015-10-10
+            </time>
+          </span>
+
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">in</span>
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/Tech/" itemprop="url" rel="index">
+                    <span itemprop="name">Tech</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/cn/2015/10/10/2017/my-2011-later-macbook-pro-gpu-issues/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="cn/2015/10/10/2017/my-2011-later-macbook-pro-gpu-issues/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+
+          
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p>一个再一般不过的日常，我像平时一样玩着电脑，写着代码听着歌。同时导入一直混乱的照片文件到<code>Mac OS X</code>新版的<code>Photos</code>里，由于照片数量确实庞大，所以电脑的风扇偶尔呼啸，时而平静，我也没有很多在意，毕竟这也没什么特别的。然而,突然一次没有任何先兆死机，我有点意外，但是也没特别在意，只是心里惯性的骂了一句“该死”，想着刚刚的界面还要重新来一遍，其他也没什么了，毕竟死机的事儿也不是第一次发生。重启的过程有点奇怪，第一次带着一丝花屏，大概是在屏幕的上方三分之一处，大约1指半宽，然后没有启动起来，画面停在了一个略灰色的白屏。就像日常启动画面没有了苹果的LOGO。停在这里就死掉了，我再次强制关机（按住电源键3秒以上）然后再次重启，成功！到这个阶段其实还完全没有太激起我的警惕心理，虽然上次硬盘的损坏也有类似的异常，我还是想继续整理我的照片，所以后台就开着Photos继续导入。不知道又过了多久，机器再度重启，这次重启就再也没有启动起来过。。</p>
+<p>这时候我才意识到问题的严重性，反复尝试了各种方式来恢复电脑，包括<br>进入<a href="https://support.apple.com/zh-cn/HT201262" target="_blank" rel="external">安全模式</a> <a href="https://support.apple.com/zh-cn/HT1492" target="_blank" rel="external">单用户启动</a> 甚至下载了 EL Capatin 的镜像文件，并制作了启动盘准备重装系统，但是纷纷宣告失败。这一夜我忙乎到了4点多，才发现可能这次不是常规错误造成的，应该也和操作系统没半毛钱关系。</p>
+<img src="/cn/2015/10/10/2017/my-2011-later-macbook-pro-gpu-issues/single-user-mode.png" alt="单用户模式" title="单用户模式">
+<p>这时候网上的一些帖子提醒了我，Macbook Pro和Macbook Air有些批次的产品存在着显卡质量问题，并且大批次的产品质量问题爆发过，后来苹果出了<a href="https://www.apple.com/cn/support/macbookpro-videoissues/" target="_blank" rel="external">政策</a>进行了召回，我仿佛是抓到了一丝救命稻草，瞬间转换了思路。顺着<a href="https://www.apple.com/cn/support/macbookpro-videoissues/" target="_blank" rel="external">召回政策</a>的页面找到了苹果的<a href="https://selfsolve.apple.com/agreementWarrantyDynamic.do?locale=zh_CN" target="_blank" rel="external">序列号查询工具</a> 我的电脑是 2011年晚期的产品，正好在召回政策里，而且这个召回只是截至到2016年2月，就是说也还来得及。<br>由于我的电脑是港行的定制版本，而且早就过保，并且我自己更换了内存（4G-&gt;16G）并且升级了硬盘（750G HDD-&gt;256G SSD）所以其实还蛮担心不会受理的问题。<br>另外我又再次实验确认了一下我的软件系统是否有问题，我把MBP上的SSD拿下来，放到硬盘读取装置上，然后查到另外一台旧的MBP上，按住Option键启动，选择这块SSD，虽然等启动的时间略长了点，但是进入了系统界面。所以这么看来再次确认了系统没问题，问题就出现在了这台MBP的硬件上。</p>
+<img src="/cn/2015/10/10/2017/my-2011-later-macbook-pro-gpu-issues/mbp-disassembled.png" alt="拆机换硬盘" title="拆机换硬盘">
+<a id="more"></a>
+<p>上次去苹果店看表（Apple Watch）的经历告诉我，到店最好还是预约。所以提前预约了西单大悦城的苹果店天才吧，个人还是觉得去苹果直营店吧，网上说的那种授权维修点各种不靠谱。去之前一天400又确认了一下，需要带电脑和个人身份证。</p>
+<p>10月10号上午9点半左右，来到大悦城苹果店，外面已经小规模排队了。路边的人说10点才开门。。我就纳闷了，这也不是什么发售日，大家至于来这么早么？另外10点开门，我这种9:45预约的怎么办？ 向前略挤，问工作人员一帅气小哥，告诉我可以直接进入，我余光感到外面人群异样的情绪闪过。到了B1接待我的是一个女生，询问了大致情况后给MBP插了一根网线，重启Option进入一个类似系统检测工具的界面，然后开始检测，大概经历10多分钟，发现三处异常，一个是硬盘（我换过），一个是内存（也是我换过）另外一个估计就是显卡之类。个人感觉是只要和该型号出厂配置不同都会报错。然后我如实说了自己过保之后更换了硬盘和内存，她也说了这些都没什么关系，接着她又单独跑了另外一个测试程序，说大概需要15分钟左右，但是如果提前出结果，可能说明确实是显卡造成的问题，就可以享受召回的免费更换主板的服务。果不其然，检测还没到2分钟，就出现结果，就这样她给我开了单子，又查了库房，刚好有主板在，说应该今天下班之前可以修改，这样的话我可以在下午五点之后取回我的MacBookPro了。小激动呀！她最后告诉我机器修好后，会有电话通知，然后带着自己的身份证和单子，就可以在天才吧的左侧领取设备了。<br>这样我就离开了苹果店，出来的时候门口依然拍了巨长的队伍。</p>
+<p>回公司没多久。大概也就12左右的样子，接到苹果打过来的电话，说机器已经修好了，随时可以过来取。。效率还真高。</p>
+<p>中午同事开车带我过去，在天才吧的东南角，提交了单子和身份证，我的MBP被带了出来，包裹了一个白色的泡沫塑料的袋子，样子还是老样子（废话啦），不过好像屏幕有被擦拭的很干净。打开试机，白屏，很长时间的白屏，过了好久好久，根据相对论，此刻时间估计被拉长了，我甚至怀疑机器并没有修好…… 然后出现了一个地球仪，很萌，此刻我把机器交给了工作人员，他们讨论了一下，应该都在正常范围。再然后，过了几秒好像进入了正常的启动状态，但是画面突然闪了一瞬间的花屏，和之前的类似一小条，但是很快又跳到了正确的开机界面。太惊险。。。<br>为了确保修好，我反复重启验证了好几次，最后终于确定没什么问题了才带着电脑离开。</p>
+<img src="/cn/2015/10/10/2017/my-2011-later-macbook-pro-gpu-issues/repair-bill.png" alt="GeniusBar的授权单" title="GeniusBar的授权单">
+<p>致此，我的MBP花屏事件算是告一段落，但是还有点心有余悸，幸亏自打上次的硬盘损坏之后每周定期TimeMachine备份系统，导致在机器突然崩溃的情况下也没有什么好忧伤的；对于苹果设备的质量也有了新的认识，就是再好的设备也难免出问题，机器陪不了你太久，硬盘也陪不了你太久，显卡更是！关键的还是数据。希望这次之后这台MBP可以陪我再战几年，多做几个游戏出来！</p>
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+
+          <div>
+            <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-layout="in-article"
+     data-ad-format="fluid"
+     data-ad-client="ca-pub-9893504593235600"
+     data-ad-slot="7654736119"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+          </div>
+
+          
+            <a href="/tags/GPU/" rel="tag">#GPU</a>
+          
+            <a href="/tags/Macbook-Pro/" rel="tag">#Macbook Pro</a>
+          
+            <a href="/tags/Fix/" rel="tag">#Fix</a>
+          
+        </div>
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/cn/2015/10/10/2016/fpv-cc3d-add-osd-minoposd-minimosd/" rel="next" title="CC3D加装Minimosd研究">
+                <i class="fa fa-chevron-left"></i> CC3D加装Minimosd研究
+              </a>
+            
+          </div>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/cn/2016/03/24/2017/the-journey-of-my-indie-game-development/" rel="prev" title="在独立开发的路上，请保护那份对游戏最初的热忱！">
+                在独立开发的路上，请保护那份对游戏最初的热忱！ <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
+    
+      <div id="disqus_thread">
+        <noscript>
+          Please enable JavaScript to view the
+          <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a>
+        </noscript>
+      </div>
+    
+  </div>
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            Inhaltsverzeichnis
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            Übersicht
+          </li>
+        </ul>
+      
+
+      <section class="site-overview sidebar-panel ">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="/images/selfie_by_pixel.jpg"
+               alt="Andy" />
+          <p class="site-author-name" itemprop="name">Andy</p>
+          <p class="site-description motion-element" itemprop="description">Do More!</p>
+        </div>
+        <nav class="site-state motion-element">
+          <div class="site-state-item site-state-posts">
+            <a href="/archives">
+              <span class="site-state-item-count">22</span>
+              <span class="site-state-item-name">Artikel</span>
+            </a>
+          </div>
+
+          
+            <div class="site-state-item site-state-categories">
+              
+                <span class="site-state-item-count">6</span>
+                <span class="site-state-item-name">Kategorien</span>
+              
+            </div>
+          
+
+          
+            <div class="site-state-item site-state-tags">
+              <a href="/tags">
+                <span class="site-state-item-count">46</span>
+                <span class="site-state-item-name">Tags</span>
+              </a>
+            </div>
+          
+
+        </nav>
+
+        
+
+        <div class="links-of-author motion-element">
+          
+            
+              <span class="links-of-author-item">
+                <a href="http://instagram.com/iandycao/" target="_blank" title="Instagram">
+                  
+                    <i class="fa fa-fw fa-instagram"></i>
+                  
+                  Instagram
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="https://www.facebook.com/andycao1982" target="_blank" title="Facebook">
+                  
+                    <i class="fa fa-fw fa-facebook"></i>
+                  
+                  Facebook
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="https://www.youtube.com/caojundan" target="_blank" title="Youtube">
+                  
+                    <i class="fa fa-fw fa-youtube"></i>
+                  
+                  Youtube
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="https://www.linkedin.com/in/andyisme" target="_blank" title="LinkedIn">
+                  
+                    <i class="fa fa-fw fa-globe"></i>
+                  
+                  LinkedIn
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="https://twitter.com/iandycao" target="_blank" title="Twitter">
+                  
+                    <i class="fa fa-fw fa-twitter"></i>
+                  
+                  Twitter
+                </a>
+              </span>
+            
+          
+        </div>
+
+        
+        
+
+        
+        
+          <div class="links-of-blogroll motion-element links-of-blogroll-inline">
+            <div class="links-of-blogroll-title">
+              <i class="fa  fa-fw fa-globe"></i>
+              Links
+            </div>
+            <ul class="links-of-blogroll-list">
+              
+                <li class="links-of-blogroll-item">
+                  <a href="https://www.tigerwang.us/" title="王老虎" target="_blank">王老虎</a>
+                </li>
+              
+                <li class="links-of-blogroll-item">
+                  <a href="http://fenglee.com/" title="阿丰哥" target="_blank">阿丰哥</a>
+                </li>
+              
+            </ul>
+          </div>
+        
+
+      </section>
+
+      
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+            
+              
+            
+            
+              <p class="post-toc-empty">Dieser Artikel hat kein Inhaltsverzeichnis</p>
+            
+          </div>
+        </section>
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  &copy; 
+  <span itemprop="copyrightYear">2018</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Andy</span>
+</div>
+
+<div class="powered-by">
+  Erstellt mit  <a class="theme-link" href="https://hexo.io">Hexo</a>
+</div>
+
+<div class="theme-info">
+  Theme -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT.Muse
+  </a>
+</div>
+
+        
+
+        
+      </div>
+    </footer>
+
+    <div class="back-to-top">
+      <i class="fa fa-arrow-up"></i>
+    </div>
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  <script type="text/javascript" src="/vendors/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script type="text/javascript" src="/vendors/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script type="text/javascript" src="/vendors/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script type="text/javascript" src="/vendors/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/vendors/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/vendors/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.0.1"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.0.1"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.0.1"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.0.1"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.0.1"></script>
+
+
+
+  
+
+
+
+  
+
+    <script type="text/javascript">
+      var disqus_shortname = 'f1982';
+      var disqus_identifier = 'cn/2015/10/10/2017/my-2011-later-macbook-pro-gpu-issues/';
+      var disqus_title = "我的2011年版Macbook Pro与传说中的显卡门";
+      var disqus_url = 'http://blog.f1982.com/cn/2015/10/10/2017/my-2011-later-macbook-pro-gpu-issues/';
+
+      function run_disqus_script(disqus_script){
+        var dsq = document.createElement('script');
+        dsq.type = 'text/javascript';
+        dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/' + disqus_script;
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+      }
+
+      run_disqus_script('count.js');
+      
+        run_disqus_script('embed.js');
+      
+    </script>
+  
+
+
+
+
+  
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>
