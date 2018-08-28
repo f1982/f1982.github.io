@@ -276,8 +276,8 @@
               <span class="post-meta-item-text">In</span>
               
                 <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                  <a href="/categories/Travel/" itemprop="url" rel="index">
-                    <span itemprop="name">Travel</span>
+                  <a href="/categories/Dev/" itemprop="url" rel="index">
+                    <span itemprop="name">Dev</span>
                   </a>
                 </span>
 
@@ -322,20 +322,20 @@
 <h3 id="困惑">困惑</h3><p>最近一直都在玩前端技术，其实也不算是纯粹的前端了，但是 js 语法体系里的东西确实越来越好用，npm 管理下的项目开发也变得充满了魔法。</p>
 <p>但是，和其他平台一样，在开发的过程中，我们不停的输出各种变量，虽然我知道各种 debug 工具都很好用，但是，我们还是无法避免的需要把变量输出到调试面板，以给我们最直观的体验，这种最基础最直接的方式有时候觉得很蠢，但是不可或缺。</p>
 <p>然而我是懒惰而不喜欢重复的，这种习惯体现在方方面面。</p>
-<pre><code>console.<span class="command">log</span>(sth);
-</code></pre><p>一度让我觉得，我自己在浪费生命。</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">console</span>.log(sth);</div></pre></td></tr></table></figure>
+<p>一度让我觉得，我自己在浪费生命。</p>
 <p>具体的说，我常用的 <code>console.log</code> 应该和大多数人的用法一样，分两种情况：</p>
 <ul>
-<li><p>输出变量的值</p>
-<pre><code>console.<span class="built_in">log</span>(<span class="keyword">value</span>);
-</code></pre></li>
-<li><p>因为输出的内容太多，我需要给变量做标识</p>
-<pre><code>console.<span class="built_in">log</span>(<span class="string">'value '</span>+value)<span class="comment">;</span>
-</code></pre></li>
+<li>输出变量的值</li>
 </ul>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">console</span>.log(value);</div></pre></td></tr></table></figure>
+<ul>
+<li>因为输出的内容太多，我需要给变量做标识</li>
+</ul>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">console</span>.log(<span class="string">'value '</span>+value);</div></pre></td></tr></table></figure>
 <p>这里有个小细节，就是如果我在 <code>javascript</code> 里，如果 <code>value</code> 是个对象或者数组，这样的输出结果可读性非常差，一般结果就是 <code>[Object Object]</code> 之类的结果，显然并不是我们想要的。所以这里可以稍加调整，估计一般人都已经这么做了。</p>
-<pre><code>console.<span class="built_in">log</span>(<span class="string">'value '</span>,value)<span class="comment">;</span>
-</code></pre><p>这样，只是修改了一个字符，保障不同类型的变量都输出都有比较好的可读性。 Chrome 的 devtool 可以把这些复杂对象处理的非常舒服。</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">console</span>.log(<span class="string">'value '</span>,value);</div></pre></td></tr></table></figure>
+<p>这样，只是修改了一个字符，保障不同类型的变量都输出都有比较好的可读性。 Chrome 的 devtool 可以把这些复杂对象处理的非常舒服。</p>
 <p>这样看，我们的需求就非常简单了，就是要输入这样的一段代码就可以了。</p>
 <pre><code>console.<span class="built_in">log</span>(<span class="string">'value: '</span>,value)<span class="comment">;</span>
 </code></pre><p>这里加了一个冒号，增加可读性。</p>
@@ -350,17 +350,14 @@
 <img src="/cn/2018/08/27/2018/my-complain-about-console-log-in-javascript-project/black-question-mark.jpeg" alt="What**k" title="What**k">
 <p>关键的问题是，我反复的输入并不能提升我的任何技能，它<strong>没有意义</strong>！ 所以我决定改进。</p>
 <h3 id="第一阶段">第一阶段</h3><p>我用的方式是 Alfred 自带的 Snippet 快捷输入功能。</p>
-<img src="/cn/2018/08/27/2018/my-complain-about-console-log-in-javascript-project/alfred-snippet-clogv.png" alt="描述" title="描述">
+<img src="/cn/2018/08/27/2018/my-complain-about-console-log-in-javascript-project/alfred-snippet-clogv.png" alt="Alfred snippets 提供了丰富的设置" title="Alfred snippets 提供了丰富的设置">
 <p>其实不一定非要用 Alfred 这个软件，毕竟市面上支持快捷输入的软件一把一把的，例如 Dash 或者 Snippetty, 就连最基础的搜狗输入法，也可以实现这个功能。大致的原理就是我把这段文本设置一个快捷输入。这样我只要我运行着 Alfred 或者输入法，快速输入自定义代码。</p>
-<pre><code>console.<span class="built_in">log</span>(<span class="string">'value: '</span>,value)<span class="comment">;</span>
-</code></pre><p>在 Alfred 的设置里，是可以直接读取剪切板内容的，所以你如果之前就复制好了变量，代码就直接输出内容了。<br>当然你也可以通过双击修改 <code>value</code> 的方式就可以快捷输入我要输出的变量了。</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">console</span>.log(<span class="string">'value: '</span>,value);</div></pre></td></tr></table></figure>
+<p>在 Alfred 的设置里，是可以直接读取剪切板内容的，所以你如果之前就复制好了变量，代码就直接输出内容了。<br>当然你也可以通过双击修改 <code>value</code> 的方式就可以快捷输入我要输出的变量了。</p>
 <p>我大概把时间降低到了 <strong>5s</strong> 左右，当然这个取决于你输入的变量长短，当然你还可以用复制粘贴的方式，会更快一点。</p>
 <h3 id="第二阶段">第二阶段</h3><p>我发现我自从变主力编辑工具切换到 VS Code 之后，我很少会在其他编辑器里输入这段代码，所以之前的方式，软件全局设置的方式并不合适。而与此同时，我发现 VS Code 自带的 Snippets 功能也非常的强大。<br>点击编辑器左下角的设置图标 &gt; 选择 User Snippets &gt; 在弹出的列表里选择 javascript &gt; 在打开的编辑器里输入如下代码（注意格式）：</p>
-<pre><code><span class="string">"Console Log Value"</span>: {
-    <span class="string">"prefix"</span>: <span class="string">"logv"</span>,
-    <span class="string">"body"</span>: <span class="string">"console.log(\"</span><span class="variable">$1</span> is: \<span class="string">",$1);"</span>
-},
-</code></pre><p>这里设置的触发方式是在 js 文件编辑状态敲击 <code>logv</code> 然后输入或者粘贴你想要的变量名。</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="string">"Console Log Value"</span>: &#123;</div><div class="line">    <span class="string">"prefix"</span>: <span class="string">"logv"</span>,</div><div class="line">    <span class="string">"body"</span>: <span class="string">"console.log(\"$1 is: \",$1);"</span></div><div class="line">&#125;,</div></pre></td></tr></table></figure>
+<p>这里设置的触发方式是在 js 文件编辑状态敲击 <code>logv</code> 然后输入或者粘贴你想要的变量名。</p>
 <img src="/cn/2018/08/27/2018/my-complain-about-console-log-in-javascript-project/vscode-snippet-logv.mp4.gif" alt="VS Code 自动同步变量名的功能提升速度明显" title="VS Code 自动同步变量名的功能提升速度明显">
 <p>这次我完成输出变量的时间变成了 <strong>2-3s</strong> 之间，提升明显。另外，这种方式定制化很强，其实可以根据需求来调整代码，增加输出信息等。而且我自己已经觉得满意，这种方式我使用了起码有几个月的时间。</p>
 <h3 id="第三阶段">第三阶段</h3><p>本来我觉得我已经把一个 <strong>7-9s</strong> 的任务提升到了 <strong>2-3s</strong> 近乎完美，直到我发现了它!</p>
@@ -373,6 +370,8 @@
 <p>当然这个插件还有一些其他很酷很实用的功能，可以详细探索，这里就只是抛砖引玉了。</p>
 <p>相比第一种方式，可以帮我每年节省大概70小时的时间，我可以做更多有趣或者有意义的事儿。</p>
 <p>至此，我关于 console.log 的抱怨算是告一段落，如果你有更好，更快的方式欢迎各种方式告知我。非常感谢！</p>
+<p>注：文章里的一些时间计算可能略有偏差，因为我们小学的时候数学课的老师身体不好，经常体育老师代课，敬请知晓。如果习惯在手机微信平台阅读请扫码关注我的公众号。</p>
+<img src="/cn/2018/08/27/2018/my-complain-about-console-log-in-javascript-project/dark-planet-qr-code.jpg" alt="我的微信公众号：暗行星" title="我的微信公众号：暗行星">
 
           
         
