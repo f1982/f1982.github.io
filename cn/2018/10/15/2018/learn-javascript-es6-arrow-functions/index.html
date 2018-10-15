@@ -88,11 +88,11 @@
 <meta name="keywords" content="Javascript,ES6,前端技术,Nodejs,教学,教程,箭头函数,Arrow Functions">
 <meta property="og:type" content="article">
 <meta property="og:title" content="JavaScript ES6 - 箭头函数（Arrow Functions) 学习">
-<meta property="og:url" content="http://blog.f1982.com/cn/2018/10/15/2018/learn-javascript-es6/index.html">
+<meta property="og:url" content="http://blog.f1982.com/cn/2018/10/15/2018/learn-javascript-es6-arrow-functions/index.html">
 <meta property="og:site_name" content="曹Andy的临时博客标题">
 <meta property="og:description" content="这几年使用的编程语言一直在根据项目的需要而不断切换，从 ActionScript 到 Objective-C 到 C++ 再到 Javascript。 最近一段时间一直在把玩 Javascript,  感受到了 js 这些年的进化，随着更多Js 应用环境的开启，感觉未来的潜力也巨大。而且新的 js 语言标准和新特性让 js 似乎也走到了其他编程语言的前面，从古老变成了领先。这里记录一下关于 Jav">
 <meta property="og:locale" content="cn">
-<meta property="og:updated_time" content="2018-10-15T01:57:10.698Z">
+<meta property="og:updated_time" content="2018-10-15T02:15:50.414Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="JavaScript ES6 - 箭头函数（Arrow Functions) 学习">
 <meta name="twitter:description" content="这几年使用的编程语言一直在根据项目的需要而不断切换，从 ActionScript 到 Objective-C 到 C++ 再到 Javascript。 最近一段时间一直在把玩 Javascript,  感受到了 js 这些年的进化，随着更多Js 应用环境的开启，感觉未来的潜力也巨大。而且新的 js 语言标准和新特性让 js 似乎也走到了其他编程语言的前面，从古老变成了领先。这里记录一下关于 Jav">
@@ -116,7 +116,7 @@
 
 
 
-  <link rel="canonical" href="http://blog.f1982.com/cn/2018/10/15/2018/learn-javascript-es6/"/>
+  <link rel="canonical" href="http://blog.f1982.com/cn/2018/10/15/2018/learn-javascript-es6-arrow-functions/"/>
 
   <title> JavaScript ES6 - 箭头函数（Arrow Functions) 学习 | 曹Andy的临时博客标题 </title>
 </head>
@@ -185,7 +185,7 @@
             
               <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
             
-            Startseite
+            Home
           </a>
         </li>
       
@@ -195,7 +195,7 @@
             
               <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
             
-            Archiv
+            Archives
           </a>
         </li>
       
@@ -258,7 +258,7 @@
             <span class="post-meta-item-icon">
               <i class="fa fa-calendar-o"></i>
             </span>
-            <span class="post-meta-item-text">Veröffentlicht am</span>
+            <span class="post-meta-item-text">Posted on</span>
             <time itemprop="dateCreated" datetime="2018-10-15T04:04:15+08:00" content="2018-10-15">
               2018-10-15
             </time>
@@ -270,7 +270,7 @@
               <span class="post-meta-item-icon">
                 <i class="fa fa-folder-o"></i>
               </span>
-              <span class="post-meta-item-text">in</span>
+              <span class="post-meta-item-text">In</span>
               
                 <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
                   <a href="/categories/Dev/" itemprop="url" rel="index">
@@ -289,8 +289,8 @@
             
               <span class="post-comments-count">
                 &nbsp; | &nbsp;
-                <a href="/cn/2018/10/15/2018/learn-javascript-es6/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="cn/2018/10/15/2018/learn-javascript-es6/" itemprop="commentsCount"></span>
+                <a href="/cn/2018/10/15/2018/learn-javascript-es6-arrow-functions/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="cn/2018/10/15/2018/learn-javascript-es6-arrow-functions/" itemprop="commentsCount"></span>
                 </a>
               </span>
             
@@ -435,10 +435,10 @@
       
         <ul class="sidebar-nav motion-element">
           <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
-            Inhaltsverzeichnis
+            Table of Contents
           </li>
           <li class="sidebar-nav-overview" data-target="site-overview">
-            Übersicht
+            Overview
           </li>
         </ul>
       
@@ -455,7 +455,7 @@
           <div class="site-state-item site-state-posts">
             <a href="/archives">
               <span class="site-state-item-count">23</span>
-              <span class="site-state-item-name">Artikel</span>
+              <span class="site-state-item-name">posts</span>
             </a>
           </div>
 
@@ -463,7 +463,7 @@
             <div class="site-state-item site-state-categories">
               
                 <span class="site-state-item-count">6</span>
-                <span class="site-state-item-name">Kategorien</span>
+                <span class="site-state-item-name">categories</span>
               
             </div>
           
@@ -472,7 +472,7 @@
             <div class="site-state-item site-state-tags">
               <a href="/tags">
                 <span class="site-state-item-count">47</span>
-                <span class="site-state-item-name">Tags</span>
+                <span class="site-state-item-name">tags</span>
               </a>
             </div>
           
@@ -592,7 +592,7 @@
 </div>
 
 <div class="powered-by">
-  Erstellt mit  <a class="theme-link" href="https://hexo.io">Hexo</a>
+  Powered by <a class="theme-link" href="https://hexo.io">Hexo</a>
 </div>
 
 <div class="theme-info">
@@ -685,9 +685,9 @@
 
     <script type="text/javascript">
       var disqus_shortname = 'f1982';
-      var disqus_identifier = 'cn/2018/10/15/2018/learn-javascript-es6/';
+      var disqus_identifier = 'cn/2018/10/15/2018/learn-javascript-es6-arrow-functions/';
       var disqus_title = "JavaScript ES6 - 箭头函数（Arrow Functions) 学习";
-      var disqus_url = 'http://blog.f1982.com/cn/2018/10/15/2018/learn-javascript-es6/';
+      var disqus_url = 'http://blog.f1982.com/cn/2018/10/15/2018/learn-javascript-es6-arrow-functions/';
 
       function run_disqus_script(disqus_script){
         var dsq = document.createElement('script');
