@@ -248,6 +248,132 @@
             
               
                 
+                <a class="post-title-link" href="/cn/2018/10/15/2018/learn-javascript-es6/" itemprop="url">
+                  JavaScript ES6 - 箭头函数（Arrow Functions) 学习
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">Posted on</span>
+            <time itemprop="dateCreated" datetime="2018-10-15T04:04:15+08:00" content="2018-10-15">
+              2018-10-15
+            </time>
+          </span>
+
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">In</span>
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/Dev/" itemprop="url" rel="index">
+                    <span itemprop="name">Dev</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/cn/2018/10/15/2018/learn-javascript-es6/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="cn/2018/10/15/2018/learn-javascript-es6/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+
+          
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          <p>这几年使用的编程语言一直在根据项目的需要而不断切换，从 ActionScript 到 Objective-C 到 C++ 再到 Javascript。 最近一段时间一直在把玩 Javascript,  感受到了 js 这些年的进化，随着更多Js 应用环境的开启，感觉未来的潜力也巨大。而且新的 js 语言标准和新特性让 js 似乎也走到了其他编程语言的前面，从古老变成了领先。<br>这里记录一下关于 Javascript es6 的语法特点和小技巧。</p>
+<h1 id="es6_箭头函数_(Arrow_Function)">es6 箭头函数 (Arrow Function)</h1><h2 id="形态变化">形态变化</h2><h3 id="完整形态">完整形态</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">func1 = <span class="function">(<span class="params">v1,v2,v3</span>) =&gt;</span> &#123;</div><div class="line">    <span class="keyword">let</span> result = v1 + v2 + v3;</div><div class="line">    <span class="keyword">return</span> result;</div><div class="line">&#125;</div><div class="line"><span class="built_in">console</span>.log(func1(<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>)); </div><div class="line"><span class="comment">//6</span></div></pre></td></tr></table></figure>
+<h3 id="参数只有一个的时候括号可以省略。">参数只有一个的时候括号可以省略。</h3><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">func2 = <span class="function"><span class="params">value</span> =&gt;</span> &#123;</div><div class="line">    <span class="keyword">return</span> <span class="number">1</span> + value;</div><div class="line">&#125;</div><div class="line"><span class="built_in">console</span>.log(func2(<span class="number">2</span>));</div><div class="line"><span class="comment">//3</span></div></pre></td></tr></table></figure>
+<h3 id="返回如果只有一行方法的大括号可以省略。">返回如果只有一行方法的大括号可以省略。</h3><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">func3 = <span class="function"><span class="params">value</span> =&gt;</span> value + <span class="number">3</span> * <span class="number">2</span>;</div><div class="line"><span class="built_in">console</span>.log(func3(<span class="number">2</span>));</div><div class="line"><span class="comment">//8</span></div></pre></td></tr></table></figure>
+<h3 id="如果方法没有参数">如果方法没有参数</h3><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">func4 = <span class="function"><span class="params">()</span> =&gt;</span> <span class="number">2</span> + <span class="number">6</span>;</div><div class="line"><span class="built_in">console</span>.log(func4());</div><div class="line"><span class="comment">//8</span></div></pre></td></tr></table></figure>
+          <div class="post-more-link text-center">
+            <a class="btn" href="/cn/2018/10/15/2018/learn-javascript-es6/#more" rel="contents">
+              Read more &raquo;
+            </a>
+          </div>
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
                 <a class="post-title-link" href="/cn/2018/08/27/2018/my-complain-about-console-log-in-javascript-project/" itemprop="url">
                   我和 console.log() 之间的那点恩怨情仇
                 </a>
@@ -1437,137 +1563,6 @@
 
 
     
-      
-
-  
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/cn/2018/04/12/2018/we-xin-xiao-cheng-xu-ji-qiao-wen-ti-zheng-li/" itemprop="url">
-                  微信小程序开发的那些坑们（持续更新中...)
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">Posted on</span>
-            <time itemprop="dateCreated" datetime="2018-04-12T09:34:30+08:00" content="2018-04-12">
-              2018-04-12
-            </time>
-          </span>
-
-          
-            <span class="post-category" >
-              &nbsp; | &nbsp;
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              <span class="post-meta-item-text">In</span>
-              
-                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                  <a href="/categories/Dev/" itemprop="url" rel="index">
-                    <span itemprop="name">Dev</span>
-                  </a>
-                </span>
-
-                
-                
-
-              
-            </span>
-          
-
-          
-            
-              <span class="post-comments-count">
-                &nbsp; | &nbsp;
-                <a href="/cn/2018/04/12/2018/we-xin-xiao-cheng-xu-ji-qiao-wen-ti-zheng-li/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="cn/2018/04/12/2018/we-xin-xiao-cheng-xu-ji-qiao-wen-ti-zheng-li/" itemprop="commentsCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-
-          
-          
-
-          
-        </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          <p>微信小程序大热，很多公司都跟着跑，没办法，谁叫微信牛掰，手里握着6个亿+的活跃用户，这个体量没有人会不重视吧！所以我也加入了一探究竟的大军，开始了小程序的摸索，个人还是很喜欢这套技术路线的，在开发领域来说，数据绑定、Nodejs 这些百花齐放而又灵活自如的开发模式越来越受到青睐。但是任何一门技术，趟坑的过程都是必不可少的，作为老技术人员，也乐在其中了。。</p>
-<img src="/cn/2018/04/12/2018/we-xin-xiao-cheng-xu-ji-qiao-wen-ti-zheng-li/wxapp-intro.png" alt="wxapp-intro.png" title="">
-<h2 id="(CST)_渲染层网络层错误">(CST) 渲染层网络层错误</h2><p><em>版本</em>: </p>
-<p>版本库: <strong>v1.9.3</strong>  devtool: <strong>v2018.03.13</strong></p>
-<p><em>问题</em>:</p>
-<p>选择本机图片 wx.chooseImage 然后渲染到画布 ctx.drawImage(imagePath,0,0,300,500) 调试区域出现错误，（CST) 渲染层网络层错误。</p>
-<p><em>解决方法</em>：</p>
-<p>关闭翻墙工具，然后重启开发工具</p>
-<p><em>BTW</em>:</p>
-<p>貌似新版的开发工具已经解决了这个问题，目测已经可以把开发工具和fan-qiang 工具共存了</p>
-          <div class="post-more-link text-center">
-            <a class="btn" href="/cn/2018/04/12/2018/we-xin-xiao-cheng-xu-ji-qiao-wen-ti-zheng-li/#more" rel="contents">
-              Read more &raquo;
-            </a>
-          </div>
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
   </section>
 
   
@@ -1613,7 +1608,7 @@
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">22</span>
+              <span class="site-state-item-count">23</span>
               <span class="site-state-item-name">posts</span>
             </a>
           </div>
@@ -1630,7 +1625,7 @@
           
             <div class="site-state-item site-state-tags">
               <a href="/tags">
-                <span class="site-state-item-count">46</span>
+                <span class="site-state-item-count">47</span>
                 <span class="site-state-item-name">tags</span>
               </a>
             </div>
