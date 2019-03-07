@@ -6,15 +6,15 @@
 
 
 <html class="theme-next muse use-motion">
-<head>
-  <meta charset="UTF-8"/>
-<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<head><meta name="generator" content="Hexo 3.8.0">
+  <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
 
 
-<meta http-equiv="Cache-Control" content="no-transform" />
-<meta http-equiv="Cache-Control" content="no-siteapp" />
+<meta http-equiv="Cache-Control" content="no-transform">
+<meta http-equiv="Cache-Control" content="no-siteapp">
 
 
 
@@ -29,7 +29,7 @@
 
   
   
-  <link href="/vendors/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+  <link href="/vendors/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css">
 
 
 
@@ -63,21 +63,21 @@
 
 
 
-<link href="/vendors/font-awesome/css/font-awesome.min.css?v=4.4.0" rel="stylesheet" type="text/css" />
+<link href="/vendors/font-awesome/css/font-awesome.min.css?v=4.4.0" rel="stylesheet" type="text/css">
 
-<link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
-
-
-  <meta name="keywords" content="SSH,git," />
+<link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css">
 
 
+  <meta name="keywords" content="SSH,git,">
 
 
 
 
 
 
-  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.0.1" />
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.0.1">
 
 
 
@@ -116,12 +116,12 @@
 
 
 
-  <link rel="canonical" href="http://blog.f1982.com/cn/2017/05/10/2017/how-to-use-multi-ssh-key-in-one-computer/"/>
+  <link rel="canonical" href="http://blog.f1982.com/cn/2017/05/10/2017/how-to-use-multi-ssh-key-in-one-computer/">
 
   <title> 一台计算机里如何存储多个 ssh key | 曹Andy的临时博客标题 </title>
 </head>
 
-<body itemscope itemtype="http://schema.org/WebPage" lang="en,zh-cn,zh-tw,default">
+<body itemscope="" itemtype="http://schema.org/WebPage" lang="en,zh-cn,zh-tw,default">
 
   
 
@@ -151,12 +151,12 @@
   <div class="container one-collumn sidebar-position-left page-post-detail ">
     <div class="headband"></div>
 
-    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+    <header id="header" class="header" itemscope="" itemtype="http://schema.org/WPHeader">
       <div class="header-inner"><div class="site-meta ">
   
 
   <div class="custom-logo-site-title">
-    <a href="/"  class="brand" rel="start">
+    <a href="/" class="brand" rel="start">
       <span class="logo-line-before"><i></i></span>
       <span class="site-title">曹Andy的临时博客标题</span>
       <span class="logo-line-after"><i></i></span>
@@ -183,9 +183,9 @@
         <li class="menu-item menu-item-home">
           <a href="/" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br>
             
-            Startseite
+            Home
           </a>
         </li>
       
@@ -193,9 +193,9 @@
         <li class="menu-item menu-item-archives">
           <a href="/archives" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br>
             
-            Archiv
+            Archives
           </a>
         </li>
       
@@ -203,7 +203,7 @@
         <li class="menu-item menu-item-tags">
           <a href="/tags" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br>
             
             Tags
           </a>
@@ -236,7 +236,7 @@
   
   
 
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+  <article class="post post-type-normal " itemscope="" itemtype="http://schema.org/Article">
 
     
       <header class="post-header">
@@ -258,21 +258,21 @@
             <span class="post-meta-item-icon">
               <i class="fa fa-calendar-o"></i>
             </span>
-            <span class="post-meta-item-text">Veröffentlicht am</span>
+            <span class="post-meta-item-text">Posted on</span>
             <time itemprop="dateCreated" datetime="2017-05-10T15:35:22+08:00" content="2017-05-10">
               2017-05-10
             </time>
           </span>
 
           
-            <span class="post-category" >
+            <span class="post-category">
               &nbsp; | &nbsp;
               <span class="post-meta-item-icon">
                 <i class="fa fa-folder-o"></i>
               </span>
-              <span class="post-meta-item-text">in</span>
+              <span class="post-meta-item-text">In</span>
               
-                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                <span itemprop="about" itemscope="" itemtype="https://schema.org/Thing">
                   <a href="/categories/Tech/" itemprop="url" rel="index">
                     <span itemprop="name">Tech</span>
                   </a>
@@ -313,53 +313,53 @@
       
 
       
-        <h2 id="问题">问题</h2><p>之前一直对各种 git 服务需要的 ssh key 的认证都是懵懵懂懂的状态，直到我偶尔用了多个git服务，比如 github 、bitbucket ，出现了好几次无法提交和拉取的问题，我才意识到我多次修改了 id_rsa 文件，为不同的 git 服务创建 ssh key 的同时也覆盖了之前 git 服务器的 key 。心想肯定有办法让多个服务共存吧，于是 Google 了一番，方法并不难。</p>
-<h2 id="步骤">步骤</h2><h3 id="创建密钥">创建密钥</h3><h4 id="1-创建一个密钥">1.创建一个密钥</h4><pre><code><span class="variable">$ </span>ssh-keygen -t rsa
-</code></pre><h4 id="2-输入保存ssh_key_密钥的文件名称_id_rsa_github_。">2.输入保存ssh key 密钥的文件名称 <code>id_rsa_github</code> 。</h4><pre><code><span class="constant">Enter </span>file <span class="keyword">in</span> which to save the key (<span class="regexp">/root/</span>.ssh/id_rsa)<span class="symbol">:/root/</span>.ssh/id_rsa_aaa
-</code></pre><h4 id="3-输入两次密码，要求最低不能低于8位。">3.输入两次密码，要求最低不能低于8位。</h4><pre><code>Enter passphrase (empty <span class="keyword">for</span> <span class="literal">no</span> passphrase):
-Enter same passphrase <span class="attribute">again</span>:
+        <h2 id="问题"><a href="#问题" class="headerlink" title="问题"></a>问题</h2><p>之前一直对各种 git 服务需要的 ssh key 的认证都是懵懵懂懂的状态，直到我偶尔用了多个git服务，比如 github 、bitbucket ，出现了好几次无法提交和拉取的问题，我才意识到我多次修改了 id_rsa 文件，为不同的 git 服务创建 ssh key 的同时也覆盖了之前 git 服务器的 key 。心想肯定有办法让多个服务共存吧，于是 Google 了一番，方法并不难。</p>
+<h2 id="步骤"><a href="#步骤" class="headerlink" title="步骤"></a>步骤</h2><h3 id="创建密钥"><a href="#创建密钥" class="headerlink" title="创建密钥"></a>创建密钥</h3><h4 id="1-创建一个密钥"><a href="#1-创建一个密钥" class="headerlink" title="1.创建一个密钥"></a>1.创建一个密钥</h4><pre><code>$ ssh-keygen -t rsa
+</code></pre><h4 id="2-输入保存ssh-key-密钥的文件名称-id-rsa-github-。"><a href="#2-输入保存ssh-key-密钥的文件名称-id-rsa-github-。" class="headerlink" title="2.输入保存ssh key 密钥的文件名称 id_rsa_github 。"></a>2.输入保存ssh key 密钥的文件名称 <code>id_rsa_github</code> 。</h4><pre><code>Enter file in which to save the key (/root/.ssh/id_rsa):/root/.ssh/id_rsa_aaa
+</code></pre><h4 id="3-输入两次密码，要求最低不能低于8位。"><a href="#3-输入两次密码，要求最低不能低于8位。" class="headerlink" title="3.输入两次密码，要求最低不能低于8位。"></a>3.输入两次密码，要求最低不能低于8位。</h4><pre><code>Enter passphrase (empty for no passphrase):
+Enter same passphrase again:
 </code></pre><p>重复上面的步骤可以创建多个密钥，比如你有多个git账户</p>
-<pre><code>id_rs<span class="built_in">a_github</span>
-id_rs<span class="built_in">a_bitbucket</span>
-id_rs<span class="built_in">a_oschina</span>
+<pre><code>id_rsa_github
+id_rsa_bitbucket
+id_rsa_oschina
 </code></pre><a id="more"></a>
-<h3 id="添加到_ssh-agent">添加到 ssh-agent</h3><p>用 <code>ssh-add</code> 命令把创建的密钥添加到 ssh-agent 里</p>
-<pre><code><span class="variable">$ </span>ssh-add ~<span class="regexp">/.ssh/id</span>_rsa_github
+<h3 id="添加到-ssh-agent"><a href="#添加到-ssh-agent" class="headerlink" title="添加到 ssh-agent"></a>添加到 ssh-agent</h3><p>用 <code>ssh-add</code> 命令把创建的密钥添加到 ssh-agent 里</p>
+<pre><code>$ ssh-add ~/.ssh/id_rsa_github
 </code></pre><p>更新提示:<code>ssh-add</code> 命令只能<em>临时性</em>添加到系统设置里，重启后会失效，<del>如果永久添加可以用下面的命令来实现</del></p>
-<pre><code><span class="label">ssh</span>-<span class="keyword">add </span>-K ~/.ssh/id_rsa_github
+<pre><code>ssh-add -K ~/.ssh/id_rsa_github
 </code></pre><p><del>可以用开机运行脚本的方式，每次开机自动运行如下脚本。</del><br>实验的结果是，调用脚本会提示输入密码，所以并不能自动运行成功运行？ </p>
-<pre><code><span class="label">ssh</span>-<span class="keyword">add </span>~/.ssh/id_rsa_github
-<span class="label">ssh</span>-<span class="keyword">add </span>~/.ssh/id_rsa_bitbucket
-<span class="label">ssh</span>-<span class="keyword">add </span>~/.ssh/id_rsa_oschina
-</code></pre><p><a href="https://www.jianshu.com/p/ada03bd51ed5" target="_blank" rel="external">用 Automator 添加到开机启动的方式</a></p>
+<pre><code>ssh-add ~/.ssh/id_rsa_github
+ssh-add ~/.ssh/id_rsa_bitbucket
+ssh-add ~/.ssh/id_rsa_oschina
+</code></pre><p><a href="https://www.jianshu.com/p/ada03bd51ed5" target="_blank" rel="noopener">用 Automator 添加到开机启动的方式</a></p>
 <p>你可以用 <code>ssh-add -l</code> 来查看一下添加效果，一般会出现下面的提示信息</p>
-<pre><code><span class="number">2048</span> <span class="constant">SHA256</span><span class="symbol">:ueU7NSaLTzfKNMKL3EVkBKqK2/bvr/ewdNVTmBYZtxg</span> /<span class="constant">Users</span>/<span class="constant">YourName</span>/.ssh/id_rsa_github (<span class="constant">RSA</span>)
-<span class="number">2048</span> <span class="constant">SHA256</span><span class="symbol">:xGAMHLe5Un5LLWiXp6GI84CVn23sD9g+EQBjXMQP34YA</span> /<span class="constant">Users</span>/<span class="constant">YourName</span>/.ssh/id_rsa_bitbucket (<span class="constant">RSA</span>)
-<span class="number">2048</span> <span class="constant">SHA256</span><span class="symbol">:lJfTU9j6JfkMSM4vJpk5BdsARzkRA/d05aUnc2BdBeg</span> /<span class="constant">Users</span>/<span class="constant">YourName</span>/.ssh/id_rsa_oschina (<span class="constant">RSA</span>)
+<pre><code>2048 SHA256:ueU7NSaLTzfKNMKL3EVkBKqK2/bvr/ewdNVTmBYZtxg /Users/YourName/.ssh/id_rsa_github (RSA)
+2048 SHA256:xGAMHLe5Un5LLWiXp6GI84CVn23sD9g+EQBjXMQP34YA /Users/YourName/.ssh/id_rsa_bitbucket (RSA)
+2048 SHA256:lJfTU9j6JfkMSM4vJpk5BdsARzkRA/d05aUnc2BdBeg /Users/YourName/.ssh/id_rsa_oschina (RSA)
 </code></pre><p>这就证明你之前添加都已经生效了。</p>
 <p>当然如果这里出现什么问题，你也可以用 <code>ssh-add -d</code> 来删除某个 <code>id_rsa</code> </p>
-<h3 id="保存公钥到_git_服务">保存公钥到 git 服务</h3><p>打开对应的git服务网站管理页面把对应的公钥提交保存到代码管理服务器（ <code>.pub</code> 结尾)</p>
-<h3 id="添加_ssh_配置文件">添加 ssh 配置文件</h3><p>在 <code>~/.ssh</code> 目录创建 config 配置文件 (如果没有的话)</p>
-<pre><code>nano ~<span class="regexp">/.ssh/config</span>
+<h3 id="保存公钥到-git-服务"><a href="#保存公钥到-git-服务" class="headerlink" title="保存公钥到 git 服务"></a>保存公钥到 git 服务</h3><p>打开对应的git服务网站管理页面把对应的公钥提交保存到代码管理服务器（ <code>.pub</code> 结尾)</p>
+<h3 id="添加-ssh-配置文件"><a href="#添加-ssh-配置文件" class="headerlink" title="添加 ssh 配置文件"></a>添加 ssh 配置文件</h3><p>在 <code>~/.ssh</code> 目录创建 config 配置文件 (如果没有的话)</p>
+<pre><code>nano ~/.ssh/config
 </code></pre><p>添加配置信息</p>
-<pre><code>Host github<span class="class">.com</span>
-    HostName        github<span class="class">.com</span>
+<pre><code>Host github.com
+    HostName        github.com
     User            git
     IdentityFile    /Users/YourName/.ssh/id_rsa_github
 
-Host bitbucket<span class="class">.org</span>
-    HostName        bitbucket<span class="class">.org</span>
+Host bitbucket.org
+    HostName        bitbucket.org
     User            git
     IdentityFile    /Users/YourName/.ssh/id_rsa_bitbucket
 
-Host oschina<span class="class">.net</span>
-    HostName        oschina<span class="class">.net</span>
+Host oschina.net
+    HostName        oschina.net
     User            git
     IdentityFile    /Users/YourName/.ssh/id_rsa_oschina
 </code></pre><p>好了，这样你就可以任意穿梭于多个 <code>git</code> 服务器而不用担心 <code>ssh key</code> 的问题了。</p>
 <p>注意，关于 ssh-add 持久化失效的问题，如果你的系统版本是 Sierra 10.12.2 以上，可以在 <code>~/.ssh/config</code> 文件中增加如下代码，来实现持久化效果</p>
-<pre><code><span class="title">Host</span> *
-    UseKeychain <span class="built_in">yes</span>
+<pre><code>Host *
+    UseKeychain yes
 </code></pre>
       
     </div>
@@ -384,12 +384,7 @@ Host oschina<span class="class">.net</span>
 
           <div>
             <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<ins class="adsbygoogle"
-     style="display:block; text-align:center;"
-     data-ad-layout="in-article"
-     data-ad-format="fluid"
-     data-ad-client="ca-pub-9893504593235600"
-     data-ad-slot="7654736119"></ins>
+<ins class="adsbygoogle" style="display:block; text-align:center;" data-ad-layout="in-article" data-ad-format="fluid" data-ad-client="ca-pub-9893504593235600" data-ad-slot="7654736119"></ins>
 <script>
      (adsbygoogle = window.adsbygoogle || []).push({});
 </script>
@@ -472,20 +467,18 @@ Host oschina<span class="class">.net</span>
 
       
         <ul class="sidebar-nav motion-element">
-          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
-            Inhaltsverzeichnis
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            Table of Contents
           </li>
           <li class="sidebar-nav-overview" data-target="site-overview">
-            Übersicht
+            Overview
           </li>
         </ul>
       
 
       <section class="site-overview sidebar-panel ">
-        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
-          <img class="site-author-image" itemprop="image"
-               src="/images/selfie_by_pixel.jpg"
-               alt="Andy" />
+        <div class="site-author motion-element" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image" src="/images/selfie_by_pixel.jpg" alt="Andy">
           <p class="site-author-name" itemprop="name">Andy</p>
           <p class="site-description motion-element" itemprop="description">Do More!</p>
         </div>
@@ -493,7 +486,7 @@ Host oschina<span class="class">.net</span>
           <div class="site-state-item site-state-posts">
             <a href="/archives">
               <span class="site-state-item-count">23</span>
-              <span class="site-state-item-name">Artikel</span>
+              <span class="site-state-item-name">posts</span>
             </a>
           </div>
 
@@ -501,7 +494,7 @@ Host oschina<span class="class">.net</span>
             <div class="site-state-item site-state-categories">
               
                 <span class="site-state-item-count">6</span>
-                <span class="site-state-item-name">Kategorien</span>
+                <span class="site-state-item-name">categories</span>
               
             </div>
           
@@ -510,7 +503,7 @@ Host oschina<span class="class">.net</span>
             <div class="site-state-item site-state-tags">
               <a href="/tags">
                 <span class="site-state-item-count">47</span>
-                <span class="site-state-item-name">Tags</span>
+                <span class="site-state-item-name">tags</span>
               </a>
             </div>
           
@@ -603,7 +596,7 @@ Host oschina<span class="class">.net</span>
               
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#问题"><span class="nav-number">1.</span> <span class="nav-text">问题</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#步骤"><span class="nav-number">2.</span> <span class="nav-text">步骤</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#创建密钥"><span class="nav-number">2.1.</span> <span class="nav-text">创建密钥</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-创建一个密钥"><span class="nav-number">2.1.1.</span> <span class="nav-text">1.创建一个密钥</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-输入保存ssh_key_密钥的文件名称_id_rsa_github_。"><span class="nav-number">2.1.2.</span> <span class="nav-text">2.输入保存ssh key 密钥的文件名称 id_rsa_github 。</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3-输入两次密码，要求最低不能低于8位。"><span class="nav-number">2.1.3.</span> <span class="nav-text">3.输入两次密码，要求最低不能低于8位。</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#添加到_ssh-agent"><span class="nav-number">2.2.</span> <span class="nav-text">添加到 ssh-agent</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#保存公钥到_git_服务"><span class="nav-number">2.3.</span> <span class="nav-text">保存公钥到 git 服务</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#添加_ssh_配置文件"><span class="nav-number">2.4.</span> <span class="nav-text">添加 ssh 配置文件</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#问题"><span class="nav-number">1.</span> <span class="nav-text">问题</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#步骤"><span class="nav-number">2.</span> <span class="nav-text">步骤</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#创建密钥"><span class="nav-number">2.1.</span> <span class="nav-text">创建密钥</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-创建一个密钥"><span class="nav-number">2.1.1.</span> <span class="nav-text">1.创建一个密钥</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-输入保存ssh-key-密钥的文件名称-id-rsa-github-。"><span class="nav-number">2.1.2.</span> <span class="nav-text">2.输入保存ssh key 密钥的文件名称 id_rsa_github 。</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3-输入两次密码，要求最低不能低于8位。"><span class="nav-number">2.1.3.</span> <span class="nav-text">3.输入两次密码，要求最低不能低于8位。</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#添加到-ssh-agent"><span class="nav-number">2.2.</span> <span class="nav-text">添加到 ssh-agent</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#保存公钥到-git-服务"><span class="nav-number">2.3.</span> <span class="nav-text">保存公钥到 git 服务</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#添加-ssh-配置文件"><span class="nav-number">2.4.</span> <span class="nav-text">添加 ssh 配置文件</span></a></li></ol></li></ol></div>
             
           </div>
         </section>
@@ -619,7 +612,7 @@ Host oschina<span class="class">.net</span>
 
     <footer id="footer" class="footer">
       <div class="footer-inner">
-        <div class="copyright" >
+        <div class="copyright">
   
   &copy; 
   <span itemprop="copyrightYear">2019</span>
@@ -630,7 +623,7 @@ Host oschina<span class="class">.net</span>
 </div>
 
 <div class="powered-by">
-  Erstellt mit  <a class="theme-link" href="https://hexo.io">Hexo</a>
+  Powered by <a class="theme-link" href="https://hexo.io">Hexo</a>
 </div>
 
 <div class="theme-info">

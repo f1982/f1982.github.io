@@ -6,15 +6,15 @@
 
 
 <html class="theme-next muse use-motion">
-<head>
-  <meta charset="UTF-8"/>
-<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<head><meta name="generator" content="Hexo 3.8.0">
+  <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
 
 
-<meta http-equiv="Cache-Control" content="no-transform" />
-<meta http-equiv="Cache-Control" content="no-siteapp" />
+<meta http-equiv="Cache-Control" content="no-transform">
+<meta http-equiv="Cache-Control" content="no-siteapp">
 
 
 
@@ -29,7 +29,7 @@
 
   
   
-  <link href="/vendors/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+  <link href="/vendors/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css">
 
 
 
@@ -63,21 +63,21 @@
 
 
 
-<link href="/vendors/font-awesome/css/font-awesome.min.css?v=4.4.0" rel="stylesheet" type="text/css" />
+<link href="/vendors/font-awesome/css/font-awesome.min.css?v=4.4.0" rel="stylesheet" type="text/css">
 
-<link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
-
-
-  <meta name="keywords" content="RC,quadcopter,fpv,osd,cc3d," />
+<link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css">
 
 
+  <meta name="keywords" content="RC,quadcopter,fpv,osd,cc3d,">
 
 
 
 
 
 
-  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.0.1" />
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.0.1">
 
 
 
@@ -127,12 +127,12 @@
 
 
 
-  <link rel="canonical" href="http://blog.f1982.com/cn/2015/10/10/2016/fpv-cc3d-add-osd-minoposd-minimosd/"/>
+  <link rel="canonical" href="http://blog.f1982.com/cn/2015/10/10/2016/fpv-cc3d-add-osd-minoposd-minimosd/">
 
   <title> CC3D加装Minimosd研究 | 曹Andy的临时博客标题 </title>
 </head>
 
-<body itemscope itemtype="http://schema.org/WebPage" lang="en,zh-cn,zh-tw,default">
+<body itemscope="" itemtype="http://schema.org/WebPage" lang="en,zh-cn,zh-tw,default">
 
   
 
@@ -162,12 +162,12 @@
   <div class="container one-collumn sidebar-position-left page-post-detail ">
     <div class="headband"></div>
 
-    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+    <header id="header" class="header" itemscope="" itemtype="http://schema.org/WPHeader">
       <div class="header-inner"><div class="site-meta ">
   
 
   <div class="custom-logo-site-title">
-    <a href="/"  class="brand" rel="start">
+    <a href="/" class="brand" rel="start">
       <span class="logo-line-before"><i></i></span>
       <span class="site-title">曹Andy的临时博客标题</span>
       <span class="logo-line-after"><i></i></span>
@@ -194,9 +194,9 @@
         <li class="menu-item menu-item-home">
           <a href="/" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br>
             
-            Startseite
+            Home
           </a>
         </li>
       
@@ -204,9 +204,9 @@
         <li class="menu-item menu-item-archives">
           <a href="/archives" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br>
             
-            Archiv
+            Archives
           </a>
         </li>
       
@@ -214,7 +214,7 @@
         <li class="menu-item menu-item-tags">
           <a href="/tags" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br>
             
             Tags
           </a>
@@ -247,7 +247,7 @@
   
   
 
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+  <article class="post post-type-normal " itemscope="" itemtype="http://schema.org/Article">
 
     
       <header class="post-header">
@@ -269,21 +269,21 @@
             <span class="post-meta-item-icon">
               <i class="fa fa-calendar-o"></i>
             </span>
-            <span class="post-meta-item-text">Veröffentlicht am</span>
+            <span class="post-meta-item-text">Posted on</span>
             <time itemprop="dateCreated" datetime="2015-10-10T15:11:22+08:00" content="2015-10-10">
               2015-10-10
             </time>
           </span>
 
           
-            <span class="post-category" >
+            <span class="post-category">
               &nbsp; | &nbsp;
               <span class="post-meta-item-icon">
                 <i class="fa fa-folder-o"></i>
               </span>
-              <span class="post-meta-item-text">in</span>
+              <span class="post-meta-item-text">In</span>
               
-                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                <span itemprop="about" itemscope="" itemtype="https://schema.org/Thing">
                   <a href="/categories/RC/" itemprop="url" rel="index">
                     <span itemprop="name">RC</span>
                   </a>
@@ -324,10 +324,10 @@
       
 
       
-        <h2 id="目的">目的</h2><p>因为飞行的时候要考虑电池电压（虽然BB响低压报警器可以实现这个效果，但是感觉略生硬了很多），以及飞行姿态的一些数据的获取，所以我决定给我的四轴飞行器增加OSD系统；此外OSD确实建立起了一个通道，可以把飞行器上的一些数据以很直观的方式展现出来，基于扩展考虑，如果增加了GPS模块还可以传递高度信息和位置信息数据，这样对于了解飞行距离和姿态还是有很大的帮助的；再有就是从传递回来的视频画面看起来更加的炫酷了。</p>
+        <h2 id="目的"><a href="#目的" class="headerlink" title="目的"></a>目的</h2><p>因为飞行的时候要考虑电池电压（虽然BB响低压报警器可以实现这个效果，但是感觉略生硬了很多），以及飞行姿态的一些数据的获取，所以我决定给我的四轴飞行器增加OSD系统；此外OSD确实建立起了一个通道，可以把飞行器上的一些数据以很直观的方式展现出来，基于扩展考虑，如果增加了GPS模块还可以传递高度信息和位置信息数据，这样对于了解飞行距离和姿态还是有很大的帮助的；再有就是从传递回来的视频画面看起来更加的炫酷了。</p>
 <p>OSD安装设置后的效果</p>
-<img src="/cn/2015/10/10/2016/fpv-cc3d-add-osd-minoposd-minimosd/minioposd-after-setup.jpg" alt="OSD安装设置后的效果" title="OSD安装设置后的效果">
-<h2 id="硬件选择">硬件选择</h2><p>之前一直有看穷人OSD，但是有人说和CC3D的兼容性不太好，后来看到板子的尺寸略大，也就没有深入研究，直到看到Minioposd，觉得这个才是我想要尝试的，主要的特点我觉得就是：</p>
+<img src="/cn/2015/10/10/2016/fpv-cc3d-add-osd-minoposd-minimosd/minioposd-after-setup.jpg" title="OSD安装设置后的效果">
+<h2 id="硬件选择"><a href="#硬件选择" class="headerlink" title="硬件选择"></a>硬件选择</h2><p>之前一直有看穷人OSD，但是有人说和CC3D的兼容性不太好，后来看到板子的尺寸略大，也就没有深入研究，直到看到Minioposd，觉得这个才是我想要尝试的，主要的特点我觉得就是：</p>
 <ul>
 <li>价格便宜</li>
 <li>体积够小</li>
@@ -335,40 +335,40 @@
 <li>定制和修改还有余地</li>
 </ul>
 <a id="more"></a>
-<h2 id="配置工具下载">配置工具下载</h2><p>配置工具是用来烧固件，刷字体，调整设置，已经修改OSD显示内容信息和布局的工具软件。</p>
-<p><a href="http://pan.baidu.com/s/1kT9yfw7" target="_blank" rel="external">ConfigTool</a></p>
-<h2 id="Charset_-_字库">Charset - 字库</h2><p>根据泡泡老师的视频，也是可以烧中文字体的但是我就暂时用英文了。</p>
-<p><a href="http://pan.baidu.com/s/18u4JO" target="_blank" rel="external">Chartset - 字库下载</a></p>
-<h2 id="Firmware_-_固件">Firmware - 固件</h2><p>我用的固件版本，一共分三种，分为纯净版、rssi模拟版本和rxok数字版本，可以根据硬件修改的情况来选择。</p>
-<p><a href="http://pan.baidu.com/s/1gdyGSEZ" target="_blank" rel="external">Firmware - 固件下载</a></p>
-<h3 id="plain_-_纯净版">plain - 纯净版</h3><p>如果我们只需要看下电压刷写纯净版就好。</p>
-<h3 id="rssi_-_模拟版">rssi - 模拟版</h3><p>如果要扩展模拟rssi显示，就刷rssi。</p>
-<h3 id="rxok_-_数字版">rxok - 数字版</h3><p>rxok是rssi的数字版，原理是利用接收机自带的信号灯高低电平检测，遗憾的是华科尔的D10接收机并不支持这样的修改和扩展。</p>
-<h2 id="硬件连接">硬件连接</h2><p>如何链接Minioposd进行刷机。</p>
-<img src="/cn/2015/10/10/2016/fpv-cc3d-add-osd-minoposd-minimosd/minioposd-ftdi.png" alt="连接Minioposd和电脑" title="连接Minioposd和电脑">
-<p>我连接以后的效果<br><img src="/cn/2015/10/10/2016/fpv-cc3d-add-osd-minoposd-minimosd/minioposd-ftdi-photo.jpg" alt="我的连接" title="我的连接"></p>
-<img src="/cn/2015/10/10/2016/fpv-cc3d-add-osd-minoposd-minimosd/minioposd-test.jpg" alt="图片" title="图片">
-<h2 id="硬件修改">硬件修改</h2><p>因为接收机不支持的原因，我只添加了电压测量的功能</p>
-<img src="/cn/2015/10/10/2016/fpv-cc3d-add-osd-minoposd-minimosd/minioposd-voltage-measuer.jpg" alt="修改硬件用来测量电压" title="修改硬件用来测量电压">
-<h2 id="软件设置">软件设置</h2><p><em>更新字库</em></p>
-<img src="/cn/2015/10/10/2016/fpv-cc3d-add-osd-minoposd-minimosd/minioposd-update-charset.jpg" alt="更新字库" title="更新字库">
+<h2 id="配置工具下载"><a href="#配置工具下载" class="headerlink" title="配置工具下载"></a>配置工具下载</h2><p>配置工具是用来烧固件，刷字体，调整设置，已经修改OSD显示内容信息和布局的工具软件。</p>
+<p><a href="http://pan.baidu.com/s/1kT9yfw7" target="_blank" rel="noopener">ConfigTool</a></p>
+<h2 id="Charset-字库"><a href="#Charset-字库" class="headerlink" title="Charset - 字库"></a>Charset - 字库</h2><p>根据泡泡老师的视频，也是可以烧中文字体的但是我就暂时用英文了。</p>
+<p><a href="http://pan.baidu.com/s/18u4JO" target="_blank" rel="noopener">Chartset - 字库下载</a></p>
+<h2 id="Firmware-固件"><a href="#Firmware-固件" class="headerlink" title="Firmware - 固件"></a>Firmware - 固件</h2><p>我用的固件版本，一共分三种，分为纯净版、rssi模拟版本和rxok数字版本，可以根据硬件修改的情况来选择。</p>
+<p><a href="http://pan.baidu.com/s/1gdyGSEZ" target="_blank" rel="noopener">Firmware - 固件下载</a></p>
+<h3 id="plain-纯净版"><a href="#plain-纯净版" class="headerlink" title="plain - 纯净版"></a>plain - 纯净版</h3><p>如果我们只需要看下电压刷写纯净版就好。</p>
+<h3 id="rssi-模拟版"><a href="#rssi-模拟版" class="headerlink" title="rssi - 模拟版"></a>rssi - 模拟版</h3><p>如果要扩展模拟rssi显示，就刷rssi。</p>
+<h3 id="rxok-数字版"><a href="#rxok-数字版" class="headerlink" title="rxok - 数字版"></a>rxok - 数字版</h3><p>rxok是rssi的数字版，原理是利用接收机自带的信号灯高低电平检测，遗憾的是华科尔的D10接收机并不支持这样的修改和扩展。</p>
+<h2 id="硬件连接"><a href="#硬件连接" class="headerlink" title="硬件连接"></a>硬件连接</h2><p>如何链接Minioposd进行刷机。</p>
+<img src="/cn/2015/10/10/2016/fpv-cc3d-add-osd-minoposd-minimosd/minioposd-ftdi.png" title="连接Minioposd和电脑">
+<p>我连接以后的效果<br><img src="/cn/2015/10/10/2016/fpv-cc3d-add-osd-minoposd-minimosd/minioposd-ftdi-photo.jpg" title="我的连接"></p>
+<img src="/cn/2015/10/10/2016/fpv-cc3d-add-osd-minoposd-minimosd/minioposd-test.jpg" title="图片">
+<h2 id="硬件修改"><a href="#硬件修改" class="headerlink" title="硬件修改"></a>硬件修改</h2><p>因为接收机不支持的原因，我只添加了电压测量的功能</p>
+<img src="/cn/2015/10/10/2016/fpv-cc3d-add-osd-minoposd-minimosd/minioposd-voltage-measuer.jpg" title="修改硬件用来测量电压">
+<h2 id="软件设置"><a href="#软件设置" class="headerlink" title="软件设置"></a>软件设置</h2><p><em>更新字库</em></p>
+<img src="/cn/2015/10/10/2016/fpv-cc3d-add-osd-minoposd-minimosd/minioposd-update-charset.jpg" title="更新字库">
 <p><em>更新固件</em></p>
-<img src="/cn/2015/10/10/2016/fpv-cc3d-add-osd-minoposd-minimosd/minioposd-update-firmware.jpg" alt="更新固件" title="更新固件">
+<img src="/cn/2015/10/10/2016/fpv-cc3d-add-osd-minoposd-minimosd/minioposd-update-firmware.jpg" title="更新固件">
 <p><em>修改设置</em></p>
 <p>比较简单，修改界面显示成自己想要的布局和位置就好，唯一要注意的是，由于屏幕尺寸和分辨率的问题，尽量留出右侧下侧足够空隙。到最后装配之前最好实测一下以保证显示器可以显示完整。</p>
 <p>设置完毕后可以导出一份配置文件，妥善备份和保管，这样方便之后调整和修改，固件丢失也可以快速导入恢复。</p>
-<p><a href="http://pan.baidu.com/s/1ntINKIt" target="_blank" rel="external">我的配置文件下载</a></p>
-<h2 id="硬件安装">硬件安装</h2><p>因为增加了新的硬件，所以四轴的布局也稍微做了些调整，把osd也集成到了四轴狭小的空间里。</p>
-<img src="/cn/2015/10/10/2016/fpv-cc3d-add-osd-minoposd-minimosd/minioposd-assemble-1.jpg" alt="图片" title="图片">
-<img src="/cn/2015/10/10/2016/fpv-cc3d-add-osd-minoposd-minimosd/minioposd-assemble-2.jpg" alt="图片" title="图片">
-<img src="/cn/2015/10/10/2016/fpv-cc3d-add-osd-minoposd-minimosd/minioposd-assemble-3.jpg" alt="图片" title="图片">
-<h2 id="CC3d地面站软件设置">CC3d地面站软件设置</h2><ul>
-<li><a href="http://v.youku.com/v_show/id_XNzk4MTUyNDQ4.html" target="_blank" rel="external">视频1</a></li>
-<li><a href="http://v.youku.com/v_show/id_XNzk4MTc2NjM2.html" target="_blank" rel="external">视频2</a></li>
+<p><a href="http://pan.baidu.com/s/1ntINKIt" target="_blank" rel="noopener">我的配置文件下载</a></p>
+<h2 id="硬件安装"><a href="#硬件安装" class="headerlink" title="硬件安装"></a>硬件安装</h2><p>因为增加了新的硬件，所以四轴的布局也稍微做了些调整，把osd也集成到了四轴狭小的空间里。</p>
+<img src="/cn/2015/10/10/2016/fpv-cc3d-add-osd-minoposd-minimosd/minioposd-assemble-1.jpg" title="图片">
+<img src="/cn/2015/10/10/2016/fpv-cc3d-add-osd-minoposd-minimosd/minioposd-assemble-2.jpg" title="图片">
+<img src="/cn/2015/10/10/2016/fpv-cc3d-add-osd-minoposd-minimosd/minioposd-assemble-3.jpg" title="图片">
+<h2 id="CC3d地面站软件设置"><a href="#CC3d地面站软件设置" class="headerlink" title="CC3d地面站软件设置"></a>CC3d地面站软件设置</h2><ul>
+<li><a href="http://v.youku.com/v_show/id_XNzk4MTUyNDQ4.html" target="_blank" rel="noopener">视频1</a></li>
+<li><a href="http://v.youku.com/v_show/id_XNzk4MTc2NjM2.html" target="_blank" rel="noopener">视频2</a></li>
 </ul>
-<h2 id="常见问题">常见问题</h2><h2 id="Links">Links</h2><ul>
-<li><a href="http://bbs.5imx.com/bbs/forum.php?mod=viewthread&amp;tid=904661" target="_blank" rel="external">minimosd for cc3d简易教程</a></li>
-<li><a href="http://bbs.5imx.com/bbs/forum.php?mod=viewthread&amp;tid=800461" target="_blank" rel="external">MWC的嫡系开源OSD系统KVTEAMOSD基于minimosd</a><br><a href="https://code.google.com/p/rush-osd-development/" target="_blank" rel="external">rush-osd</a></li>
+<h2 id="常见问题"><a href="#常见问题" class="headerlink" title="常见问题"></a>常见问题</h2><h2 id="Links"><a href="#Links" class="headerlink" title="Links"></a>Links</h2><ul>
+<li><a href="http://bbs.5imx.com/bbs/forum.php?mod=viewthread&amp;tid=904661" target="_blank" rel="noopener">minimosd for cc3d简易教程</a></li>
+<li><a href="http://bbs.5imx.com/bbs/forum.php?mod=viewthread&amp;tid=800461" target="_blank" rel="noopener">MWC的嫡系开源OSD系统KVTEAMOSD基于minimosd</a><br><a href="https://code.google.com/p/rush-osd-development/" target="_blank" rel="noopener">rush-osd</a></li>
 </ul>
 
       
@@ -394,12 +394,7 @@
 
           <div>
             <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<ins class="adsbygoogle"
-     style="display:block; text-align:center;"
-     data-ad-layout="in-article"
-     data-ad-format="fluid"
-     data-ad-client="ca-pub-9893504593235600"
-     data-ad-slot="7654736119"></ins>
+<ins class="adsbygoogle" style="display:block; text-align:center;" data-ad-layout="in-article" data-ad-format="fluid" data-ad-client="ca-pub-9893504593235600" data-ad-slot="7654736119"></ins>
 <script>
      (adsbygoogle = window.adsbygoogle || []).push({});
 </script>
@@ -488,20 +483,18 @@
 
       
         <ul class="sidebar-nav motion-element">
-          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
-            Inhaltsverzeichnis
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            Table of Contents
           </li>
           <li class="sidebar-nav-overview" data-target="site-overview">
-            Übersicht
+            Overview
           </li>
         </ul>
       
 
       <section class="site-overview sidebar-panel ">
-        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
-          <img class="site-author-image" itemprop="image"
-               src="/images/selfie_by_pixel.jpg"
-               alt="Andy" />
+        <div class="site-author motion-element" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image" src="/images/selfie_by_pixel.jpg" alt="Andy">
           <p class="site-author-name" itemprop="name">Andy</p>
           <p class="site-description motion-element" itemprop="description">Do More!</p>
         </div>
@@ -509,7 +502,7 @@
           <div class="site-state-item site-state-posts">
             <a href="/archives">
               <span class="site-state-item-count">23</span>
-              <span class="site-state-item-name">Artikel</span>
+              <span class="site-state-item-name">posts</span>
             </a>
           </div>
 
@@ -517,7 +510,7 @@
             <div class="site-state-item site-state-categories">
               
                 <span class="site-state-item-count">6</span>
-                <span class="site-state-item-name">Kategorien</span>
+                <span class="site-state-item-name">categories</span>
               
             </div>
           
@@ -526,7 +519,7 @@
             <div class="site-state-item site-state-tags">
               <a href="/tags">
                 <span class="site-state-item-count">47</span>
-                <span class="site-state-item-name">Tags</span>
+                <span class="site-state-item-name">tags</span>
               </a>
             </div>
           
@@ -619,7 +612,7 @@
               
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#目的"><span class="nav-number">1.</span> <span class="nav-text">目的</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#硬件选择"><span class="nav-number">2.</span> <span class="nav-text">硬件选择</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#配置工具下载"><span class="nav-number">3.</span> <span class="nav-text">配置工具下载</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Charset_-_字库"><span class="nav-number">4.</span> <span class="nav-text">Charset - 字库</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Firmware_-_固件"><span class="nav-number">5.</span> <span class="nav-text">Firmware - 固件</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#plain_-_纯净版"><span class="nav-number">5.1.</span> <span class="nav-text">plain - 纯净版</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#rssi_-_模拟版"><span class="nav-number">5.2.</span> <span class="nav-text">rssi - 模拟版</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#rxok_-_数字版"><span class="nav-number">5.3.</span> <span class="nav-text">rxok - 数字版</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#硬件连接"><span class="nav-number">6.</span> <span class="nav-text">硬件连接</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#硬件修改"><span class="nav-number">7.</span> <span class="nav-text">硬件修改</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#软件设置"><span class="nav-number">8.</span> <span class="nav-text">软件设置</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#硬件安装"><span class="nav-number">9.</span> <span class="nav-text">硬件安装</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#CC3d地面站软件设置"><span class="nav-number">10.</span> <span class="nav-text">CC3d地面站软件设置</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#常见问题"><span class="nav-number">11.</span> <span class="nav-text">常见问题</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Links"><span class="nav-number">12.</span> <span class="nav-text">Links</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#目的"><span class="nav-number">1.</span> <span class="nav-text">目的</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#硬件选择"><span class="nav-number">2.</span> <span class="nav-text">硬件选择</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#配置工具下载"><span class="nav-number">3.</span> <span class="nav-text">配置工具下载</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Charset-字库"><span class="nav-number">4.</span> <span class="nav-text">Charset - 字库</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Firmware-固件"><span class="nav-number">5.</span> <span class="nav-text">Firmware - 固件</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#plain-纯净版"><span class="nav-number">5.1.</span> <span class="nav-text">plain - 纯净版</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#rssi-模拟版"><span class="nav-number">5.2.</span> <span class="nav-text">rssi - 模拟版</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#rxok-数字版"><span class="nav-number">5.3.</span> <span class="nav-text">rxok - 数字版</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#硬件连接"><span class="nav-number">6.</span> <span class="nav-text">硬件连接</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#硬件修改"><span class="nav-number">7.</span> <span class="nav-text">硬件修改</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#软件设置"><span class="nav-number">8.</span> <span class="nav-text">软件设置</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#硬件安装"><span class="nav-number">9.</span> <span class="nav-text">硬件安装</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#CC3d地面站软件设置"><span class="nav-number">10.</span> <span class="nav-text">CC3d地面站软件设置</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#常见问题"><span class="nav-number">11.</span> <span class="nav-text">常见问题</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Links"><span class="nav-number">12.</span> <span class="nav-text">Links</span></a></li></ol></div>
             
           </div>
         </section>
@@ -635,7 +628,7 @@
 
     <footer id="footer" class="footer">
       <div class="footer-inner">
-        <div class="copyright" >
+        <div class="copyright">
   
   &copy; 
   <span itemprop="copyrightYear">2019</span>
@@ -646,7 +639,7 @@
 </div>
 
 <div class="powered-by">
-  Erstellt mit  <a class="theme-link" href="https://hexo.io">Hexo</a>
+  Powered by <a class="theme-link" href="https://hexo.io">Hexo</a>
 </div>
 
 <div class="theme-info">
