@@ -1,20 +1,25 @@
-<!doctype html>
+<!DOCTYPE html>
+
+
+
+
+
+
+
+
+
 
 
 
   
 
 
-<html class="theme-next muse use-motion">
+<html class="theme-next pisces use-motion" lang="en,zh-cn,zh-tw,default">
 <head><meta name="generator" content="Hexo 3.8.0">
   <meta charset="UTF-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-
-
-
-<meta http-equiv="Cache-Control" content="no-transform">
-<meta http-equiv="Cache-Control" content="no-siteapp">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
 
 
 
@@ -25,66 +30,73 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2">
+
+<link rel="stylesheet" href="/css/main.css?v=7.1.1">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=7.1.1">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=7.1.1">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=7.1.1">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=7.1.1" color="#222">
+
+
+
+
+
+
+
+<script id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Pisces',
+    version: '7.1.1',
+    sidebar: {"position":"left","display":"post","offset":12,"onmobile":false,"dimmer":false},
+    back2top: true,
+    back2top_sidebar: false,
+    fancybox: false,
+    fastclick: false,
+    lazyload: false,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
 
 
   
-  
-  <link href="/vendors/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css">
 
 
 
 
-  
-  
-  
-  
-
-  
-    
-    
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-    
-    
-    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
-  
-
-
-
-
-
-
-<link href="/vendors/font-awesome/css/font-awesome.min.css?v=4.4.0" rel="stylesheet" type="text/css">
-
-<link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css">
-
-
-  <meta name="keywords" content="Hexo, NexT">
-
-
-
-
-
-
-
-
-  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.0.1">
-
-
-
-
-
-
-<meta name="description" content="Do More!">
+  <meta name="description" content="Do More!">
 <meta property="og:type" content="website">
 <meta property="og:title" content="曹Andy的临时博客标题">
 <meta property="og:url" content="http://blog.f1982.com/index.html">
@@ -97,41 +109,24 @@
 
 
 
-<script type="text/javascript" id="hexo.configuration">
-  var NexT = window.NexT || {};
-  var CONFIG = {
-    scheme: 'Muse',
-    sidebar: {"position":"left","display":"post"},
-    fancybox: true,
-    motion: true,
-    duoshuo: {
-      userId: 0,
-      author: 'Author'
-    }
+
+
+  
+  
+  <link rel="canonical" href="http://blog.f1982.com/">
+
+
+
+<script id="page.configurations">
+  CONFIG.page = {
+    sidebar: "",
   };
 </script>
 
-
-
-
-  <link rel="canonical" href="http://blog.f1982.com/">
-
-  <title> 曹Andy的临时博客标题 </title>
-</head>
-
-<body itemscope="" itemtype="http://schema.org/WebPage" lang="en,zh-cn,zh-tw,default">
-
+  <title>曹Andy的临时博客标题</title>
   
 
 
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-  ga('create', 'UA-26199919-2', 'auto');
-  ga('send', 'pageview');
-</script>
 
 
 
@@ -140,89 +135,145 @@
 
 
 
+
+
+  <noscript>
+  <style>
+  .use-motion .motion-element,
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-title { opacity: initial; }
+
+  .use-motion .logo,
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope="" itemtype="http://schema.org/WebPage" lang="en">
 
   
   
     
   
 
-  <div class="container one-collumn sidebar-position-left 
-   page-home 
- ">
+  <div class="container sidebar-position-left 
+  page-home">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope="" itemtype="http://schema.org/WPHeader">
-      <div class="header-inner"><div class="site-meta ">
-  
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta">
+    
 
-  <div class="custom-logo-site-title">
-    <a href="/" class="brand" rel="start">
-      <span class="logo-line-before"><i></i></span>
-      <span class="site-title">曹Andy的临时博客标题</span>
-      <span class="logo-line-after"><i></i></span>
-    </a>
+    <div class="custom-logo-site-title">
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">曹Andy的临时博客标题</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+    
+      
+        <p class="site-subtitle">他走过的这一路上的碎念与杂谈</p>
+      
+    
+    
   </div>
-  <p class="site-subtitle">他走过的这一路上的碎念与杂谈</p>
+
+  <div class="site-nav-toggle">
+    <button aria-label="Toggle navigation bar">
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
 </div>
 
-<div class="site-nav-toggle">
-  <button>
-    <span class="btn-bar"></span>
-    <span class="btn-bar"></span>
-    <span class="btn-bar"></span>
-  </button>
-</div>
+
 
 <nav class="site-nav">
-  
-
   
     <ul id="menu" class="menu">
       
         
-        <li class="menu-item menu-item-home">
-          <a href="/" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-home"></i> <br>
-            
-            Home
-          </a>
-        </li>
-      
         
-        <li class="menu-item menu-item-archives">
-          <a href="/archives" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br>
-            
-            Archives
-          </a>
-        </li>
-      
         
-        <li class="menu-item menu-item-tags">
-          <a href="/tags" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br>
-            
-            Tags
-          </a>
-        </li>
-      
+          
+          <li class="menu-item menu-item-home menu-item-active">
 
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/" rel="section"><i class="menu-item-icon fa fa-fw fa-home"></i> <br>Home</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-archives">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i> <br>Archives</a>
+
+  </li>
+
+      
       
     </ul>
   
 
   
+
+  
 </nav>
 
- </div>
+
+
+  
+
+
+
+</div>
     </header>
+
+    
+
 
     <main id="main" class="main">
       <div class="main-inner">
         <div class="content-wrap">
+          
+            
+
+          
           <div id="content" class="content">
             
   <section id="posts" class="posts-expand">
@@ -230,13 +281,29 @@
       
 
   
-  
 
   
   
   
 
-  <article class="post post-type-normal " itemscope="" itemtype="http://schema.org/Article">
+  
+
+  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://blog.f1982.com/cn/2018/08/27/2018/my-complain-about-console-log-in-javascript-project/">
+
+    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Andy">
+      <meta itemprop="description" content="Do More!">
+      <meta itemprop="image" content="/images/selfie_by_pixel.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="曹Andy的临时博客标题">
+    </span>
 
     
       <header class="post-header">
@@ -244,13 +311,9 @@
         
         
           <h1 class="post-title" itemprop="name headline">
-            
-            
-              
                 
-                <a class="post-title-link" href="/cn/2018/08/27/2018/my-complain-about-console-log-in-javascript-project/" itemprop="url">
-                  我和 console.log() 之间的那点恩怨情仇
-                </a>
+                
+                <a href="/cn/2018/08/27/2018/my-complain-about-console-log-in-javascript-project/" class="post-title-link" itemprop="url">我和 console.log() 之间的那点恩怨情仇</a>
               
             
           </h1>
@@ -258,58 +321,99 @@
 
         <div class="post-meta">
           <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">Posted on</span>
-            <time itemprop="dateCreated" datetime="2018-08-27T16:03:28+08:00" content="2018-08-27">
-              2018-08-27
-            </time>
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+
+              
+                
+              
+
+              <time title="Created: 2018-08-27 16:03:28" itemprop="dateCreated datePublished" datetime="2018-08-27T16:03:28+08:00">2018-08-27</time>
+            
+
+            
+              
+
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Edited on</span>
+                
+                <time title="Modified: 2018-08-28 10:45:29" itemprop="dateModified" datetime="2018-08-28T10:45:29+08:00">2018-08-28</time>
+              
+            
           </span>
 
           
             <span class="post-category">
-              &nbsp; | &nbsp;
+            
+              <span class="post-meta-divider">|</span>
+            
               <span class="post-meta-item-icon">
                 <i class="fa fa-folder-o"></i>
               </span>
-              <span class="post-meta-item-text">In</span>
               
-                <span itemprop="about" itemscope="" itemtype="https://schema.org/Thing">
-                  <a href="/categories/Dev/" itemprop="url" rel="index">
-                    <span itemprop="name">Dev</span>
-                  </a>
-                </span>
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing"><a href="/categories/Dev/" itemprop="url" rel="index"><span itemprop="name">Dev</span></a></span>
 
                 
                 
-
               
             </span>
           
 
           
             
+            
+              
               <span class="post-comments-count">
-                &nbsp; | &nbsp;
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+            
+                <span class="post-meta-item-text">Comments: </span>
                 <a href="/cn/2018/08/27/2018/my-complain-about-console-log-in-javascript-project/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="cn/2018/08/27/2018/my-complain-about-console-log-in-javascript-project/" itemprop="commentsCount"></span>
+                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="cn/2018/08/27/2018/my-complain-about-console-log-in-javascript-project/" itemprop="commentCount"></span>
                 </a>
               </span>
             
           
 
           
-
-          
           
 
           
+
+          
+
+          
+
         </div>
       </header>
     
 
-
+    
+    
+    
     <div class="post-body" itemprop="articleBody">
 
       
@@ -378,15 +482,24 @@
       
     </div>
 
-    <div>
-      
-    </div>
+    
 
-    <div>
+    
+    
+    
+
+    
+
+    
       
-    </div>
+    
+    
+
+    
 
     <footer class="post-footer">
+      
+
       
 
       
@@ -396,6 +509,10 @@
         <div class="post-eof"></div>
       
     </footer>
+  </div>
+  
+  
+  
   </article>
 
 
@@ -403,13 +520,29 @@
       
 
   
-  
 
   
   
   
 
-  <article class="post post-type-normal " itemscope="" itemtype="http://schema.org/Article">
+  
+
+  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://blog.f1982.com/cn/2018/07/31/2018/zhao-pian-jia-wen-zi-xiao-cheng-xu-guang-ying-yin-zhang/">
+
+    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Andy">
+      <meta itemprop="description" content="Do More!">
+      <meta itemprop="image" content="/images/selfie_by_pixel.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="曹Andy的临时博客标题">
+    </span>
 
     
       <header class="post-header">
@@ -417,13 +550,9 @@
         
         
           <h1 class="post-title" itemprop="name headline">
-            
-            
-              
                 
-                <a class="post-title-link" href="/cn/2018/07/31/2018/zhao-pian-jia-wen-zi-xiao-cheng-xu-guang-ying-yin-zhang/" itemprop="url">
-                  照片加文字，不仅仅的！在照片上记录时间的刻度
-                </a>
+                
+                <a href="/cn/2018/07/31/2018/zhao-pian-jia-wen-zi-xiao-cheng-xu-guang-ying-yin-zhang/" class="post-title-link" itemprop="url">照片加文字，不仅仅的！在照片上记录时间的刻度</a>
               
             
           </h1>
@@ -431,58 +560,87 @@
 
         <div class="post-meta">
           <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">Posted on</span>
-            <time itemprop="dateCreated" datetime="2018-07-31T12:14:35+08:00" content="2018-07-31">
-              2018-07-31
-            </time>
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+
+              
+                
+              
+
+              <time title="Created: 2018-07-31 12:14:35 / Modified: 17:19:28" itemprop="dateCreated datePublished" datetime="2018-07-31T12:14:35+08:00">2018-07-31</time>
+            
+
+            
+              
+
+              
+            
           </span>
 
           
             <span class="post-category">
-              &nbsp; | &nbsp;
+            
+              <span class="post-meta-divider">|</span>
+            
               <span class="post-meta-item-icon">
                 <i class="fa fa-folder-o"></i>
               </span>
-              <span class="post-meta-item-text">In</span>
               
-                <span itemprop="about" itemscope="" itemtype="https://schema.org/Thing">
-                  <a href="/categories/Travel/" itemprop="url" rel="index">
-                    <span itemprop="name">Travel</span>
-                  </a>
-                </span>
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing"><a href="/categories/Travel/" itemprop="url" rel="index"><span itemprop="name">Travel</span></a></span>
 
                 
                 
-
               
             </span>
           
 
           
             
+            
+              
               <span class="post-comments-count">
-                &nbsp; | &nbsp;
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+            
+                <span class="post-meta-item-text">Comments: </span>
                 <a href="/cn/2018/07/31/2018/zhao-pian-jia-wen-zi-xiao-cheng-xu-guang-ying-yin-zhang/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="cn/2018/07/31/2018/zhao-pian-jia-wen-zi-xiao-cheng-xu-guang-ying-yin-zhang/" itemprop="commentsCount"></span>
+                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="cn/2018/07/31/2018/zhao-pian-jia-wen-zi-xiao-cheng-xu-guang-ying-yin-zhang/" itemprop="commentCount"></span>
                 </a>
               </span>
             
           
 
           
-
-          
           
 
           
+
+          
+
+          
+
         </div>
       </header>
     
 
-
+    
+    
+    
     <div class="post-body" itemprop="articleBody">
 
       
@@ -491,24 +649,37 @@
       
         
           <img src="/cn/2018/07/31/2018/zhao-pian-jia-wen-zi-xiao-cheng-xu-guang-ying-yin-zhang/cover-signet-1080p.jpg" title="我写了一个叫做光影印章的小程序">
-          <div class="post-more-link text-center">
-            <a class="btn" href="/cn/2018/07/31/2018/zhao-pian-jia-wen-zi-xiao-cheng-xu-guang-ying-yin-zhang/#more" rel="contents">
-              Read more &raquo;
-            </a>
-          </div>
+          <!--noindex-->
+          
+            <div class="post-button text-center">
+              <a class="btn" href="/cn/2018/07/31/2018/zhao-pian-jia-wen-zi-xiao-cheng-xu-guang-ying-yin-zhang/#more" rel="contents">
+                Read more &raquo;
+              </a>
+            </div>
+          
+          <!--/noindex-->
         
       
     </div>
 
-    <div>
-      
-    </div>
+    
 
-    <div>
+    
+    
+    
+
+    
+
+    
       
-    </div>
+    
+    
+
+    
 
     <footer class="post-footer">
+      
+
       
 
       
@@ -518,6 +689,10 @@
         <div class="post-eof"></div>
       
     </footer>
+  </div>
+  
+  
+  
   </article>
 
 
@@ -525,13 +700,29 @@
       
 
   
-  
 
   
   
   
 
-  <article class="post post-type-normal " itemscope="" itemtype="http://schema.org/Article">
+  
+
+  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://blog.f1982.com/cn/2018/07/26/2018/travel-to-japan-with-zoe-day4-kyoto-street-play-sandpile/">
+
+    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Andy">
+      <meta itemprop="description" content="Do More!">
+      <meta itemprop="image" content="/images/selfie_by_pixel.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="曹Andy的临时博客标题">
+    </span>
 
     
       <header class="post-header">
@@ -539,13 +730,9 @@
         
         
           <h1 class="post-title" itemprop="name headline">
-            
-            
-              
                 
-                <a class="post-title-link" href="/cn/2018/07/26/2018/travel-to-japan-with-zoe-day4-kyoto-street-play-sandpile/" itemprop="url">
-                  霓虹溜娃记Day3，从东京到京都，我们在路上颠儿
-                </a>
+                
+                <a href="/cn/2018/07/26/2018/travel-to-japan-with-zoe-day4-kyoto-street-play-sandpile/" class="post-title-link" itemprop="url">霓虹溜娃记Day3，从东京到京都，我们在路上颠儿</a>
               
             
           </h1>
@@ -553,58 +740,99 @@
 
         <div class="post-meta">
           <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">Posted on</span>
-            <time itemprop="dateCreated" datetime="2018-07-26T11:06:35+08:00" content="2018-07-26">
-              2018-07-26
-            </time>
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+
+              
+                
+              
+
+              <time title="Created: 2018-07-26 11:06:35" itemprop="dateCreated datePublished" datetime="2018-07-26T11:06:35+08:00">2018-07-26</time>
+            
+
+            
+              
+
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Edited on</span>
+                
+                <time title="Modified: 2018-08-17 10:09:21" itemprop="dateModified" datetime="2018-08-17T10:09:21+08:00">2018-08-17</time>
+              
+            
           </span>
 
           
             <span class="post-category">
-              &nbsp; | &nbsp;
+            
+              <span class="post-meta-divider">|</span>
+            
               <span class="post-meta-item-icon">
                 <i class="fa fa-folder-o"></i>
               </span>
-              <span class="post-meta-item-text">In</span>
               
-                <span itemprop="about" itemscope="" itemtype="https://schema.org/Thing">
-                  <a href="/categories/Travel/" itemprop="url" rel="index">
-                    <span itemprop="name">Travel</span>
-                  </a>
-                </span>
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing"><a href="/categories/Travel/" itemprop="url" rel="index"><span itemprop="name">Travel</span></a></span>
 
                 
                 
-
               
             </span>
           
 
           
             
+            
+              
               <span class="post-comments-count">
-                &nbsp; | &nbsp;
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+            
+                <span class="post-meta-item-text">Comments: </span>
                 <a href="/cn/2018/07/26/2018/travel-to-japan-with-zoe-day4-kyoto-street-play-sandpile/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="cn/2018/07/26/2018/travel-to-japan-with-zoe-day4-kyoto-street-play-sandpile/" itemprop="commentsCount"></span>
+                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="cn/2018/07/26/2018/travel-to-japan-with-zoe-day4-kyoto-street-play-sandpile/" itemprop="commentCount"></span>
                 </a>
               </span>
             
           
 
           
-
-          
           
 
           
+
+          
+
+          
+
         </div>
       </header>
     
 
-
+    
+    
+    
     <div class="post-body" itemprop="articleBody">
 
       
@@ -615,24 +843,37 @@
           <blockquote>
 <p>这一天我们并没有什么探索，也没有游览景点，也就是晚上的时候去了下路边的优衣库。其他的时间呢？都在陪着一一玩沙坑。一爸觉得自己的耐力值提升迅速。</p>
 </blockquote>
-          <div class="post-more-link text-center">
-            <a class="btn" href="/cn/2018/07/26/2018/travel-to-japan-with-zoe-day4-kyoto-street-play-sandpile/#more" rel="contents">
-              Read more &raquo;
-            </a>
-          </div>
+          <!--noindex-->
+          
+            <div class="post-button text-center">
+              <a class="btn" href="/cn/2018/07/26/2018/travel-to-japan-with-zoe-day4-kyoto-street-play-sandpile/#more" rel="contents">
+                Read more &raquo;
+              </a>
+            </div>
+          
+          <!--/noindex-->
         
       
     </div>
 
-    <div>
-      
-    </div>
+    
 
-    <div>
+    
+    
+    
+
+    
+
+    
       
-    </div>
+    
+    
+
+    
 
     <footer class="post-footer">
+      
+
       
 
       
@@ -642,6 +883,10 @@
         <div class="post-eof"></div>
       
     </footer>
+  </div>
+  
+  
+  
   </article>
 
 
@@ -649,13 +894,29 @@
       
 
   
-  
 
   
   
   
 
-  <article class="post post-type-normal " itemscope="" itemtype="http://schema.org/Article">
+  
+
+  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://blog.f1982.com/cn/2018/07/05/2018/travel-to-japan-with-zoe-day3-tokyo-to-kyoto-on-the-road/">
+
+    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Andy">
+      <meta itemprop="description" content="Do More!">
+      <meta itemprop="image" content="/images/selfie_by_pixel.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="曹Andy的临时博客标题">
+    </span>
 
     
       <header class="post-header">
@@ -663,13 +924,9 @@
         
         
           <h1 class="post-title" itemprop="name headline">
-            
-            
-              
                 
-                <a class="post-title-link" href="/cn/2018/07/05/2018/travel-to-japan-with-zoe-day3-tokyo-to-kyoto-on-the-road/" itemprop="url">
-                  霓虹溜娃记Day3，从东京到京都，我们在路上颠儿
-                </a>
+                
+                <a href="/cn/2018/07/05/2018/travel-to-japan-with-zoe-day3-tokyo-to-kyoto-on-the-road/" class="post-title-link" itemprop="url">霓虹溜娃记Day3，从东京到京都，我们在路上颠儿</a>
               
             
           </h1>
@@ -677,58 +934,99 @@
 
         <div class="post-meta">
           <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">Posted on</span>
-            <time itemprop="dateCreated" datetime="2018-07-05T11:06:35+08:00" content="2018-07-05">
-              2018-07-05
-            </time>
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+
+              
+                
+              
+
+              <time title="Created: 2018-07-05 11:06:35" itemprop="dateCreated datePublished" datetime="2018-07-05T11:06:35+08:00">2018-07-05</time>
+            
+
+            
+              
+
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Edited on</span>
+                
+                <time title="Modified: 2018-07-31 12:18:53" itemprop="dateModified" datetime="2018-07-31T12:18:53+08:00">2018-07-31</time>
+              
+            
           </span>
 
           
             <span class="post-category">
-              &nbsp; | &nbsp;
+            
+              <span class="post-meta-divider">|</span>
+            
               <span class="post-meta-item-icon">
                 <i class="fa fa-folder-o"></i>
               </span>
-              <span class="post-meta-item-text">In</span>
               
-                <span itemprop="about" itemscope="" itemtype="https://schema.org/Thing">
-                  <a href="/categories/Travel/" itemprop="url" rel="index">
-                    <span itemprop="name">Travel</span>
-                  </a>
-                </span>
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing"><a href="/categories/Travel/" itemprop="url" rel="index"><span itemprop="name">Travel</span></a></span>
 
                 
                 
-
               
             </span>
           
 
           
             
+            
+              
               <span class="post-comments-count">
-                &nbsp; | &nbsp;
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+            
+                <span class="post-meta-item-text">Comments: </span>
                 <a href="/cn/2018/07/05/2018/travel-to-japan-with-zoe-day3-tokyo-to-kyoto-on-the-road/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="cn/2018/07/05/2018/travel-to-japan-with-zoe-day3-tokyo-to-kyoto-on-the-road/" itemprop="commentsCount"></span>
+                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="cn/2018/07/05/2018/travel-to-japan-with-zoe-day3-tokyo-to-kyoto-on-the-road/" itemprop="commentCount"></span>
                 </a>
               </span>
             
           
 
           
-
-          
           
 
           
+
+          
+
+          
+
         </div>
       </header>
     
 
-
+    
+    
+    
     <div class="post-body" itemprop="articleBody">
 
       
@@ -740,24 +1038,37 @@
 <p>第三天，我们离开了东京，在路上奔波了大半天，来到了京都的日式民宿，开启了京都之旅。</p>
 </blockquote>
 <img src="/cn/2018/07/05/2018/travel-to-japan-with-zoe-day3-tokyo-to-kyoto-on-the-road/d3-cover-2.jpg" title="从东京到京都">
-          <div class="post-more-link text-center">
-            <a class="btn" href="/cn/2018/07/05/2018/travel-to-japan-with-zoe-day3-tokyo-to-kyoto-on-the-road/#more" rel="contents">
-              Read more &raquo;
-            </a>
-          </div>
+          <!--noindex-->
+          
+            <div class="post-button text-center">
+              <a class="btn" href="/cn/2018/07/05/2018/travel-to-japan-with-zoe-day3-tokyo-to-kyoto-on-the-road/#more" rel="contents">
+                Read more &raquo;
+              </a>
+            </div>
+          
+          <!--/noindex-->
         
       
     </div>
 
-    <div>
-      
-    </div>
+    
 
-    <div>
+    
+    
+    
+
+    
+
+    
       
-    </div>
+    
+    
+
+    
 
     <footer class="post-footer">
+      
+
       
 
       
@@ -767,6 +1078,10 @@
         <div class="post-eof"></div>
       
     </footer>
+  </div>
+  
+  
+  
   </article>
 
 
@@ -774,13 +1089,29 @@
       
 
   
-  
 
   
   
   
 
-  <article class="post post-type-normal " itemscope="" itemtype="http://schema.org/Article">
+  
+
+  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://blog.f1982.com/cn/2018/06/29/2018/travel-to-japan-with-zoe-day2-tokyo-disneyland-in-rain/">
+
+    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Andy">
+      <meta itemprop="description" content="Do More!">
+      <meta itemprop="image" content="/images/selfie_by_pixel.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="曹Andy的临时博客标题">
+    </span>
 
     
       <header class="post-header">
@@ -788,13 +1119,9 @@
         
         
           <h1 class="post-title" itemprop="name headline">
-            
-            
-              
                 
-                <a class="post-title-link" href="/cn/2018/06/29/2018/travel-to-japan-with-zoe-day2-tokyo-disneyland-in-rain/" itemprop="url">
-                  霓虹溜娃记Day2，在雨中的迪斯尼里使劲儿撒欢儿...
-                </a>
+                
+                <a href="/cn/2018/06/29/2018/travel-to-japan-with-zoe-day2-tokyo-disneyland-in-rain/" class="post-title-link" itemprop="url">霓虹溜娃记Day2，在雨中的迪斯尼里使劲儿撒欢儿...</a>
               
             
           </h1>
@@ -802,58 +1129,99 @@
 
         <div class="post-meta">
           <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">Posted on</span>
-            <time itemprop="dateCreated" datetime="2018-06-29T11:06:35+08:00" content="2018-06-29">
-              2018-06-29
-            </time>
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+
+              
+                
+              
+
+              <time title="Created: 2018-06-29 11:06:35" itemprop="dateCreated datePublished" datetime="2018-06-29T11:06:35+08:00">2018-06-29</time>
+            
+
+            
+              
+
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Edited on</span>
+                
+                <time title="Modified: 2018-07-31 12:18:53" itemprop="dateModified" datetime="2018-07-31T12:18:53+08:00">2018-07-31</time>
+              
+            
           </span>
 
           
             <span class="post-category">
-              &nbsp; | &nbsp;
+            
+              <span class="post-meta-divider">|</span>
+            
               <span class="post-meta-item-icon">
                 <i class="fa fa-folder-o"></i>
               </span>
-              <span class="post-meta-item-text">In</span>
               
-                <span itemprop="about" itemscope="" itemtype="https://schema.org/Thing">
-                  <a href="/categories/Travel/" itemprop="url" rel="index">
-                    <span itemprop="name">Travel</span>
-                  </a>
-                </span>
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing"><a href="/categories/Travel/" itemprop="url" rel="index"><span itemprop="name">Travel</span></a></span>
 
                 
                 
-
               
             </span>
           
 
           
             
+            
+              
               <span class="post-comments-count">
-                &nbsp; | &nbsp;
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+            
+                <span class="post-meta-item-text">Comments: </span>
                 <a href="/cn/2018/06/29/2018/travel-to-japan-with-zoe-day2-tokyo-disneyland-in-rain/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="cn/2018/06/29/2018/travel-to-japan-with-zoe-day2-tokyo-disneyland-in-rain/" itemprop="commentsCount"></span>
+                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="cn/2018/06/29/2018/travel-to-japan-with-zoe-day2-tokyo-disneyland-in-rain/" itemprop="commentCount"></span>
                 </a>
               </span>
             
           
 
           
-
-          
           
 
           
+
+          
+
+          
+
         </div>
       </header>
     
 
-
+    
+    
+    
     <div class="post-body" itemprop="articleBody">
 
       
@@ -873,24 +1241,37 @@
 <img src="/cn/2018/06/29/2018/travel-to-japan-with-zoe-day2-tokyo-disneyland-in-rain/street-morning-2.jpg">
 <img src="/cn/2018/06/29/2018/travel-to-japan-with-zoe-day2-tokyo-disneyland-in-rain/street-morning-3.jpg">
 <p>由于太早了，路上一个人也没有，只有路口闪烁着的红绿灯发出的提示音。</p>
-          <div class="post-more-link text-center">
-            <a class="btn" href="/cn/2018/06/29/2018/travel-to-japan-with-zoe-day2-tokyo-disneyland-in-rain/#more" rel="contents">
-              Read more &raquo;
-            </a>
-          </div>
+          <!--noindex-->
+          
+            <div class="post-button text-center">
+              <a class="btn" href="/cn/2018/06/29/2018/travel-to-japan-with-zoe-day2-tokyo-disneyland-in-rain/#more" rel="contents">
+                Read more &raquo;
+              </a>
+            </div>
+          
+          <!--/noindex-->
         
       
     </div>
 
-    <div>
-      
-    </div>
+    
 
-    <div>
+    
+    
+    
+
+    
+
+    
       
-    </div>
+    
+    
+
+    
 
     <footer class="post-footer">
+      
+
       
 
       
@@ -900,6 +1281,10 @@
         <div class="post-eof"></div>
       
     </footer>
+  </div>
+  
+  
+  
   </article>
 
 
@@ -907,13 +1292,29 @@
       
 
   
-  
 
   
   
   
 
-  <article class="post post-type-normal " itemscope="" itemtype="http://schema.org/Article">
+  
+
+  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://blog.f1982.com/cn/2018/06/25/2018/travel-to-japan-with-zoe-day1-tokyo-airbnb-house/">
+
+    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Andy">
+      <meta itemprop="description" content="Do More!">
+      <meta itemprop="image" content="/images/selfie_by_pixel.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="曹Andy的临时博客标题">
+    </span>
 
     
       <header class="post-header">
@@ -921,13 +1322,9 @@
         
         
           <h1 class="post-title" itemprop="name headline">
-            
-            
-              
                 
-                <a class="post-title-link" href="/cn/2018/06/25/2018/travel-to-japan-with-zoe-day1-tokyo-airbnb-house/" itemprop="url">
-                  霓虹溜娃记Day1，东京Airbnb大个儿民宿初体验
-                </a>
+                
+                <a href="/cn/2018/06/25/2018/travel-to-japan-with-zoe-day1-tokyo-airbnb-house/" class="post-title-link" itemprop="url">霓虹溜娃记Day1，东京Airbnb大个儿民宿初体验</a>
               
             
           </h1>
@@ -935,58 +1332,99 @@
 
         <div class="post-meta">
           <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">Posted on</span>
-            <time itemprop="dateCreated" datetime="2018-06-25T11:06:35+08:00" content="2018-06-25">
-              2018-06-25
-            </time>
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+
+              
+                
+              
+
+              <time title="Created: 2018-06-25 11:06:35" itemprop="dateCreated datePublished" datetime="2018-06-25T11:06:35+08:00">2018-06-25</time>
+            
+
+            
+              
+
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Edited on</span>
+                
+                <time title="Modified: 2018-07-02 09:21:44" itemprop="dateModified" datetime="2018-07-02T09:21:44+08:00">2018-07-02</time>
+              
+            
           </span>
 
           
             <span class="post-category">
-              &nbsp; | &nbsp;
+            
+              <span class="post-meta-divider">|</span>
+            
               <span class="post-meta-item-icon">
                 <i class="fa fa-folder-o"></i>
               </span>
-              <span class="post-meta-item-text">In</span>
               
-                <span itemprop="about" itemscope="" itemtype="https://schema.org/Thing">
-                  <a href="/categories/Travel/" itemprop="url" rel="index">
-                    <span itemprop="name">Travel</span>
-                  </a>
-                </span>
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing"><a href="/categories/Travel/" itemprop="url" rel="index"><span itemprop="name">Travel</span></a></span>
 
                 
                 
-
               
             </span>
           
 
           
             
+            
+              
               <span class="post-comments-count">
-                &nbsp; | &nbsp;
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+            
+                <span class="post-meta-item-text">Comments: </span>
                 <a href="/cn/2018/06/25/2018/travel-to-japan-with-zoe-day1-tokyo-airbnb-house/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="cn/2018/06/25/2018/travel-to-japan-with-zoe-day1-tokyo-airbnb-house/" itemprop="commentsCount"></span>
+                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="cn/2018/06/25/2018/travel-to-japan-with-zoe-day1-tokyo-airbnb-house/" itemprop="commentCount"></span>
                 </a>
               </span>
             
           
 
           
-
-          
           
 
           
+
+          
+
+          
+
         </div>
       </header>
     
 
-
+    
+    
+    
     <div class="post-body" itemprop="articleBody">
 
       
@@ -1005,24 +1443,37 @@
 <p>早上出发，果不其然，约好的8点40专车，到了8点半的时候还堵在二环里呢，打电话过去司机也是懵逼，他也没想到今天这么赌，那也没辙，生等呗，还好做了足够多的提前量，12:50的飞机，就算他再晚个半小时我们应该也是来得及的。在看到 GPS 提示他即将到达小区的前5分钟，我们出门了，2个大箱子，3个双肩背、一一背包里其实只有一包纸，这里必须感慨一下带娃出行想轻装好难啊！</p>
 <p>在去机场的路上并没有出现什么特别的拥堵，不到50分钟的样子，我们出现在了北京首都国际机场的T3，并没有出现时间上的问题，这时同行的小伙伴打来电话，他们也堵在路上了，不过这超长版提前量拉的还是很明智的，在我带着一一粗略观赏了一下 T3的结构之后，小伙伴如期到达了。</p>
 <img src="/cn/2018/06/25/2018/travel-to-japan-with-zoe-day1-tokyo-airbnb-house/zoe-and-kexin-2.jpg" title="一一和可心姐姐">
-          <div class="post-more-link text-center">
-            <a class="btn" href="/cn/2018/06/25/2018/travel-to-japan-with-zoe-day1-tokyo-airbnb-house/#more" rel="contents">
-              Read more &raquo;
-            </a>
-          </div>
+          <!--noindex-->
+          
+            <div class="post-button text-center">
+              <a class="btn" href="/cn/2018/06/25/2018/travel-to-japan-with-zoe-day1-tokyo-airbnb-house/#more" rel="contents">
+                Read more &raquo;
+              </a>
+            </div>
+          
+          <!--/noindex-->
         
       
     </div>
 
-    <div>
-      
-    </div>
+    
 
-    <div>
+    
+    
+    
+
+    
+
+    
       
-    </div>
+    
+    
+
+    
 
     <footer class="post-footer">
+      
+
       
 
       
@@ -1032,6 +1483,10 @@
         <div class="post-eof"></div>
       
     </footer>
+  </div>
+  
+  
+  
   </article>
 
 
@@ -1039,13 +1494,29 @@
       
 
   
-  
 
   
   
   
 
-  <article class="post post-type-normal " itemscope="" itemtype="http://schema.org/Article">
+  
+
+  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://blog.f1982.com/cn/2018/06/21/2018/travel-to-japan-with-zoe-day-trailer/">
+
+    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Andy">
+      <meta itemprop="description" content="Do More!">
+      <meta itemprop="image" content="/images/selfie_by_pixel.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="曹Andy的临时博客标题">
+    </span>
 
     
       <header class="post-header">
@@ -1053,13 +1524,9 @@
         
         
           <h1 class="post-title" itemprop="name headline">
-            
-            
-              
                 
-                <a class="post-title-link" href="/cn/2018/06/21/2018/travel-to-japan-with-zoe-day-trailer/" itemprop="url">
-                  『霓虹国溜娃记』的预告片出炉了
-                </a>
+                
+                <a href="/cn/2018/06/21/2018/travel-to-japan-with-zoe-day-trailer/" class="post-title-link" itemprop="url">『霓虹国溜娃记』的预告片出炉了</a>
               
             
           </h1>
@@ -1067,58 +1534,99 @@
 
         <div class="post-meta">
           <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">Posted on</span>
-            <time itemprop="dateCreated" datetime="2018-06-21T09:20:46+08:00" content="2018-06-21">
-              2018-06-21
-            </time>
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+
+              
+                
+              
+
+              <time title="Created: 2018-06-21 09:20:46" itemprop="dateCreated datePublished" datetime="2018-06-21T09:20:46+08:00">2018-06-21</time>
+            
+
+            
+              
+
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Edited on</span>
+                
+                <time title="Modified: 2018-07-02 09:21:44" itemprop="dateModified" datetime="2018-07-02T09:21:44+08:00">2018-07-02</time>
+              
+            
           </span>
 
           
             <span class="post-category">
-              &nbsp; | &nbsp;
+            
+              <span class="post-meta-divider">|</span>
+            
               <span class="post-meta-item-icon">
                 <i class="fa fa-folder-o"></i>
               </span>
-              <span class="post-meta-item-text">In</span>
               
-                <span itemprop="about" itemscope="" itemtype="https://schema.org/Thing">
-                  <a href="/categories/Travel/" itemprop="url" rel="index">
-                    <span itemprop="name">Travel</span>
-                  </a>
-                </span>
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing"><a href="/categories/Travel/" itemprop="url" rel="index"><span itemprop="name">Travel</span></a></span>
 
                 
                 
-
               
             </span>
           
 
           
             
+            
+              
               <span class="post-comments-count">
-                &nbsp; | &nbsp;
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+            
+                <span class="post-meta-item-text">Comments: </span>
                 <a href="/cn/2018/06/21/2018/travel-to-japan-with-zoe-day-trailer/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="cn/2018/06/21/2018/travel-to-japan-with-zoe-day-trailer/" itemprop="commentsCount"></span>
+                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="cn/2018/06/21/2018/travel-to-japan-with-zoe-day-trailer/" itemprop="commentCount"></span>
                 </a>
               </span>
             
           
 
           
-
-          
           
 
           
+
+          
+
+          
+
         </div>
       </header>
     
 
-
+    
+    
+    
     <div class="post-body" itemprop="articleBody">
 
       
@@ -1132,24 +1640,37 @@
 <iframe frameborder="0" width="100%" height="545" src="https://v.qq.com/iframe/player.html?vid=n0688uvl72b&tiny=0&auto=0" allowfullscreen></iframe>
 
 <p>墙外用户如果想看高清可以去油管订阅 <a href="https://www.youtube.com/user/caojundan" target="_blank" rel="noopener">我的频道</a> ；也可以复制链接到 <a href="https://v.qq.com/x/page/e0642zds4se.html" target="_blank" rel="noopener">腾讯视频</a> 查看</p>
-          <div class="post-more-link text-center">
-            <a class="btn" href="/cn/2018/06/21/2018/travel-to-japan-with-zoe-day-trailer/#more" rel="contents">
-              Read more &raquo;
-            </a>
-          </div>
+          <!--noindex-->
+          
+            <div class="post-button text-center">
+              <a class="btn" href="/cn/2018/06/21/2018/travel-to-japan-with-zoe-day-trailer/#more" rel="contents">
+                Read more &raquo;
+              </a>
+            </div>
+          
+          <!--/noindex-->
         
       
     </div>
 
-    <div>
-      
-    </div>
+    
 
-    <div>
+    
+    
+    
+
+    
+
+    
       
-    </div>
+    
+    
+
+    
 
     <footer class="post-footer">
+      
+
       
 
       
@@ -1159,6 +1680,10 @@
         <div class="post-eof"></div>
       
     </footer>
+  </div>
+  
+  
+  
   </article>
 
 
@@ -1166,13 +1691,29 @@
       
 
   
-  
 
   
   
   
 
-  <article class="post post-type-normal " itemscope="" itemtype="http://schema.org/Article">
+  
+
+  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://blog.f1982.com/cn/2018/05/04/2018/red-brick-art-museum-unspeakable-openness-of-things/">
+
+    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Andy">
+      <meta itemprop="description" content="Do More!">
+      <meta itemprop="image" content="/images/selfie_by_pixel.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="曹Andy的临时博客标题">
+    </span>
 
     
       <header class="post-header">
@@ -1180,13 +1721,9 @@
         
         
           <h1 class="post-title" itemprop="name headline">
-            
-            
-              
                 
-                <a class="post-title-link" href="/cn/2018/05/04/2018/red-brick-art-museum-unspeakable-openness-of-things/" itemprop="url">
-                  放电，以艺术之名。红砖美术馆-道隐无名。
-                </a>
+                
+                <a href="/cn/2018/05/04/2018/red-brick-art-museum-unspeakable-openness-of-things/" class="post-title-link" itemprop="url">放电，以艺术之名。红砖美术馆-道隐无名。</a>
               
             
           </h1>
@@ -1194,58 +1731,87 @@
 
         <div class="post-meta">
           <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">Posted on</span>
-            <time itemprop="dateCreated" datetime="2018-05-04T11:17:02+08:00" content="2018-05-04">
-              2018-05-04
-            </time>
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+
+              
+                
+              
+
+              <time title="Created: 2018-05-04 11:17:02 / Modified: 16:21:35" itemprop="dateCreated datePublished" datetime="2018-05-04T11:17:02+08:00">2018-05-04</time>
+            
+
+            
+              
+
+              
+            
           </span>
 
           
             <span class="post-category">
-              &nbsp; | &nbsp;
+            
+              <span class="post-meta-divider">|</span>
+            
               <span class="post-meta-item-icon">
                 <i class="fa fa-folder-o"></i>
               </span>
-              <span class="post-meta-item-text">In</span>
               
-                <span itemprop="about" itemscope="" itemtype="https://schema.org/Thing">
-                  <a href="/categories/Travel/" itemprop="url" rel="index">
-                    <span itemprop="name">Travel</span>
-                  </a>
-                </span>
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing"><a href="/categories/Travel/" itemprop="url" rel="index"><span itemprop="name">Travel</span></a></span>
 
                 
                 
-
               
             </span>
           
 
           
             
+            
+              
               <span class="post-comments-count">
-                &nbsp; | &nbsp;
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+            
+                <span class="post-meta-item-text">Comments: </span>
                 <a href="/cn/2018/05/04/2018/red-brick-art-museum-unspeakable-openness-of-things/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="cn/2018/05/04/2018/red-brick-art-museum-unspeakable-openness-of-things/" itemprop="commentsCount"></span>
+                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="cn/2018/05/04/2018/red-brick-art-museum-unspeakable-openness-of-things/" itemprop="commentCount"></span>
                 </a>
               </span>
             
           
 
           
-
-          
           
 
           
+
+          
+
+          
+
         </div>
       </header>
     
 
-
+    
+    
+    
     <div class="post-body" itemprop="articleBody">
 
       
@@ -1269,24 +1835,37 @@
 <img src="/cn/2018/05/04/2018/red-brick-art-museum-unspeakable-openness-of-things/IMG_1997.JPG" title="奥拉维尔·埃利亚松：道隐无名 海报">
 <p>一妈也等不及了，所以我们三人一同冲进了美术馆。</p>
 <img src="/cn/2018/05/04/2018/red-brick-art-museum-unspeakable-openness-of-things/IMG_1775.JPG" title="《遗失的指南针》">
-          <div class="post-more-link text-center">
-            <a class="btn" href="/cn/2018/05/04/2018/red-brick-art-museum-unspeakable-openness-of-things/#more" rel="contents">
-              Read more &raquo;
-            </a>
-          </div>
+          <!--noindex-->
+          
+            <div class="post-button text-center">
+              <a class="btn" href="/cn/2018/05/04/2018/red-brick-art-museum-unspeakable-openness-of-things/#more" rel="contents">
+                Read more &raquo;
+              </a>
+            </div>
+          
+          <!--/noindex-->
         
       
     </div>
 
-    <div>
-      
-    </div>
+    
 
-    <div>
+    
+    
+    
+
+    
+
+    
       
-    </div>
+    
+    
+
+    
 
     <footer class="post-footer">
+      
+
       
 
       
@@ -1296,6 +1875,10 @@
         <div class="post-eof"></div>
       
     </footer>
+  </div>
+  
+  
+  
   </article>
 
 
@@ -1303,13 +1886,29 @@
       
 
   
-  
 
   
   
   
 
-  <article class="post post-type-normal " itemscope="" itemtype="http://schema.org/Article">
+  
+
+  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://blog.f1982.com/cn/2018/04/24/2018/wei-xin-xiao-cheng-xu-ru-he-diao-yong-zhu-jian-de-fang-fa/">
+
+    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Andy">
+      <meta itemprop="description" content="Do More!">
+      <meta itemprop="image" content="/images/selfie_by_pixel.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="曹Andy的临时博客标题">
+    </span>
 
     
       <header class="post-header">
@@ -1317,13 +1916,9 @@
         
         
           <h1 class="post-title" itemprop="name headline">
-            
-            
-              
                 
-                <a class="post-title-link" href="/cn/2018/04/24/2018/wei-xin-xiao-cheng-xu-ru-he-diao-yong-zhu-jian-de-fang-fa/" itemprop="url">
-                  微信小程序如何在页面调用组件内方法
-                </a>
+                
+                <a href="/cn/2018/04/24/2018/wei-xin-xiao-cheng-xu-ru-he-diao-yong-zhu-jian-de-fang-fa/" class="post-title-link" itemprop="url">微信小程序如何在页面调用组件内方法</a>
               
             
           </h1>
@@ -1331,58 +1926,99 @@
 
         <div class="post-meta">
           <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">Posted on</span>
-            <time itemprop="dateCreated" datetime="2018-04-24T23:00:01+08:00" content="2018-04-24">
-              2018-04-24
-            </time>
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+
+              
+                
+              
+
+              <time title="Created: 2018-04-24 23:00:01" itemprop="dateCreated datePublished" datetime="2018-04-24T23:00:01+08:00">2018-04-24</time>
+            
+
+            
+              
+
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Edited on</span>
+                
+                <time title="Modified: 2018-04-25 10:36:15" itemprop="dateModified" datetime="2018-04-25T10:36:15+08:00">2018-04-25</time>
+              
+            
           </span>
 
           
             <span class="post-category">
-              &nbsp; | &nbsp;
+            
+              <span class="post-meta-divider">|</span>
+            
               <span class="post-meta-item-icon">
                 <i class="fa fa-folder-o"></i>
               </span>
-              <span class="post-meta-item-text">In</span>
               
-                <span itemprop="about" itemscope="" itemtype="https://schema.org/Thing">
-                  <a href="/categories/Dev/" itemprop="url" rel="index">
-                    <span itemprop="name">Dev</span>
-                  </a>
-                </span>
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing"><a href="/categories/Dev/" itemprop="url" rel="index"><span itemprop="name">Dev</span></a></span>
 
                 
                 
-
               
             </span>
           
 
           
             
+            
+              
               <span class="post-comments-count">
-                &nbsp; | &nbsp;
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+            
+                <span class="post-meta-item-text">Comments: </span>
                 <a href="/cn/2018/04/24/2018/wei-xin-xiao-cheng-xu-ru-he-diao-yong-zhu-jian-de-fang-fa/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="cn/2018/04/24/2018/wei-xin-xiao-cheng-xu-ru-he-diao-yong-zhu-jian-de-fang-fa/" itemprop="commentsCount"></span>
+                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="cn/2018/04/24/2018/wei-xin-xiao-cheng-xu-ru-he-diao-yong-zhu-jian-de-fang-fa/" itemprop="commentCount"></span>
                 </a>
               </span>
             
           
 
           
-
-          
           
 
           
+
+          
+
+          
+
         </div>
       </header>
     
 
-
+    
+    
+    
     <div class="post-body" itemprop="articleBody">
 
       
@@ -1406,24 +2042,37 @@
     }
 })
 </code></pre><img src="/cn/2018/04/24/2018/wei-xin-xiao-cheng-xu-ru-he-diao-yong-zhu-jian-de-fang-fa/wexin-dai-ma-pian-duan-component.jpg" title="微信代码片段的目录结构">
-          <div class="post-more-link text-center">
-            <a class="btn" href="/cn/2018/04/24/2018/wei-xin-xiao-cheng-xu-ru-he-diao-yong-zhu-jian-de-fang-fa/#more" rel="contents">
-              Read more &raquo;
-            </a>
-          </div>
+          <!--noindex-->
+          
+            <div class="post-button text-center">
+              <a class="btn" href="/cn/2018/04/24/2018/wei-xin-xiao-cheng-xu-ru-he-diao-yong-zhu-jian-de-fang-fa/#more" rel="contents">
+                Read more &raquo;
+              </a>
+            </div>
+          
+          <!--/noindex-->
         
       
     </div>
 
-    <div>
-      
-    </div>
+    
 
-    <div>
+    
+    
+    
+
+    
+
+    
       
-    </div>
+    
+    
+
+    
 
     <footer class="post-footer">
+      
+
       
 
       
@@ -1433,6 +2082,10 @@
         <div class="post-eof"></div>
       
     </footer>
+  </div>
+  
+  
+  
   </article>
 
 
@@ -1440,13 +2093,29 @@
       
 
   
-  
 
   
   
   
 
-  <article class="post post-type-normal " itemscope="" itemtype="http://schema.org/Article">
+  
+
+  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://blog.f1982.com/cn/2018/04/12/2018/we-xin-xiao-cheng-xu-ji-qiao-wen-ti-zheng-li/">
+
+    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Andy">
+      <meta itemprop="description" content="Do More!">
+      <meta itemprop="image" content="/images/selfie_by_pixel.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="曹Andy的临时博客标题">
+    </span>
 
     
       <header class="post-header">
@@ -1454,13 +2123,9 @@
         
         
           <h1 class="post-title" itemprop="name headline">
-            
-            
-              
                 
-                <a class="post-title-link" href="/cn/2018/04/12/2018/we-xin-xiao-cheng-xu-ji-qiao-wen-ti-zheng-li/" itemprop="url">
-                  微信小程序开发的那些坑们（持续更新中...)
-                </a>
+                
+                <a href="/cn/2018/04/12/2018/we-xin-xiao-cheng-xu-ji-qiao-wen-ti-zheng-li/" class="post-title-link" itemprop="url">微信小程序开发的那些坑们（持续更新中...)</a>
               
             
           </h1>
@@ -1468,58 +2133,99 @@
 
         <div class="post-meta">
           <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">Posted on</span>
-            <time itemprop="dateCreated" datetime="2018-04-12T09:34:30+08:00" content="2018-04-12">
-              2018-04-12
-            </time>
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+
+              
+                
+              
+
+              <time title="Created: 2018-04-12 09:34:30" itemprop="dateCreated datePublished" datetime="2018-04-12T09:34:30+08:00">2018-04-12</time>
+            
+
+            
+              
+
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Edited on</span>
+                
+                <time title="Modified: 2018-04-13 10:20:48" itemprop="dateModified" datetime="2018-04-13T10:20:48+08:00">2018-04-13</time>
+              
+            
           </span>
 
           
             <span class="post-category">
-              &nbsp; | &nbsp;
+            
+              <span class="post-meta-divider">|</span>
+            
               <span class="post-meta-item-icon">
                 <i class="fa fa-folder-o"></i>
               </span>
-              <span class="post-meta-item-text">In</span>
               
-                <span itemprop="about" itemscope="" itemtype="https://schema.org/Thing">
-                  <a href="/categories/Dev/" itemprop="url" rel="index">
-                    <span itemprop="name">Dev</span>
-                  </a>
-                </span>
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing"><a href="/categories/Dev/" itemprop="url" rel="index"><span itemprop="name">Dev</span></a></span>
 
                 
                 
-
               
             </span>
           
 
           
             
+            
+              
               <span class="post-comments-count">
-                &nbsp; | &nbsp;
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+            
+                <span class="post-meta-item-text">Comments: </span>
                 <a href="/cn/2018/04/12/2018/we-xin-xiao-cheng-xu-ji-qiao-wen-ti-zheng-li/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="cn/2018/04/12/2018/we-xin-xiao-cheng-xu-ji-qiao-wen-ti-zheng-li/" itemprop="commentsCount"></span>
+                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="cn/2018/04/12/2018/we-xin-xiao-cheng-xu-ji-qiao-wen-ti-zheng-li/" itemprop="commentCount"></span>
                 </a>
               </span>
             
           
 
           
-
-          
           
 
           
+
+          
+
+          
+
         </div>
       </header>
     
 
-
+    
+    
+    
     <div class="post-body" itemprop="articleBody">
 
       
@@ -1537,24 +2243,37 @@
 <p>关闭翻墙工具，然后重启开发工具</p>
 <p><em>BTW</em>:</p>
 <p>貌似新版的开发工具已经解决了这个问题，目测已经可以把开发工具和fan-qiang 工具共存了</p>
-          <div class="post-more-link text-center">
-            <a class="btn" href="/cn/2018/04/12/2018/we-xin-xiao-cheng-xu-ji-qiao-wen-ti-zheng-li/#more" rel="contents">
-              Read more &raquo;
-            </a>
-          </div>
+          <!--noindex-->
+          
+            <div class="post-button text-center">
+              <a class="btn" href="/cn/2018/04/12/2018/we-xin-xiao-cheng-xu-ji-qiao-wen-ti-zheng-li/#more" rel="contents">
+                Read more &raquo;
+              </a>
+            </div>
+          
+          <!--/noindex-->
         
       
     </div>
 
-    <div>
-      
-    </div>
+    
 
-    <div>
+    
+    
+    
+
+    
+
+    
       
-    </div>
+    
+    
+
+    
 
     <footer class="post-footer">
+      
+
       
 
       
@@ -1564,6 +2283,10 @@
         <div class="post-eof"></div>
       
     </footer>
+  </div>
+  
+  
+  
   </article>
 
 
@@ -1572,15 +2295,12 @@
 
   
   <nav class="pagination">
-    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="page-number" href="/page/3/">3</a><a class="extend next" rel="next" href="/page/2/"><i class="fa fa-angle-right"></i></a>
+    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="page-number" href="/page/3/">3</a><a class="extend next" rel="next" href="/page/2/"><i class="fa fa-angle-right" aria-label="Next page"></i></a>
   </nav>
 
 
 
           </div>
-          
-
-
           
 
         </div>
@@ -1602,123 +2322,270 @@
 
       
 
-      <section class="site-overview sidebar-panel  sidebar-panel-active ">
-        <div class="site-author motion-element" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
-          <img class="site-author-image" itemprop="image" src="/images/selfie_by_pixel.jpg" alt="Andy">
-          <p class="site-author-name" itemprop="name">Andy</p>
-          <p class="site-description motion-element" itemprop="description">Do More!</p>
-        </div>
-        <nav class="site-state motion-element">
-          <div class="site-state-item site-state-posts">
-            <a href="/archives">
-              <span class="site-state-item-count">23</span>
-              <span class="site-state-item-name">posts</span>
-            </a>
+      <div class="site-overview-wrap sidebar-panel sidebar-panel-active">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image" src="/images/selfie_by_pixel.jpg" alt="Andy">
+            
+              <p class="site-author-name" itemprop="name">Andy</p>
+              <div class="site-description motion-element" itemprop="description">Do More!</div>
           </div>
 
           
-            <div class="site-state-item site-state-categories">
+            <nav class="site-state motion-element">
               
-                <span class="site-state-item-count">6</span>
-                <span class="site-state-item-name">categories</span>
+                <div class="site-state-item site-state-posts">
+                
+                  <a href="/archives/">
+                
+                    <span class="site-state-item-count">23</span>
+                    <span class="site-state-item-name">posts</span>
+                  </a>
+                </div>
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-categories">
+                  
+                    
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">6</span>
+                    <span class="site-state-item-name">categories</span>
+                  
+                </div>
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-tags">
+                  
+                    
+                      <a href="/tags/">
+                    
+                  
+                    
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">44</span>
+                    <span class="site-state-item-name">tags</span>
+                  </a>
+                </div>
+              
+            </nav>
+          
+
+          
+
+          
+
+          
+            <div class="links-of-author motion-element">
+              
+                <span class="links-of-author-item">
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  <a href="http://instagram.com/iandycao/" title="Instagram &rarr; http://instagram.com/iandycao/" rel="noopener" target="_blank"><i class="fa fa-fw fa-globe"></i>Instagram</a>
+                </span>
+              
+                <span class="links-of-author-item">
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  <a href="https://www.facebook.com/andycao1982" title="Facebook &rarr; https://www.facebook.com/andycao1982" rel="noopener" target="_blank"><i class="fa fa-fw fa-globe"></i>Facebook</a>
+                </span>
+              
+                <span class="links-of-author-item">
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  <a href="https://www.youtube.com/caojundan" title="Youtube &rarr; https://www.youtube.com/caojundan" rel="noopener" target="_blank"><i class="fa fa-fw fa-globe"></i>Youtube</a>
+                </span>
+              
+                <span class="links-of-author-item">
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  <a href="https://www.linkedin.com/in/andyisme" title="LinkedIn &rarr; https://www.linkedin.com/in/andyisme" rel="noopener" target="_blank"><i class="fa fa-fw fa-globe"></i>LinkedIn</a>
+                </span>
+              
+                <span class="links-of-author-item">
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  <a href="https://twitter.com/iandycao" title="Twitter &rarr; https://twitter.com/iandycao" rel="noopener" target="_blank"><i class="fa fa-fw fa-globe"></i>Twitter</a>
+                </span>
               
             </div>
           
 
           
-            <div class="site-state-item site-state-tags">
-              <a href="/tags">
-                <span class="site-state-item-count">47</span>
-                <span class="site-state-item-name">tags</span>
-              </a>
+
+          
+          
+            <div class="links-of-blogroll motion-element links-of-blogroll-block">
+              <div class="links-of-blogroll-title">
+                <i class="fa  fa-fw fa-link"></i>
+                Links
+              </div>
+              <ul class="links-of-blogroll-list">
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="https://www.tigerwang.us/" title="https://www.tigerwang.us/" rel="noopener" target="_blank">王老虎</a>
+                  </li>
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="http://fenglee.com/" title="http://fenglee.com/" rel="noopener" target="_blank">阿丰哥</a>
+                  </li>
+                
+              </ul>
             </div>
           
 
-        </nav>
-
-        
-
-        <div class="links-of-author motion-element">
           
             
-              <span class="links-of-author-item">
-                <a href="http://instagram.com/iandycao/" target="_blank" title="Instagram">
-                  
-                    <i class="fa fa-fw fa-instagram"></i>
-                  
-                  Instagram
-                </a>
-              </span>
-            
-              <span class="links-of-author-item">
-                <a href="https://www.facebook.com/andycao1982" target="_blank" title="Facebook">
-                  
-                    <i class="fa fa-fw fa-facebook"></i>
-                  
-                  Facebook
-                </a>
-              </span>
-            
-              <span class="links-of-author-item">
-                <a href="https://www.youtube.com/caojundan" target="_blank" title="Youtube">
-                  
-                    <i class="fa fa-fw fa-youtube"></i>
-                  
-                  Youtube
-                </a>
-              </span>
-            
-              <span class="links-of-author-item">
-                <a href="https://www.linkedin.com/in/andyisme" target="_blank" title="LinkedIn">
-                  
-                    <i class="fa fa-fw fa-globe"></i>
-                  
-                  LinkedIn
-                </a>
-              </span>
-            
-              <span class="links-of-author-item">
-                <a href="https://twitter.com/iandycao" target="_blank" title="Twitter">
-                  
-                    <i class="fa fa-fw fa-twitter"></i>
-                  
-                  Twitter
-                </a>
-              </span>
-            
           
+          
+
         </div>
+      </div>
 
-        
-        
-
-        
-        
-          <div class="links-of-blogroll motion-element links-of-blogroll-inline">
-            <div class="links-of-blogroll-title">
-              <i class="fa  fa-fw fa-globe"></i>
-              Links
-            </div>
-            <ul class="links-of-blogroll-list">
-              
-                <li class="links-of-blogroll-item">
-                  <a href="https://www.tigerwang.us/" title="王老虎" target="_blank">王老虎</a>
-                </li>
-              
-                <li class="links-of-blogroll-item">
-                  <a href="http://fenglee.com/" title="阿丰哥" target="_blank">阿丰哥</a>
-                </li>
-              
-            </ul>
-          </div>
-        
-
-      </section>
+      
 
       
 
     </div>
   </aside>
+  
 
 
         
@@ -1727,41 +2594,61 @@
 
     <footer id="footer" class="footer">
       <div class="footer-inner">
-        <div class="copyright">
-  
-  &copy; 
-  <span itemprop="copyrightYear">2019</span>
-  <span class="with-love">
-    <i class="fa fa-heart"></i>
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2019</span>
+  <span class="with-love" id="animate">
+    <i class="fa fa-user"></i>
   </span>
   <span class="author" itemprop="copyrightHolder">Andy</span>
+
+  
+
+  
 </div>
 
-<div class="powered-by">
-  Powered by <a class="theme-link" href="https://hexo.io">Hexo</a>
-</div>
 
-<div class="theme-info">
-  Theme -
-  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
-    NexT.Muse
-  </a>
-</div>
+  <div class="powered-by">Powered by <a href="https://hexo.io" class="theme-link" rel="noopener" target="_blank">Hexo</a> v3.8.0</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">Theme – <a href="https://theme-next.org" class="theme-link" rel="noopener" target="_blank">NexT.Pisces</a> v7.1.1</div>
+
+
+
 
         
+
+
+
+
+
+
+
 
         
       </div>
     </footer>
 
-    <div class="back-to-top">
-      <i class="fa fa-arrow-up"></i>
-    </div>
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+    
+
+    
   </div>
 
   
 
-<script type="text/javascript">
+<script>
   if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
     window.Promise = null;
   }
@@ -1775,79 +2662,101 @@
 
 
 
-  
 
 
 
-  
-  <script type="text/javascript" src="/vendors/jquery/index.js?v=2.1.3"></script>
-
-  
-  <script type="text/javascript" src="/vendors/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
-
-  
-  <script type="text/javascript" src="/vendors/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
-
-  
-  <script type="text/javascript" src="/vendors/velocity/velocity.min.js?v=1.2.1"></script>
-
-  
-  <script type="text/javascript" src="/vendors/velocity/velocity.ui.min.js?v=1.2.1"></script>
-
-  
-  <script type="text/javascript" src="/vendors/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
-
-
-  
-
-
-  <script type="text/javascript" src="/js/src/utils.js?v=5.0.1"></script>
-
-  <script type="text/javascript" src="/js/src/motion.js?v=5.0.1"></script>
 
 
 
-  
-  
-
-  
-
-  
-
-
-  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.0.1"></script>
 
 
 
-  
 
 
 
-  
 
-    <script type="text/javascript">
-      var disqus_shortname = 'f1982';
-      var disqus_identifier = 'index.html';
-      var disqus_title = "";
-      var disqus_url = '';
-
-      function run_disqus_script(disqus_script){
-        var dsq = document.createElement('script');
-        dsq.type = 'text/javascript';
-        dsq.async = true;
-        dsq.src = '//' + disqus_shortname + '.disqus.com/' + disqus_script;
-        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-      }
-
-      run_disqus_script('count.js');
-      
-    </script>
-  
 
 
 
 
   
+  <script src="/lib/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+
+  
+
+
+  <script src="/js/utils.js?v=7.1.1"></script>
+
+  <script src="/js/motion.js?v=7.1.1"></script>
+
+
+
+  
+  
+
+
+  <script src="/js/affix.js?v=7.1.1"></script>
+
+  <script src="/js/schemes/pisces.js?v=7.1.1"></script>
+
+
+
+  
+
+  
+
+
+  <script src="/js/next-boot.js?v=7.1.1"></script>
+
+
+  
+
+  
+
+  
+
+  
+  
+  <script id="dsq-count-scr" src="https://f1982.disqus.com/count.js" async></script>
+
+
+
+
+
+
+
+  
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
   
 
   
